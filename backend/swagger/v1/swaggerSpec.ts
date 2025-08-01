@@ -18,6 +18,8 @@ import updateExpense from "./paths/updateExpense";
 import deleteExpense from "./paths/deleteExpense";
 import loadData from "./paths/loadData";
 import normalizeData from "./paths/normalizeData";
+import getChartData from "./paths/getChartData";
+import getMetrics from "./paths/getMetrics";
 
 const swaggerSpec = {
   openapi: "3.0.0",
@@ -32,6 +34,8 @@ const swaggerSpec = {
     "/api/expense": createExpense,
     "/api/load": loadData,
     "/api/normalize": normalizeData,
+    "/api/chart": getChartData,
+    "/api/metrics": getMetrics,
   },
   components: {
     schemas: {

@@ -5,6 +5,7 @@ import { sequelize } from "./config/database";
 import loadRoutes from "./routes/load.routes";
 import saleRoutes from "./routes/sale.routes";
 import expenseRoutes from "./routes/expense.routes";
+import metricsRoutes from "./routes/metrics.routes";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -22,6 +23,7 @@ setupSwaggerV1(app);
 app.use("/api", loadRoutes);
 app.use("/api", saleRoutes);
 app.use("/api", expenseRoutes);
+app.use("/api", metricsRoutes);
 
 // Conexión a la base de datos
 sequelize
