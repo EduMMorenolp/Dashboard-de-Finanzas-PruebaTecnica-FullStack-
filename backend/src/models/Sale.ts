@@ -1,5 +1,5 @@
 // src/models/Sale.ts
-import { DataTypes, Model } from "sequelize";
+import { DataTypes, Model, Optional } from "sequelize";
 import { sequelize } from "../config/database";
 
 export interface SaleAttributes {
@@ -11,6 +11,8 @@ export interface SaleAttributes {
   description: string;
   client: string;
 }
+
+export type SaleCreationAttributes = Optional<SaleAttributes, "id">;
 
 export class Sale extends Model<SaleAttributes> implements SaleAttributes {
   public id!: number;
