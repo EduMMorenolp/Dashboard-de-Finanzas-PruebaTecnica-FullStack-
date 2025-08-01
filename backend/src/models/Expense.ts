@@ -1,5 +1,5 @@
 // src/models/Expense.ts
-import { DataTypes, Model } from "sequelize";
+import { DataTypes, Model, Optional } from "sequelize";
 import { sequelize } from "../config/database";
 
 export interface ExpenseAttributes {
@@ -10,6 +10,8 @@ export interface ExpenseAttributes {
   description: string;
   provider: string;
 }
+
+export type ExpenseCreationAttributes = Optional<ExpenseAttributes, "id">;
 
 export class Expense
   extends Model<ExpenseAttributes>
