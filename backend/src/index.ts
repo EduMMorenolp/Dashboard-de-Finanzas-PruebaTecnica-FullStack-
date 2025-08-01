@@ -13,6 +13,11 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
+// Swagger
+// @ts-ignore
+import setupSwaggerV1 from "../swagger/v1/main";
+setupSwaggerV1(app);
+
 // Rutas
 app.use("/api", loadRoutes);
 app.use("/api", saleRoutes);
