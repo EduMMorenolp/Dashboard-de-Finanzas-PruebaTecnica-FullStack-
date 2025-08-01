@@ -19,8 +19,8 @@ const info = {
 - **Base de Datos**: PostgreSQL con Sequelize ORM.
 `,
   contact: {
-    name: "DELSUD",
-    email: "contact@delsud.com",
+    name: "Eduardo Moreno",
+    email: "e.m.morenolp@gmail.com",
   },
 };
 
