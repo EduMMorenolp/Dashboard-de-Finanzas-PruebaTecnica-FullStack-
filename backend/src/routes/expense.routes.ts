@@ -6,7 +6,7 @@ import {
   putExpense,
   deleteExpense,
 } from "../controllers/expense.controller";
-import { validateExpense, validateId } from "../validation";
+import { validateExpense, validateId } from "../validation/validation";
 
 const router = Router();
 

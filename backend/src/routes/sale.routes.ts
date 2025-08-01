@@ -6,7 +6,7 @@ import {
   updateSale,
   deleteSale,
 } from "../controllers/sale.controller";
-import { validateSale, validateId } from "../validation";
+import { validateSale, validateId } from "../validation/validation";
 
 const router = Router();
 
