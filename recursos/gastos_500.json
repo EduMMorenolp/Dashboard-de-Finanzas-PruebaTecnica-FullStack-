@@ -1,0 +1,5316 @@
+{
+  "data_gastos": [
+    {
+      "id": 1,
+      "currency": "ARS",
+      "monto_ars": 136917,
+      "info_extra": {
+        "fecha_gasto": "2025-02-14",
+        "descripcion": "Alquiler"
+      },
+      "proveedor": "Proveedor D"
+    },
+    {
+      "id": 2,
+      "currency": "USD",
+      "monto_usd": 245,
+      "info_extra": {
+        "fecha_gasto": "2025-10-09",
+        "descripcion": "Alquiler"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "id": 3,
+      "currency": "ARS",
+      "monto_ars": 40126,
+      "info_extra": {
+        "fecha_gasto": "2025-06-24",
+        "descripcion": "Alquiler"
+      },
+      "proveedor": "Proveedor H"
+    },
+    {
+      "id": 4,
+      "currency": "ARS",
+      "monto_ars": 88383,
+      "info_extra": {
+        "fecha_gasto": "2025-12-19",
+        "descripcion": "Logística"
+      },
+      "proveedor": "Proveedor F"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 940,
+      "id_gasto": "GASTO-005",
+      "fecha": "2025-06-13",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1029,
+      "id_gasto": "PAGO-006",
+      "fecha": "2025-07-24",
+      "extra": {
+        "proveedor": "Proveedor C",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 176,
+      "id_gasto": "PAGO-007",
+      "fecha": "2025-10-16",
+      "extra": {
+        "proveedor": "Proveedor D",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 125174,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "G-ORD-008",
+      "fecha": "2025-07-25",
+      "extra": {
+        "proveedor": "Proveedor L",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "GASTO-009",
+      "currency": "ARS",
+      "monto_ars": 168236,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-09-29",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1390,
+      "id_gasto": "PAGO-010",
+      "fecha": "2025-01-01",
+      "extra": {
+        "proveedor": "Proveedor H",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 272574,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-011",
+      "fecha": "2025-09-18",
+      "extra": {
+        "proveedor": "Proveedor L",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1516,
+      "id_gasto": "EXTRA-012",
+      "fecha": "2025-04-11",
+      "extra": {
+        "proveedor": "Proveedor B",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "id": 13,
+      "currency": "ARS",
+      "monto_ars": 21771,
+      "info_extra": {
+        "fecha_gasto": "2025-03-22",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 139109,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "GASTO-014",
+      "fecha": "2025-06-14",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-015",
+      "currency": "USD",
+      "monto_usd": 1182,
+      "detalles": {
+        "proveedor": "Proveedor E",
+        "fecha": "2025-04-09",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id": 16,
+      "currency": "ARS",
+      "monto_ars": 193851,
+      "info_extra": {
+        "fecha_gasto": "2025-03-16",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor F"
+    },
+    {
+      "id": 17,
+      "currency": "USD",
+      "monto_usd": 739,
+      "info_extra": {
+        "fecha_gasto": "2025-08-14",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor J"
+    },
+    {
+      "id": 18,
+      "currency": "ARS",
+      "monto_ars": 226273,
+      "info_extra": {
+        "fecha_gasto": "2025-02-08",
+        "descripcion": "Consultoría"
+      },
+      "proveedor": "Proveedor J"
+    },
+    {
+      "id": 19,
+      "currency": "ARS",
+      "monto_ars": 228389,
+      "info_extra": {
+        "fecha_gasto": "2025-12-08",
+        "descripcion": "Consultoría"
+      },
+      "proveedor": "Proveedor G"
+    },
+    {
+      "id_gasto": "FAC-020",
+      "currency": "USD",
+      "monto_usd": 782,
+      "detalles": {
+        "proveedor": "Proveedor G",
+        "fecha": "2025-07-12",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id": 21,
+      "currency": "ARS",
+      "monto_ars": 94590,
+      "info_extra": {
+        "fecha_gasto": "2025-02-08",
+        "descripcion": "Transporte"
+      },
+      "proveedor": "Proveedor J"
+    },
+    {
+      "id": 22,
+      "currency": "USD",
+      "monto_usd": 799,
+      "info_extra": {
+        "fecha_gasto": "2025-03-15",
+        "descripcion": "Consultoría"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "id": 23,
+      "currency": "ARS",
+      "monto_ars": 25350,
+      "info_extra": {
+        "fecha_gasto": "2025-08-16",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor F"
+    },
+    {
+      "id": 24,
+      "currency": "ARS",
+      "monto_ars": 262945,
+      "info_extra": {
+        "fecha_gasto": "2025-05-27",
+        "descripcion": "Otros"
+      },
+      "proveedor": "Proveedor C"
+    },
+    {
+      "id": 25,
+      "currency": "ARS",
+      "monto_ars": 250108,
+      "info_extra": {
+        "fecha_gasto": "2025-04-20",
+        "descripcion": "Transporte"
+      },
+      "proveedor": "Proveedor D"
+    },
+    {
+      "id_gasto": "EXTRA-026",
+      "currency": "USD",
+      "monto_usd": 1308,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-10-28",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id": 27,
+      "currency": "ARS",
+      "monto_ars": 232576,
+      "info_extra": {
+        "fecha_gasto": "2025-01-09",
+        "descripcion": "Suministros"
+      },
+      "proveedor": "Proveedor J"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 81917,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "GASTO-028",
+      "fecha": "2025-07-04",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 160,
+      "id_gasto": "G-ORD-029",
+      "fecha": "2025-05-20",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id_gasto": "GASTO-030",
+      "currency": "ARS",
+      "monto_ars": 128414,
+      "detalles": {
+        "proveedor": "Proveedor C",
+        "fecha": "2025-08-25",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id": 31,
+      "currency": "ARS",
+      "monto_ars": 62169,
+      "info_extra": {
+        "fecha_gasto": "2025-05-10",
+        "descripcion": "Tecnología"
+      },
+      "proveedor": "Proveedor J"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1408,
+      "id_gasto": "G-ORD-032",
+      "fecha": "2025-11-18",
+      "extra": {
+        "proveedor": "Proveedor F",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-033",
+      "currency": "USD",
+      "monto_usd": 762,
+      "detalles": {
+        "proveedor": "Proveedor L",
+        "fecha": "2025-04-25",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "id": 34,
+      "currency": "ARS",
+      "monto_ars": 155152,
+      "info_extra": {
+        "fecha_gasto": "2025-10-11",
+        "descripcion": "Suministros"
+      },
+      "proveedor": "Proveedor G"
+    },
+    {
+      "id_gasto": "EXTRA-035",
+      "currency": "ARS",
+      "monto_ars": 230668,
+      "detalles": {
+        "proveedor": "Proveedor H",
+        "fecha": "2025-08-02",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 443,
+      "id_gasto": "GASTO-036",
+      "fecha": "2025-08-22",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-037",
+      "currency": "ARS",
+      "monto_ars": 244756,
+      "detalles": {
+        "proveedor": "Proveedor C",
+        "fecha": "2025-07-07",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id": 38,
+      "currency": "ARS",
+      "monto_ars": 213225,
+      "info_extra": {
+        "fecha_gasto": "2025-10-20",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "id": 39,
+      "currency": "ARS",
+      "monto_ars": 46118,
+      "info_extra": {
+        "fecha_gasto": "2025-09-05",
+        "descripcion": "Transporte"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "id_gasto": "PAGO-040",
+      "currency": "ARS",
+      "monto_ars": 19978,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-09-23",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 58212,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "GASTO-041",
+      "fecha": "2025-12-15",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "PAGO-042",
+      "currency": "USD",
+      "monto_usd": 1235,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-04-11",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id": 43,
+      "currency": "ARS",
+      "monto_ars": 292805,
+      "info_extra": {
+        "fecha_gasto": "2025-02-20",
+        "descripcion": "Suministros"
+      },
+      "proveedor": "Proveedor C"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 203134,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-044",
+      "fecha": "2025-05-24",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 461,
+      "id_gasto": "EXTRA-045",
+      "fecha": "2025-11-13",
+      "extra": {
+        "proveedor": "Proveedor B",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id_gasto": "PAGO-046",
+      "currency": "USD",
+      "monto_usd": 1235,
+      "detalles": {
+        "proveedor": "Proveedor D",
+        "fecha": "2025-04-06",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1198,
+      "id_gasto": "EXTRA-047",
+      "fecha": "2025-01-03",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 38189,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-048",
+      "fecha": "2025-03-18",
+      "extra": {
+        "proveedor": "Proveedor C",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 952,
+      "id_gasto": "FAC-049",
+      "fecha": "2025-11-24",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "PAGO-050",
+      "currency": "USD",
+      "monto_usd": 737,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-04-06",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 372,
+      "id_gasto": "FAC-051",
+      "fecha": "2025-10-22",
+      "extra": {
+        "proveedor": "Proveedor I",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-052",
+      "currency": "USD",
+      "monto_usd": 106,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-11-20",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-053",
+      "currency": "ARS",
+      "monto_ars": 165226,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-12-04",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id_gasto": "FAC-054",
+      "currency": "ARS",
+      "monto_ars": 156065,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-08-09",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 563,
+      "id_gasto": "G-ORD-055",
+      "fecha": "2025-11-18",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 170,
+      "id_gasto": "EXTRA-056",
+      "fecha": "2025-02-27",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-057",
+      "currency": "ARS",
+      "monto_ars": 192547,
+      "detalles": {
+        "proveedor": "Proveedor H",
+        "fecha": "2025-02-24",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 279003,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "G-ORD-058",
+      "fecha": "2025-10-04",
+      "extra": {
+        "proveedor": "Proveedor B",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1355,
+      "id_gasto": "FAC-059",
+      "fecha": "2025-08-01",
+      "extra": {
+        "proveedor": "Proveedor F",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-060",
+      "currency": "ARS",
+      "monto_ars": 84632,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-09-27",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-061",
+      "currency": "USD",
+      "monto_usd": 512,
+      "detalles": {
+        "proveedor": "Proveedor G",
+        "fecha": "2025-06-17",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 202322,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "FAC-062",
+      "fecha": "2025-02-24",
+      "extra": {
+        "proveedor": "Proveedor F",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id_gasto": "FAC-063",
+      "currency": "ARS",
+      "monto_ars": 183781,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-03-26",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 283,
+      "id_gasto": "G-ORD-064",
+      "fecha": "2025-07-30",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id": 65,
+      "currency": "ARS",
+      "monto_ars": 273753,
+      "info_extra": {
+        "fecha_gasto": "2025-12-14",
+        "descripcion": "Transporte"
+      },
+      "proveedor": "Proveedor F"
+    },
+    {
+      "id": 66,
+      "currency": "USD",
+      "monto_usd": 939,
+      "info_extra": {
+        "fecha_gasto": "2025-07-27",
+        "descripcion": "Mantenimiento"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "id_gasto": "PAGO-067",
+      "currency": "USD",
+      "monto_usd": 547,
+      "detalles": {
+        "proveedor": "Proveedor B",
+        "fecha": "2025-05-09",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 702,
+      "id_gasto": "FAC-068",
+      "fecha": "2025-03-24",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 189175,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "GASTO-069",
+      "fecha": "2025-06-19",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-070",
+      "currency": "ARS",
+      "monto_ars": 139019,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-07-11",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 576,
+      "id_gasto": "EXTRA-071",
+      "fecha": "2025-03-01",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id_gasto": "FAC-072",
+      "currency": "USD",
+      "monto_usd": 343,
+      "detalles": {
+        "proveedor": "Proveedor I",
+        "fecha": "2025-01-12",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id": 73,
+      "currency": "ARS",
+      "monto_ars": 251812,
+      "info_extra": {
+        "fecha_gasto": "2025-05-31",
+        "descripcion": "Logística"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1311,
+      "id_gasto": "FAC-074",
+      "fecha": "2025-08-28",
+      "extra": {
+        "proveedor": "Proveedor H",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id": 75,
+      "currency": "USD",
+      "monto_usd": 1291,
+      "info_extra": {
+        "fecha_gasto": "2025-11-07",
+        "descripcion": "Transporte"
+      },
+      "proveedor": "Proveedor C"
+    },
+    {
+      "id_gasto": "PAGO-076",
+      "currency": "ARS",
+      "monto_ars": 284206,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-10-31",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id_gasto": "FAC-077",
+      "currency": "ARS",
+      "monto_ars": 251114,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-08-13",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id_gasto": "GASTO-078",
+      "currency": "ARS",
+      "monto_ars": 248880,
+      "detalles": {
+        "proveedor": "Proveedor E",
+        "fecha": "2025-10-28",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id": 79,
+      "currency": "ARS",
+      "monto_ars": 18349,
+      "info_extra": {
+        "fecha_gasto": "2025-10-30",
+        "descripcion": "Otros"
+      },
+      "proveedor": "Proveedor A"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 120280,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "FAC-080",
+      "fecha": "2025-12-09",
+      "extra": {
+        "proveedor": "Proveedor L",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 773,
+      "id_gasto": "G-ORD-081",
+      "fecha": "2025-03-18",
+      "extra": {
+        "proveedor": "Proveedor C",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id_gasto": "FAC-082",
+      "currency": "ARS",
+      "monto_ars": 292539,
+      "detalles": {
+        "proveedor": "Proveedor L",
+        "fecha": "2025-08-11",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 279,
+      "id_gasto": "GASTO-083",
+      "fecha": "2025-10-02",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id_gasto": "PAGO-084",
+      "currency": "ARS",
+      "monto_ars": 185475,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-08-27",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 103,
+      "id_gasto": "FAC-085",
+      "fecha": "2025-12-17",
+      "extra": {
+        "proveedor": "Proveedor H",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 32257,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-086",
+      "fecha": "2025-09-04",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "FAC-087",
+      "currency": "ARS",
+      "monto_ars": 91138,
+      "detalles": {
+        "proveedor": "Proveedor B",
+        "fecha": "2025-05-22",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 820,
+      "id_gasto": "FAC-088",
+      "fecha": "2025-07-11",
+      "extra": {
+        "proveedor": "Proveedor E",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 978,
+      "id_gasto": "EXTRA-089",
+      "fecha": "2025-10-19",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "PAGO-090",
+      "currency": "USD",
+      "monto_usd": 1090,
+      "detalles": {
+        "proveedor": "Proveedor I",
+        "fecha": "2025-11-05",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id": 91,
+      "currency": "USD",
+      "monto_usd": 1460,
+      "info_extra": {
+        "fecha_gasto": "2025-12-19",
+        "descripcion": "Alquiler"
+      },
+      "proveedor": "Proveedor K"
+    },
+    {
+      "id_gasto": "GASTO-092",
+      "currency": "USD",
+      "monto_usd": 869,
+      "detalles": {
+        "proveedor": "Proveedor C",
+        "fecha": "2025-03-21",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id": 93,
+      "currency": "USD",
+      "monto_usd": 1405,
+      "info_extra": {
+        "fecha_gasto": "2025-04-25",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor E"
+    },
+    {
+      "id": 94,
+      "currency": "ARS",
+      "monto_ars": 180251,
+      "info_extra": {
+        "fecha_gasto": "2025-12-06",
+        "descripcion": "Alquiler"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "id_gasto": "EXTRA-095",
+      "currency": "USD",
+      "monto_usd": 156,
+      "detalles": {
+        "proveedor": "Proveedor I",
+        "fecha": "2025-05-06",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 361,
+      "id_gasto": "PAGO-096",
+      "fecha": "2025-05-19",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id_gasto": "PAGO-097",
+      "currency": "USD",
+      "monto_usd": 1164,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-08-16",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id": 98,
+      "currency": "USD",
+      "monto_usd": 1280,
+      "info_extra": {
+        "fecha_gasto": "2025-09-17",
+        "descripcion": "Suministros"
+      },
+      "proveedor": "Proveedor A"
+    },
+    {
+      "id_gasto": "GASTO-099",
+      "currency": "USD",
+      "monto_usd": 1275,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-07-14",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 173624,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "G-ORD-100",
+      "fecha": "2025-10-18",
+      "extra": {
+        "proveedor": "Proveedor B",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id": 101,
+      "currency": "USD",
+      "monto_usd": 1587,
+      "info_extra": {
+        "fecha_gasto": "2025-09-09",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor J"
+    },
+    {
+      "id": 102,
+      "currency": "ARS",
+      "monto_ars": 110852,
+      "info_extra": {
+        "fecha_gasto": "2025-02-03",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "id": 103,
+      "currency": "USD",
+      "monto_usd": 1504,
+      "info_extra": {
+        "fecha_gasto": "2025-04-01",
+        "descripcion": "Transporte"
+      },
+      "proveedor": "Proveedor F"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 206816,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "G-ORD-104",
+      "fecha": "2025-02-05",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 171216,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-105",
+      "fecha": "2025-05-17",
+      "extra": {
+        "proveedor": "Proveedor H",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id": 106,
+      "currency": "USD",
+      "monto_usd": 1282,
+      "info_extra": {
+        "fecha_gasto": "2025-03-23",
+        "descripcion": "Logística"
+      },
+      "proveedor": "Proveedor L"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 165123,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-107",
+      "fecha": "2025-06-04",
+      "extra": {
+        "proveedor": "Proveedor H",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id": 108,
+      "currency": "ARS",
+      "monto_ars": 60267,
+      "info_extra": {
+        "fecha_gasto": "2025-07-12",
+        "descripcion": "Transporte"
+      },
+      "proveedor": "Proveedor H"
+    },
+    {
+      "id_gasto": "GASTO-109",
+      "currency": "ARS",
+      "monto_ars": 127025,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-01-17",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id": 110,
+      "currency": "ARS",
+      "monto_ars": 234242,
+      "info_extra": {
+        "fecha_gasto": "2025-12-12",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor K"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 51734,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "FAC-111",
+      "fecha": "2025-03-27",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 867,
+      "id_gasto": "FAC-112",
+      "fecha": "2025-07-08",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 239420,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "G-ORD-113",
+      "fecha": "2025-10-23",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 494,
+      "id_gasto": "GASTO-114",
+      "fecha": "2025-09-08",
+      "extra": {
+        "proveedor": "Proveedor D",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id_gasto": "PAGO-115",
+      "currency": "USD",
+      "monto_usd": 832,
+      "detalles": {
+        "proveedor": "Proveedor B",
+        "fecha": "2025-11-04",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id": 116,
+      "currency": "USD",
+      "monto_usd": 554,
+      "info_extra": {
+        "fecha_gasto": "2025-05-09",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor L"
+    },
+    {
+      "id_gasto": "G-ORD-117",
+      "currency": "USD",
+      "monto_usd": 1119,
+      "detalles": {
+        "proveedor": "Proveedor H",
+        "fecha": "2025-06-24",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-118",
+      "currency": "USD",
+      "monto_usd": 1020,
+      "detalles": {
+        "proveedor": "Proveedor H",
+        "fecha": "2025-02-20",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id": 119,
+      "currency": "USD",
+      "monto_usd": 1570,
+      "info_extra": {
+        "fecha_gasto": "2025-07-11",
+        "descripcion": "Transporte"
+      },
+      "proveedor": "Proveedor H"
+    },
+    {
+      "id": 120,
+      "currency": "ARS",
+      "monto_ars": 58071,
+      "info_extra": {
+        "fecha_gasto": "2025-08-02",
+        "descripcion": "Servicios Públicos"
+      },
+      "proveedor": "Proveedor A"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1407,
+      "id_gasto": "FAC-121",
+      "fecha": "2025-11-17",
+      "extra": {
+        "proveedor": "Proveedor H",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id": 122,
+      "currency": "ARS",
+      "monto_ars": 174972,
+      "info_extra": {
+        "fecha_gasto": "2025-06-30",
+        "descripcion": "Suministros"
+      },
+      "proveedor": "Proveedor J"
+    },
+    {
+      "id": 123,
+      "currency": "ARS",
+      "monto_ars": 98583,
+      "info_extra": {
+        "fecha_gasto": "2025-08-20",
+        "descripcion": "Otros"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "id": 124,
+      "currency": "USD",
+      "monto_usd": 282,
+      "info_extra": {
+        "fecha_gasto": "2025-10-10",
+        "descripcion": "Logística"
+      },
+      "proveedor": "Proveedor F"
+    },
+    {
+      "id_gasto": "G-ORD-125",
+      "currency": "ARS",
+      "monto_ars": 203546,
+      "detalles": {
+        "proveedor": "Proveedor B",
+        "fecha": "2025-07-16",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id_gasto": "GASTO-126",
+      "currency": "ARS",
+      "monto_ars": 77618,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-11-04",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-127",
+      "currency": "USD",
+      "monto_usd": 1467,
+      "detalles": {
+        "proveedor": "Proveedor G",
+        "fecha": "2025-10-17",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 528,
+      "id_gasto": "EXTRA-128",
+      "fecha": "2025-02-12",
+      "extra": {
+        "proveedor": "Proveedor B",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id": 129,
+      "currency": "ARS",
+      "monto_ars": 112943,
+      "info_extra": {
+        "fecha_gasto": "2025-01-19",
+        "descripcion": "Logística"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "id_gasto": "G-ORD-130",
+      "currency": "ARS",
+      "monto_ars": 277767,
+      "detalles": {
+        "proveedor": "Proveedor I",
+        "fecha": "2025-04-27",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "id": 131,
+      "currency": "USD",
+      "monto_usd": 1467,
+      "info_extra": {
+        "fecha_gasto": "2025-10-22",
+        "descripcion": "Tecnología"
+      },
+      "proveedor": "Proveedor L"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 279699,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-132",
+      "fecha": "2025-06-08",
+      "extra": {
+        "proveedor": "Proveedor D",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1048,
+      "id_gasto": "FAC-133",
+      "fecha": "2025-11-17",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id": 134,
+      "currency": "ARS",
+      "monto_ars": 279510,
+      "info_extra": {
+        "fecha_gasto": "2025-12-23",
+        "descripcion": "Logística"
+      },
+      "proveedor": "Proveedor J"
+    },
+    {
+      "id": 135,
+      "currency": "ARS",
+      "monto_ars": 121634,
+      "info_extra": {
+        "fecha_gasto": "2025-09-15",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor C"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 9646,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "GASTO-136",
+      "fecha": "2025-02-28",
+      "extra": {
+        "proveedor": "Proveedor H",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 227487,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-137",
+      "fecha": "2025-05-05",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-138",
+      "currency": "USD",
+      "monto_usd": 315,
+      "detalles": {
+        "proveedor": "Proveedor C",
+        "fecha": "2025-07-31",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1341,
+      "id_gasto": "G-ORD-139",
+      "fecha": "2025-08-19",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id": 140,
+      "currency": "ARS",
+      "monto_ars": 252865,
+      "info_extra": {
+        "fecha_gasto": "2025-08-13",
+        "descripcion": "Transporte"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 192758,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-141",
+      "fecha": "2025-04-22",
+      "extra": {
+        "proveedor": "Proveedor E",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id": 142,
+      "currency": "ARS",
+      "monto_ars": 185521,
+      "info_extra": {
+        "fecha_gasto": "2025-10-28",
+        "descripcion": "Otros"
+      },
+      "proveedor": "Proveedor A"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1561,
+      "id_gasto": "EXTRA-143",
+      "fecha": "2025-02-11",
+      "extra": {
+        "proveedor": "Proveedor D",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-144",
+      "currency": "ARS",
+      "monto_ars": 151993,
+      "detalles": {
+        "proveedor": "Proveedor E",
+        "fecha": "2025-06-14",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "PAGO-145",
+      "currency": "USD",
+      "monto_usd": 1379,
+      "detalles": {
+        "proveedor": "Proveedor L",
+        "fecha": "2025-10-28",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 218105,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "FAC-146",
+      "fecha": "2025-07-31",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id": 147,
+      "currency": "USD",
+      "monto_usd": 832,
+      "info_extra": {
+        "fecha_gasto": "2025-10-08",
+        "descripcion": "Mantenimiento"
+      },
+      "proveedor": "Proveedor G"
+    },
+    {
+      "id": 148,
+      "currency": "ARS",
+      "monto_ars": 98295,
+      "info_extra": {
+        "fecha_gasto": "2025-08-01",
+        "descripcion": "Transporte"
+      },
+      "proveedor": "Proveedor D"
+    },
+    {
+      "id_gasto": "GASTO-149",
+      "currency": "USD",
+      "monto_usd": 1414,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-11-10",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id": 150,
+      "currency": "ARS",
+      "monto_ars": 288027,
+      "info_extra": {
+        "fecha_gasto": "2025-06-28",
+        "descripcion": "Alquiler"
+      },
+      "proveedor": "Proveedor K"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 981,
+      "id_gasto": "PAGO-151",
+      "fecha": "2025-06-23",
+      "extra": {
+        "proveedor": "Proveedor I",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id": 152,
+      "currency": "ARS",
+      "monto_ars": 85681,
+      "info_extra": {
+        "fecha_gasto": "2025-09-15",
+        "descripcion": "Consultoría"
+      },
+      "proveedor": "Proveedor K"
+    },
+    {
+      "id_gasto": "G-ORD-153",
+      "currency": "ARS",
+      "monto_ars": 206669,
+      "detalles": {
+        "proveedor": "Proveedor E",
+        "fecha": "2025-10-10",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id": 154,
+      "currency": "ARS",
+      "monto_ars": 302399,
+      "info_extra": {
+        "fecha_gasto": "2025-03-16",
+        "descripcion": "Alquiler"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 67482,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "GASTO-155",
+      "fecha": "2025-04-19",
+      "extra": {
+        "proveedor": "Proveedor B",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id_gasto": "FAC-156",
+      "currency": "USD",
+      "monto_usd": 1562,
+      "detalles": {
+        "proveedor": "Proveedor I",
+        "fecha": "2025-07-28",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id": 157,
+      "currency": "USD",
+      "monto_usd": 766,
+      "info_extra": {
+        "fecha_gasto": "2025-02-15",
+        "descripcion": "Transporte"
+      },
+      "proveedor": "Proveedor F"
+    },
+    {
+      "id_gasto": "PAGO-158",
+      "currency": "ARS",
+      "monto_ars": 179180,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-08-15",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "FAC-159",
+      "currency": "ARS",
+      "monto_ars": 92310,
+      "detalles": {
+        "proveedor": "Proveedor L",
+        "fecha": "2025-09-10",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id": 160,
+      "currency": "ARS",
+      "monto_ars": 87641,
+      "info_extra": {
+        "fecha_gasto": "2025-03-13",
+        "descripcion": "Consultoría"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 979,
+      "id_gasto": "FAC-161",
+      "fecha": "2025-05-12",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id": 162,
+      "currency": "USD",
+      "monto_usd": 402,
+      "info_extra": {
+        "fecha_gasto": "2025-05-12",
+        "descripcion": "Transporte"
+      },
+      "proveedor": "Proveedor A"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 72179,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-163",
+      "fecha": "2025-09-12",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id_gasto": "PAGO-164",
+      "currency": "ARS",
+      "monto_ars": 102002,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-07-14",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-165",
+      "currency": "USD",
+      "monto_usd": 1354,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-11-26",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 714,
+      "id_gasto": "EXTRA-166",
+      "fecha": "2025-03-23",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1020,
+      "id_gasto": "FAC-167",
+      "fecha": "2025-04-05",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id_gasto": "GASTO-168",
+      "currency": "ARS",
+      "monto_ars": 202640,
+      "detalles": {
+        "proveedor": "Proveedor C",
+        "fecha": "2025-03-28",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id": 169,
+      "currency": "ARS",
+      "monto_ars": 272583,
+      "info_extra": {
+        "fecha_gasto": "2025-05-23",
+        "descripcion": "Tecnología"
+      },
+      "proveedor": "Proveedor G"
+    },
+    {
+      "id_gasto": "FAC-170",
+      "currency": "USD",
+      "monto_usd": 1298,
+      "detalles": {
+        "proveedor": "Proveedor D",
+        "fecha": "2025-03-20",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 288076,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-171",
+      "fecha": "2025-09-11",
+      "extra": {
+        "proveedor": "Proveedor D",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id_gasto": "FAC-172",
+      "currency": "ARS",
+      "monto_ars": 225298,
+      "detalles": {
+        "proveedor": "Proveedor E",
+        "fecha": "2025-10-25",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id": 173,
+      "currency": "USD",
+      "monto_usd": 1136,
+      "info_extra": {
+        "fecha_gasto": "2025-02-22",
+        "descripcion": "Otros"
+      },
+      "proveedor": "Proveedor G"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1572,
+      "id_gasto": "PAGO-174",
+      "fecha": "2025-11-03",
+      "extra": {
+        "proveedor": "Proveedor F",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-175",
+      "currency": "USD",
+      "monto_usd": 448,
+      "detalles": {
+        "proveedor": "Proveedor I",
+        "fecha": "2025-04-09",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id": 176,
+      "currency": "ARS",
+      "monto_ars": 102779,
+      "info_extra": {
+        "fecha_gasto": "2025-09-17",
+        "descripcion": "Suministros"
+      },
+      "proveedor": "Proveedor J"
+    },
+    {
+      "id_gasto": "GASTO-177",
+      "currency": "ARS",
+      "monto_ars": 106621,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-09-13",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-178",
+      "currency": "ARS",
+      "monto_ars": 11323,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-03-16",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id": 179,
+      "currency": "USD",
+      "monto_usd": 1468,
+      "info_extra": {
+        "fecha_gasto": "2025-04-04",
+        "descripcion": "Alquiler"
+      },
+      "proveedor": "Proveedor E"
+    },
+    {
+      "id": 180,
+      "currency": "ARS",
+      "monto_ars": 192681,
+      "info_extra": {
+        "fecha_gasto": "2025-05-20",
+        "descripcion": "Consultoría"
+      },
+      "proveedor": "Proveedor K"
+    },
+    {
+      "id": 181,
+      "currency": "ARS",
+      "monto_ars": 139810,
+      "info_extra": {
+        "fecha_gasto": "2025-07-07",
+        "descripcion": "Tecnología"
+      },
+      "proveedor": "Proveedor G"
+    },
+    {
+      "id_gasto": "EXTRA-182",
+      "currency": "USD",
+      "monto_usd": 1587,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-04-10",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id": 183,
+      "currency": "USD",
+      "monto_usd": 298,
+      "info_extra": {
+        "fecha_gasto": "2025-10-15",
+        "descripcion": "Suministros"
+      },
+      "proveedor": "Proveedor C"
+    },
+    {
+      "id_gasto": "GASTO-184",
+      "currency": "USD",
+      "monto_usd": 274,
+      "detalles": {
+        "proveedor": "Proveedor C",
+        "fecha": "2025-12-29",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id": 185,
+      "currency": "ARS",
+      "monto_ars": 252899,
+      "info_extra": {
+        "fecha_gasto": "2025-12-07",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor H"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 48833,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-186",
+      "fecha": "2025-08-01",
+      "extra": {
+        "proveedor": "Proveedor H",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-187",
+      "currency": "ARS",
+      "monto_ars": 285359,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-01-04",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 330,
+      "id_gasto": "GASTO-188",
+      "fecha": "2025-02-05",
+      "extra": {
+        "proveedor": "Proveedor L",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id": 189,
+      "currency": "ARS",
+      "monto_ars": 110091,
+      "info_extra": {
+        "fecha_gasto": "2025-08-17",
+        "descripcion": "Servicios Públicos"
+      },
+      "proveedor": "Proveedor C"
+    },
+    {
+      "id": 190,
+      "currency": "ARS",
+      "monto_ars": 264373,
+      "info_extra": {
+        "fecha_gasto": "2025-10-15",
+        "descripcion": "Mantenimiento"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "id_gasto": "FAC-191",
+      "currency": "USD",
+      "monto_usd": 549,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-04-12",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 911,
+      "id_gasto": "G-ORD-192",
+      "fecha": "2025-10-26",
+      "extra": {
+        "proveedor": "Proveedor B",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id": 193,
+      "currency": "USD",
+      "monto_usd": 322,
+      "info_extra": {
+        "fecha_gasto": "2025-10-20",
+        "descripcion": "Servicios Públicos"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "id": 194,
+      "currency": "ARS",
+      "monto_ars": 12261,
+      "info_extra": {
+        "fecha_gasto": "2025-10-28",
+        "descripcion": "Otros"
+      },
+      "proveedor": "Proveedor F"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 55644,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "G-ORD-195",
+      "fecha": "2025-01-24",
+      "extra": {
+        "proveedor": "Proveedor I",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-196",
+      "currency": "ARS",
+      "monto_ars": 76077,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-12-21",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 283219,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-197",
+      "fecha": "2025-12-14",
+      "extra": {
+        "proveedor": "Proveedor H",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id": 198,
+      "currency": "USD",
+      "monto_usd": 1490,
+      "info_extra": {
+        "fecha_gasto": "2025-05-03",
+        "descripcion": "Alquiler"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1363,
+      "id_gasto": "GASTO-199",
+      "fecha": "2025-08-29",
+      "extra": {
+        "proveedor": "Proveedor E",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id": 200,
+      "currency": "USD",
+      "monto_usd": 1127,
+      "info_extra": {
+        "fecha_gasto": "2025-01-28",
+        "descripcion": "Transporte"
+      },
+      "proveedor": "Proveedor A"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 487,
+      "id_gasto": "FAC-201",
+      "fecha": "2025-03-31",
+      "extra": {
+        "proveedor": "Proveedor B",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-202",
+      "currency": "ARS",
+      "monto_ars": 214717,
+      "detalles": {
+        "proveedor": "Proveedor E",
+        "fecha": "2025-10-03",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 162300,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-203",
+      "fecha": "2025-03-19",
+      "extra": {
+        "proveedor": "Proveedor E",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "PAGO-204",
+      "currency": "USD",
+      "monto_usd": 462,
+      "detalles": {
+        "proveedor": "Proveedor D",
+        "fecha": "2025-07-05",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-205",
+      "currency": "USD",
+      "monto_usd": 958,
+      "detalles": {
+        "proveedor": "Proveedor B",
+        "fecha": "2025-08-28",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 559,
+      "id_gasto": "G-ORD-206",
+      "fecha": "2025-08-13",
+      "extra": {
+        "proveedor": "Proveedor B",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id": 207,
+      "currency": "ARS",
+      "monto_ars": 299461,
+      "info_extra": {
+        "fecha_gasto": "2025-11-09",
+        "descripcion": "Servicios Públicos"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "id": 208,
+      "currency": "ARS",
+      "monto_ars": 189987,
+      "info_extra": {
+        "fecha_gasto": "2025-12-13",
+        "descripcion": "Alquiler"
+      },
+      "proveedor": "Proveedor E"
+    },
+    {
+      "id": 209,
+      "currency": "ARS",
+      "monto_ars": 238589,
+      "info_extra": {
+        "fecha_gasto": "2025-10-17",
+        "descripcion": "Servicios Públicos"
+      },
+      "proveedor": "Proveedor G"
+    },
+    {
+      "id": 210,
+      "currency": "ARS",
+      "monto_ars": 43750,
+      "info_extra": {
+        "fecha_gasto": "2025-07-06",
+        "descripcion": "Alquiler"
+      },
+      "proveedor": "Proveedor H"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 251,
+      "id_gasto": "G-ORD-211",
+      "fecha": "2025-09-08",
+      "extra": {
+        "proveedor": "Proveedor L",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id": 212,
+      "currency": "USD",
+      "monto_usd": 1221,
+      "info_extra": {
+        "fecha_gasto": "2025-11-25",
+        "descripcion": "Otros"
+      },
+      "proveedor": "Proveedor C"
+    },
+    {
+      "id": 213,
+      "currency": "ARS",
+      "monto_ars": 125266,
+      "info_extra": {
+        "fecha_gasto": "2025-08-03",
+        "descripcion": "Suministros"
+      },
+      "proveedor": "Proveedor E"
+    },
+    {
+      "id_gasto": "PAGO-214",
+      "currency": "USD",
+      "monto_usd": 582,
+      "detalles": {
+        "proveedor": "Proveedor G",
+        "fecha": "2025-04-21",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-215",
+      "currency": "USD",
+      "monto_usd": 789,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-09-24",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 552,
+      "id_gasto": "EXTRA-216",
+      "fecha": "2025-12-16",
+      "extra": {
+        "proveedor": "Proveedor I",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 202480,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-217",
+      "fecha": "2025-08-08",
+      "extra": {
+        "proveedor": "Proveedor L",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id_gasto": "FAC-218",
+      "currency": "ARS",
+      "monto_ars": 178860,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-12-24",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-219",
+      "currency": "USD",
+      "monto_usd": 1187,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-02-06",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id": 220,
+      "currency": "USD",
+      "monto_usd": 477,
+      "info_extra": {
+        "fecha_gasto": "2025-03-08",
+        "descripcion": "Consultoría"
+      },
+      "proveedor": "Proveedor K"
+    },
+    {
+      "id_gasto": "EXTRA-221",
+      "currency": "ARS",
+      "monto_ars": 163657,
+      "detalles": {
+        "proveedor": "Proveedor I",
+        "fecha": "2025-06-26",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 302874,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "GASTO-222",
+      "fecha": "2025-11-15",
+      "extra": {
+        "proveedor": "Proveedor E",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 195699,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-223",
+      "fecha": "2025-03-10",
+      "extra": {
+        "proveedor": "Proveedor B",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id": 224,
+      "currency": "USD",
+      "monto_usd": 1259,
+      "info_extra": {
+        "fecha_gasto": "2025-01-03",
+        "descripcion": "Mantenimiento"
+      },
+      "proveedor": "Proveedor C"
+    },
+    {
+      "id_gasto": "GASTO-225",
+      "currency": "ARS",
+      "monto_ars": 126490,
+      "detalles": {
+        "proveedor": "Proveedor L",
+        "fecha": "2025-02-02",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id": 226,
+      "currency": "ARS",
+      "monto_ars": 187881,
+      "info_extra": {
+        "fecha_gasto": "2025-04-27",
+        "descripcion": "Tecnología"
+      },
+      "proveedor": "Proveedor E"
+    },
+    {
+      "id_gasto": "FAC-227",
+      "currency": "USD",
+      "monto_usd": 389,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-08-03",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "FAC-228",
+      "currency": "USD",
+      "monto_usd": 571,
+      "detalles": {
+        "proveedor": "Proveedor C",
+        "fecha": "2025-11-07",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "id_gasto": "GASTO-229",
+      "currency": "USD",
+      "monto_usd": 264,
+      "detalles": {
+        "proveedor": "Proveedor G",
+        "fecha": "2025-05-14",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-230",
+      "currency": "ARS",
+      "monto_ars": 48923,
+      "detalles": {
+        "proveedor": "Proveedor H",
+        "fecha": "2025-07-11",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 149298,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "G-ORD-231",
+      "fecha": "2025-09-17",
+      "extra": {
+        "proveedor": "Proveedor E",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "id": 232,
+      "currency": "USD",
+      "monto_usd": 971,
+      "info_extra": {
+        "fecha_gasto": "2025-06-13",
+        "descripcion": "Tecnología"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "id": 233,
+      "currency": "USD",
+      "monto_usd": 909,
+      "info_extra": {
+        "fecha_gasto": "2025-08-06",
+        "descripcion": "Otros"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "id_gasto": "PAGO-234",
+      "currency": "ARS",
+      "monto_ars": 18106,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-10-09",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 602,
+      "id_gasto": "PAGO-235",
+      "fecha": "2025-12-02",
+      "extra": {
+        "proveedor": "Proveedor I",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1534,
+      "id_gasto": "FAC-236",
+      "fecha": "2025-07-21",
+      "extra": {
+        "proveedor": "Proveedor I",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 295,
+      "id_gasto": "EXTRA-237",
+      "fecha": "2025-04-23",
+      "extra": {
+        "proveedor": "Proveedor C",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id": 238,
+      "currency": "ARS",
+      "monto_ars": 223941,
+      "info_extra": {
+        "fecha_gasto": "2025-03-04",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor E"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1069,
+      "id_gasto": "EXTRA-239",
+      "fecha": "2025-09-18",
+      "extra": {
+        "proveedor": "Proveedor F",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 617,
+      "id_gasto": "G-ORD-240",
+      "fecha": "2025-12-18",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id_gasto": "GASTO-241",
+      "currency": "USD",
+      "monto_usd": 1342,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-02-03",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 41738,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-242",
+      "fecha": "2025-11-23",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 899,
+      "id_gasto": "PAGO-243",
+      "fecha": "2025-08-20",
+      "extra": {
+        "proveedor": "Proveedor D",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id": 244,
+      "currency": "USD",
+      "monto_usd": 205,
+      "info_extra": {
+        "fecha_gasto": "2025-03-10",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor E"
+    },
+    {
+      "id_gasto": "PAGO-245",
+      "currency": "USD",
+      "monto_usd": 1135,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-09-23",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id": 246,
+      "currency": "USD",
+      "monto_usd": 1519,
+      "info_extra": {
+        "fecha_gasto": "2025-02-27",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 60606,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "G-ORD-247",
+      "fecha": "2025-10-30",
+      "extra": {
+        "proveedor": "Proveedor I",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1595,
+      "id_gasto": "GASTO-248",
+      "fecha": "2025-04-04",
+      "extra": {
+        "proveedor": "Proveedor C",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id_gasto": "PAGO-249",
+      "currency": "USD",
+      "monto_usd": 285,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-03-03",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "PAGO-250",
+      "currency": "USD",
+      "monto_usd": 485,
+      "detalles": {
+        "proveedor": "Proveedor G",
+        "fecha": "2025-04-08",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 503,
+      "id_gasto": "GASTO-251",
+      "fecha": "2025-05-11",
+      "extra": {
+        "proveedor": "Proveedor L",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 135,
+      "id_gasto": "PAGO-252",
+      "fecha": "2025-07-07",
+      "extra": {
+        "proveedor": "Proveedor B",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "GASTO-253",
+      "currency": "ARS",
+      "monto_ars": 56954,
+      "detalles": {
+        "proveedor": "Proveedor B",
+        "fecha": "2025-04-15",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id": 254,
+      "currency": "ARS",
+      "monto_ars": 68436,
+      "info_extra": {
+        "fecha_gasto": "2025-03-03",
+        "descripcion": "Logística"
+      },
+      "proveedor": "Proveedor H"
+    },
+    {
+      "id": 255,
+      "currency": "USD",
+      "monto_usd": 159,
+      "info_extra": {
+        "fecha_gasto": "2025-12-07",
+        "descripcion": "Otros"
+      },
+      "proveedor": "Proveedor E"
+    },
+    {
+      "id_gasto": "G-ORD-256",
+      "currency": "ARS",
+      "monto_ars": 79907,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-07-04",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 110412,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-257",
+      "fecha": "2025-09-05",
+      "extra": {
+        "proveedor": "Proveedor C",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 79457,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "FAC-258",
+      "fecha": "2025-03-11",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 8393,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-259",
+      "fecha": "2025-06-01",
+      "extra": {
+        "proveedor": "Proveedor H",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 124248,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-260",
+      "fecha": "2025-10-03",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "id": 261,
+      "currency": "ARS",
+      "monto_ars": 53720,
+      "info_extra": {
+        "fecha_gasto": "2025-05-13",
+        "descripcion": "Servicios Públicos"
+      },
+      "proveedor": "Proveedor C"
+    },
+    {
+      "id_gasto": "FAC-262",
+      "currency": "ARS",
+      "monto_ars": 236793,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-04-05",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id": 263,
+      "currency": "USD",
+      "monto_usd": 979,
+      "info_extra": {
+        "fecha_gasto": "2025-09-03",
+        "descripcion": "Consultoría"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "id": 264,
+      "currency": "ARS",
+      "monto_ars": 22871,
+      "info_extra": {
+        "fecha_gasto": "2025-09-12",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 471,
+      "id_gasto": "FAC-265",
+      "fecha": "2025-10-28",
+      "extra": {
+        "proveedor": "Proveedor I",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "GASTO-266",
+      "currency": "ARS",
+      "monto_ars": 166679,
+      "detalles": {
+        "proveedor": "Proveedor I",
+        "fecha": "2025-04-18",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id": 267,
+      "currency": "USD",
+      "monto_usd": 775,
+      "info_extra": {
+        "fecha_gasto": "2025-04-23",
+        "descripcion": "Tecnología"
+      },
+      "proveedor": "Proveedor F"
+    },
+    {
+      "id": 268,
+      "currency": "ARS",
+      "monto_ars": 199353,
+      "info_extra": {
+        "fecha_gasto": "2025-08-30",
+        "descripcion": "Servicios Públicos"
+      },
+      "proveedor": "Proveedor A"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1576,
+      "id_gasto": "EXTRA-269",
+      "fecha": "2025-12-12",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-270",
+      "currency": "ARS",
+      "monto_ars": 170855,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-07-20",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 170498,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-271",
+      "fecha": "2025-02-22",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id": 272,
+      "currency": "USD",
+      "monto_usd": 630,
+      "info_extra": {
+        "fecha_gasto": "2025-07-18",
+        "descripcion": "Suministros"
+      },
+      "proveedor": "Proveedor A"
+    },
+    {
+      "id_gasto": "GASTO-273",
+      "currency": "ARS",
+      "monto_ars": 41854,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-12-24",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id_gasto": "FAC-274",
+      "currency": "ARS",
+      "monto_ars": 235597,
+      "detalles": {
+        "proveedor": "Proveedor I",
+        "fecha": "2025-12-17",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 176,
+      "id_gasto": "GASTO-275",
+      "fecha": "2025-07-17",
+      "extra": {
+        "proveedor": "Proveedor E",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1157,
+      "id_gasto": "GASTO-276",
+      "fecha": "2025-09-02",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id": 277,
+      "currency": "ARS",
+      "monto_ars": 277865,
+      "info_extra": {
+        "fecha_gasto": "2025-06-26",
+        "descripcion": "Suministros"
+      },
+      "proveedor": "Proveedor H"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 157121,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-278",
+      "fecha": "2025-02-23",
+      "extra": {
+        "proveedor": "Proveedor D",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "FAC-279",
+      "currency": "USD",
+      "monto_usd": 295,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-09-03",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 233538,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "GASTO-280",
+      "fecha": "2025-09-28",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id": 281,
+      "currency": "ARS",
+      "monto_ars": 121536,
+      "info_extra": {
+        "fecha_gasto": "2025-06-30",
+        "descripcion": "Consultoría"
+      },
+      "proveedor": "Proveedor C"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 173938,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-282",
+      "fecha": "2025-09-18",
+      "extra": {
+        "proveedor": "Proveedor E",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-283",
+      "currency": "ARS",
+      "monto_ars": 162661,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-05-14",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-284",
+      "currency": "USD",
+      "monto_usd": 898,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-02-08",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id": 285,
+      "currency": "USD",
+      "monto_usd": 972,
+      "info_extra": {
+        "fecha_gasto": "2025-07-16",
+        "descripcion": "Servicios Públicos"
+      },
+      "proveedor": "Proveedor J"
+    },
+    {
+      "id_gasto": "EXTRA-286",
+      "currency": "USD",
+      "monto_usd": 1190,
+      "detalles": {
+        "proveedor": "Proveedor I",
+        "fecha": "2025-12-04",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-287",
+      "currency": "ARS",
+      "monto_ars": 251480,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-08-28",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 59967,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-288",
+      "fecha": "2025-03-14",
+      "extra": {
+        "proveedor": "Proveedor B",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-289",
+      "currency": "ARS",
+      "monto_ars": 204625,
+      "detalles": {
+        "proveedor": "Proveedor I",
+        "fecha": "2025-07-16",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id_gasto": "GASTO-290",
+      "currency": "ARS",
+      "monto_ars": 115918,
+      "detalles": {
+        "proveedor": "Proveedor H",
+        "fecha": "2025-01-18",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id_gasto": "GASTO-291",
+      "currency": "ARS",
+      "monto_ars": 150810,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-11-16",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-292",
+      "currency": "ARS",
+      "monto_ars": 216299,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-05-17",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "GASTO-293",
+      "currency": "ARS",
+      "monto_ars": 237615,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-09-17",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-294",
+      "currency": "ARS",
+      "monto_ars": 67310,
+      "detalles": {
+        "proveedor": "Proveedor D",
+        "fecha": "2025-02-27",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 547,
+      "id_gasto": "EXTRA-295",
+      "fecha": "2025-10-31",
+      "extra": {
+        "proveedor": "Proveedor I",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "id_gasto": "GASTO-296",
+      "currency": "ARS",
+      "monto_ars": 117736,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-05-27",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-297",
+      "currency": "ARS",
+      "monto_ars": 165270,
+      "detalles": {
+        "proveedor": "Proveedor H",
+        "fecha": "2025-03-12",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id_gasto": "GASTO-298",
+      "currency": "USD",
+      "monto_usd": 889,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-02-28",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1541,
+      "id_gasto": "EXTRA-299",
+      "fecha": "2025-05-04",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id": 300,
+      "currency": "ARS",
+      "monto_ars": 32980,
+      "info_extra": {
+        "fecha_gasto": "2025-06-24",
+        "descripcion": "Transporte"
+      },
+      "proveedor": "Proveedor L"
+    },
+    {
+      "id": 301,
+      "currency": "USD",
+      "monto_usd": 454,
+      "info_extra": {
+        "fecha_gasto": "2025-11-02",
+        "descripcion": "Servicios Públicos"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "id_gasto": "PAGO-302",
+      "currency": "USD",
+      "monto_usd": 1439,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-10-06",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-303",
+      "currency": "USD",
+      "monto_usd": 966,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-12-30",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1152,
+      "id_gasto": "GASTO-304",
+      "fecha": "2025-10-28",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1237,
+      "id_gasto": "PAGO-305",
+      "fecha": "2025-11-13",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-306",
+      "currency": "ARS",
+      "monto_ars": 167601,
+      "detalles": {
+        "proveedor": "Proveedor D",
+        "fecha": "2025-02-10",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id": 307,
+      "currency": "ARS",
+      "monto_ars": 192114,
+      "info_extra": {
+        "fecha_gasto": "2025-10-24",
+        "descripcion": "Alquiler"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 790,
+      "id_gasto": "PAGO-308",
+      "fecha": "2025-11-07",
+      "extra": {
+        "proveedor": "Proveedor I",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 248196,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-309",
+      "fecha": "2025-07-13",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id": 310,
+      "currency": "ARS",
+      "monto_ars": 146260,
+      "info_extra": {
+        "fecha_gasto": "2025-07-14",
+        "descripcion": "Otros"
+      },
+      "proveedor": "Proveedor F"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 114842,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "G-ORD-311",
+      "fecha": "2025-02-27",
+      "extra": {
+        "proveedor": "Proveedor L",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 158088,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-312",
+      "fecha": "2025-10-15",
+      "extra": {
+        "proveedor": "Proveedor L",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "id": 313,
+      "currency": "ARS",
+      "monto_ars": 216895,
+      "info_extra": {
+        "fecha_gasto": "2025-10-15",
+        "descripcion": "Otros"
+      },
+      "proveedor": "Proveedor F"
+    },
+    {
+      "id": 314,
+      "currency": "ARS",
+      "monto_ars": 296158,
+      "info_extra": {
+        "fecha_gasto": "2025-10-14",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor A"
+    },
+    {
+      "id_gasto": "GASTO-315",
+      "currency": "USD",
+      "monto_usd": 550,
+      "detalles": {
+        "proveedor": "Proveedor B",
+        "fecha": "2025-07-02",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id": 316,
+      "currency": "ARS",
+      "monto_ars": 118064,
+      "info_extra": {
+        "fecha_gasto": "2025-03-06",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor D"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 178,
+      "id_gasto": "PAGO-317",
+      "fecha": "2025-10-03",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id_gasto": "FAC-318",
+      "currency": "ARS",
+      "monto_ars": 265157,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-07-11",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id": 319,
+      "currency": "USD",
+      "monto_usd": 825,
+      "info_extra": {
+        "fecha_gasto": "2025-01-20",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "id": 320,
+      "currency": "USD",
+      "monto_usd": 379,
+      "info_extra": {
+        "fecha_gasto": "2025-10-04",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "id_gasto": "EXTRA-321",
+      "currency": "USD",
+      "monto_usd": 1376,
+      "detalles": {
+        "proveedor": "Proveedor C",
+        "fecha": "2025-02-03",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 104106,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "GASTO-322",
+      "fecha": "2025-07-23",
+      "extra": {
+        "proveedor": "Proveedor D",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-323",
+      "currency": "USD",
+      "monto_usd": 1034,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-05-09",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 202,
+      "id_gasto": "FAC-324",
+      "fecha": "2025-08-20",
+      "extra": {
+        "proveedor": "Proveedor L",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "FAC-325",
+      "currency": "ARS",
+      "monto_ars": 24591,
+      "detalles": {
+        "proveedor": "Proveedor I",
+        "fecha": "2025-09-06",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id": 326,
+      "currency": "USD",
+      "monto_usd": 1035,
+      "info_extra": {
+        "fecha_gasto": "2025-02-09",
+        "descripcion": "Otros"
+      },
+      "proveedor": "Proveedor L"
+    },
+    {
+      "id": 327,
+      "currency": "ARS",
+      "monto_ars": 7760,
+      "info_extra": {
+        "fecha_gasto": "2025-02-18",
+        "descripcion": "Servicios Públicos"
+      },
+      "proveedor": "Proveedor F"
+    },
+    {
+      "id": 328,
+      "currency": "ARS",
+      "monto_ars": 212504,
+      "info_extra": {
+        "fecha_gasto": "2025-01-16",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor L"
+    },
+    {
+      "id": 329,
+      "currency": "USD",
+      "monto_usd": 887,
+      "info_extra": {
+        "fecha_gasto": "2025-02-01",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor E"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 322,
+      "id_gasto": "PAGO-330",
+      "fecha": "2025-09-29",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 190,
+      "id_gasto": "PAGO-331",
+      "fecha": "2025-03-12",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id": 332,
+      "currency": "ARS",
+      "monto_ars": 133586,
+      "info_extra": {
+        "fecha_gasto": "2025-10-05",
+        "descripcion": "Logística"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "id": 333,
+      "currency": "USD",
+      "monto_usd": 1090,
+      "info_extra": {
+        "fecha_gasto": "2025-02-24",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor K"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 760,
+      "id_gasto": "GASTO-334",
+      "fecha": "2025-01-21",
+      "extra": {
+        "proveedor": "Proveedor B",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1191,
+      "id_gasto": "FAC-335",
+      "fecha": "2025-08-14",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 386,
+      "id_gasto": "FAC-336",
+      "fecha": "2025-07-31",
+      "extra": {
+        "proveedor": "Proveedor E",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id_gasto": "PAGO-337",
+      "currency": "USD",
+      "monto_usd": 377,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-03-04",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "GASTO-338",
+      "currency": "USD",
+      "monto_usd": 637,
+      "detalles": {
+        "proveedor": "Proveedor C",
+        "fecha": "2025-12-10",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-339",
+      "currency": "ARS",
+      "monto_ars": 78451,
+      "detalles": {
+        "proveedor": "Proveedor E",
+        "fecha": "2025-03-21",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id_gasto": "FAC-340",
+      "currency": "USD",
+      "monto_usd": 550,
+      "detalles": {
+        "proveedor": "Proveedor H",
+        "fecha": "2025-05-22",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 292,
+      "id_gasto": "G-ORD-341",
+      "fecha": "2025-05-07",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-342",
+      "currency": "USD",
+      "monto_usd": 1437,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-04-06",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 167360,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "GASTO-343",
+      "fecha": "2025-08-28",
+      "extra": {
+        "proveedor": "Proveedor F",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-344",
+      "currency": "USD",
+      "monto_usd": 1290,
+      "detalles": {
+        "proveedor": "Proveedor B",
+        "fecha": "2025-06-25",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 237412,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-345",
+      "fecha": "2025-11-09",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 6236,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "GASTO-346",
+      "fecha": "2025-09-15",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-347",
+      "currency": "USD",
+      "monto_usd": 1235,
+      "detalles": {
+        "proveedor": "Proveedor I",
+        "fecha": "2025-08-21",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-348",
+      "currency": "USD",
+      "monto_usd": 180,
+      "detalles": {
+        "proveedor": "Proveedor C",
+        "fecha": "2025-08-22",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id": 349,
+      "currency": "ARS",
+      "monto_ars": 210028,
+      "info_extra": {
+        "fecha_gasto": "2025-12-23",
+        "descripcion": "Logística"
+      },
+      "proveedor": "Proveedor A"
+    },
+    {
+      "id": 350,
+      "currency": "USD",
+      "monto_usd": 773,
+      "info_extra": {
+        "fecha_gasto": "2025-01-20",
+        "descripcion": "Consultoría"
+      },
+      "proveedor": "Proveedor J"
+    },
+    {
+      "id": 351,
+      "currency": "ARS",
+      "monto_ars": 82151,
+      "info_extra": {
+        "fecha_gasto": "2025-02-28",
+        "descripcion": "Suministros"
+      },
+      "proveedor": "Proveedor J"
+    },
+    {
+      "id_gasto": "GASTO-352",
+      "currency": "USD",
+      "monto_usd": 1222,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-12-28",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 251661,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-353",
+      "fecha": "2025-09-05",
+      "extra": {
+        "proveedor": "Proveedor F",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-354",
+      "currency": "ARS",
+      "monto_ars": 106464,
+      "detalles": {
+        "proveedor": "Proveedor D",
+        "fecha": "2025-01-11",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id_gasto": "FAC-355",
+      "currency": "ARS",
+      "monto_ars": 41446,
+      "detalles": {
+        "proveedor": "Proveedor H",
+        "fecha": "2025-11-30",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id": 356,
+      "currency": "USD",
+      "monto_usd": 276,
+      "info_extra": {
+        "fecha_gasto": "2025-09-07",
+        "descripcion": "Tecnología"
+      },
+      "proveedor": "Proveedor K"
+    },
+    {
+      "id_gasto": "G-ORD-357",
+      "currency": "ARS",
+      "monto_ars": 66008,
+      "detalles": {
+        "proveedor": "Proveedor B",
+        "fecha": "2025-11-03",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-358",
+      "currency": "USD",
+      "monto_usd": 1356,
+      "detalles": {
+        "proveedor": "Proveedor B",
+        "fecha": "2025-05-30",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 95079,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "GASTO-359",
+      "fecha": "2025-10-01",
+      "extra": {
+        "proveedor": "Proveedor D",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "FAC-360",
+      "currency": "USD",
+      "monto_usd": 1229,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-04-17",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id": 361,
+      "currency": "ARS",
+      "monto_ars": 251903,
+      "info_extra": {
+        "fecha_gasto": "2025-02-03",
+        "descripcion": "Alquiler"
+      },
+      "proveedor": "Proveedor C"
+    },
+    {
+      "id_gasto": "GASTO-362",
+      "currency": "USD",
+      "monto_usd": 1008,
+      "detalles": {
+        "proveedor": "Proveedor H",
+        "fecha": "2025-08-27",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-363",
+      "currency": "ARS",
+      "monto_ars": 86940,
+      "detalles": {
+        "proveedor": "Proveedor D",
+        "fecha": "2025-07-28",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "FAC-364",
+      "currency": "ARS",
+      "monto_ars": 232223,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-08-19",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-365",
+      "currency": "USD",
+      "monto_usd": 885,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-09-23",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id": 366,
+      "currency": "USD",
+      "monto_usd": 1262,
+      "info_extra": {
+        "fecha_gasto": "2025-02-19",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "id": 367,
+      "currency": "USD",
+      "monto_usd": 618,
+      "info_extra": {
+        "fecha_gasto": "2025-12-16",
+        "descripcion": "Transporte"
+      },
+      "proveedor": "Proveedor L"
+    },
+    {
+      "id_gasto": "GASTO-368",
+      "currency": "USD",
+      "monto_usd": 109,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-01-19",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-369",
+      "currency": "USD",
+      "monto_usd": 1202,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-03-09",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 222036,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "FAC-370",
+      "fecha": "2025-07-23",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1173,
+      "id_gasto": "PAGO-371",
+      "fecha": "2025-12-23",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id": 372,
+      "currency": "USD",
+      "monto_usd": 1504,
+      "info_extra": {
+        "fecha_gasto": "2025-03-25",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor D"
+    },
+    {
+      "id_gasto": "G-ORD-373",
+      "currency": "USD",
+      "monto_usd": 1427,
+      "detalles": {
+        "proveedor": "Proveedor L",
+        "fecha": "2025-06-23",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id": 374,
+      "currency": "ARS",
+      "monto_ars": 282863,
+      "info_extra": {
+        "fecha_gasto": "2025-10-04",
+        "descripcion": "Logística"
+      },
+      "proveedor": "Proveedor C"
+    },
+    {
+      "id_gasto": "GASTO-375",
+      "currency": "ARS",
+      "monto_ars": 87592,
+      "detalles": {
+        "proveedor": "Proveedor E",
+        "fecha": "2025-10-30",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id": 376,
+      "currency": "ARS",
+      "monto_ars": 88059,
+      "info_extra": {
+        "fecha_gasto": "2025-07-24",
+        "descripcion": "Otros"
+      },
+      "proveedor": "Proveedor C"
+    },
+    {
+      "id_gasto": "FAC-377",
+      "currency": "ARS",
+      "monto_ars": 21371,
+      "detalles": {
+        "proveedor": "Proveedor H",
+        "fecha": "2025-04-13",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "GASTO-378",
+      "currency": "ARS",
+      "monto_ars": 12615,
+      "detalles": {
+        "proveedor": "Proveedor E",
+        "fecha": "2025-12-09",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id_gasto": "GASTO-379",
+      "currency": "USD",
+      "monto_usd": 390,
+      "detalles": {
+        "proveedor": "Proveedor B",
+        "fecha": "2025-07-31",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id": 380,
+      "currency": "USD",
+      "monto_usd": 238,
+      "info_extra": {
+        "fecha_gasto": "2025-04-14",
+        "descripcion": "Mantenimiento"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "id": 381,
+      "currency": "USD",
+      "monto_usd": 598,
+      "info_extra": {
+        "fecha_gasto": "2025-08-12",
+        "descripcion": "Logística"
+      },
+      "proveedor": "Proveedor F"
+    },
+    {
+      "id": 382,
+      "currency": "ARS",
+      "monto_ars": 300780,
+      "info_extra": {
+        "fecha_gasto": "2025-01-14",
+        "descripcion": "Mantenimiento"
+      },
+      "proveedor": "Proveedor L"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 162359,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-383",
+      "fecha": "2025-01-30",
+      "extra": {
+        "proveedor": "Proveedor F",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id": 384,
+      "currency": "ARS",
+      "monto_ars": 54049,
+      "info_extra": {
+        "fecha_gasto": "2025-05-30",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor K"
+    },
+    {
+      "id_gasto": "GASTO-385",
+      "currency": "ARS",
+      "monto_ars": 273400,
+      "detalles": {
+        "proveedor": "Proveedor G",
+        "fecha": "2025-09-13",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 445,
+      "id_gasto": "FAC-386",
+      "fecha": "2025-10-14",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-387",
+      "currency": "ARS",
+      "monto_ars": 276006,
+      "detalles": {
+        "proveedor": "Proveedor L",
+        "fecha": "2025-08-28",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id_gasto": "FAC-388",
+      "currency": "USD",
+      "monto_usd": 1027,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-02-21",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id_gasto": "PAGO-389",
+      "currency": "USD",
+      "monto_usd": 697,
+      "detalles": {
+        "proveedor": "Proveedor G",
+        "fecha": "2025-02-12",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id": 390,
+      "currency": "ARS",
+      "monto_ars": 191901,
+      "info_extra": {
+        "fecha_gasto": "2025-02-15",
+        "descripcion": "Mantenimiento"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "id_gasto": "PAGO-391",
+      "currency": "ARS",
+      "monto_ars": 19475,
+      "detalles": {
+        "proveedor": "Proveedor B",
+        "fecha": "2025-01-28",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-392",
+      "currency": "ARS",
+      "monto_ars": 167634,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-11-14",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 189161,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "GASTO-393",
+      "fecha": "2025-02-04",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "id": 394,
+      "currency": "ARS",
+      "monto_ars": 182342,
+      "info_extra": {
+        "fecha_gasto": "2025-07-24",
+        "descripcion": "Consultoría"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 237079,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "GASTO-395",
+      "fecha": "2025-11-07",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id": 396,
+      "currency": "USD",
+      "monto_usd": 163,
+      "info_extra": {
+        "fecha_gasto": "2025-02-28",
+        "descripcion": "Suministros"
+      },
+      "proveedor": "Proveedor A"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 634,
+      "id_gasto": "FAC-397",
+      "fecha": "2025-07-17",
+      "extra": {
+        "proveedor": "Proveedor L",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-398",
+      "currency": "ARS",
+      "monto_ars": 15295,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-11-29",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id_gasto": "GASTO-399",
+      "currency": "USD",
+      "monto_usd": 582,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-05-17",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1198,
+      "id_gasto": "GASTO-400",
+      "fecha": "2025-02-26",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id": 401,
+      "currency": "ARS",
+      "monto_ars": 71903,
+      "info_extra": {
+        "fecha_gasto": "2025-12-07",
+        "descripcion": "Otros"
+      },
+      "proveedor": "Proveedor F"
+    },
+    {
+      "id_gasto": "EXTRA-402",
+      "currency": "ARS",
+      "monto_ars": 252143,
+      "detalles": {
+        "proveedor": "Proveedor B",
+        "fecha": "2025-05-17",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id": 403,
+      "currency": "USD",
+      "monto_usd": 1118,
+      "info_extra": {
+        "fecha_gasto": "2025-12-21",
+        "descripcion": "Mantenimiento"
+      },
+      "proveedor": "Proveedor C"
+    },
+    {
+      "id": 404,
+      "currency": "USD",
+      "monto_usd": 284,
+      "info_extra": {
+        "fecha_gasto": "2025-04-20",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "id": 405,
+      "currency": "USD",
+      "monto_usd": 603,
+      "info_extra": {
+        "fecha_gasto": "2025-07-17",
+        "descripcion": "Suministros"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 880,
+      "id_gasto": "FAC-406",
+      "fecha": "2025-09-04",
+      "extra": {
+        "proveedor": "Proveedor I",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 254231,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-407",
+      "fecha": "2025-02-15",
+      "extra": {
+        "proveedor": "Proveedor B",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id": 408,
+      "currency": "USD",
+      "monto_usd": 357,
+      "info_extra": {
+        "fecha_gasto": "2025-04-12",
+        "descripcion": "Servicios Públicos"
+      },
+      "proveedor": "Proveedor E"
+    },
+    {
+      "id": 409,
+      "currency": "ARS",
+      "monto_ars": 157852,
+      "info_extra": {
+        "fecha_gasto": "2025-05-02",
+        "descripcion": "Logística"
+      },
+      "proveedor": "Proveedor H"
+    },
+    {
+      "id": 410,
+      "currency": "USD",
+      "monto_usd": 1403,
+      "info_extra": {
+        "fecha_gasto": "2025-02-21",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor H"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 238875,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-411",
+      "fecha": "2025-05-04",
+      "extra": {
+        "proveedor": "Proveedor C",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 526,
+      "id_gasto": "PAGO-412",
+      "fecha": "2025-08-01",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 280291,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-413",
+      "fecha": "2025-08-24",
+      "extra": {
+        "proveedor": "Proveedor C",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id": 414,
+      "currency": "USD",
+      "monto_usd": 716,
+      "info_extra": {
+        "fecha_gasto": "2025-03-04",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor D"
+    },
+    {
+      "id": 415,
+      "currency": "ARS",
+      "monto_ars": 277369,
+      "info_extra": {
+        "fecha_gasto": "2025-07-29",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "id": 416,
+      "currency": "ARS",
+      "monto_ars": 66635,
+      "info_extra": {
+        "fecha_gasto": "2025-10-20",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor C"
+    },
+    {
+      "id_gasto": "G-ORD-417",
+      "currency": "ARS",
+      "monto_ars": 158109,
+      "detalles": {
+        "proveedor": "Proveedor B",
+        "fecha": "2025-01-26",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id": 418,
+      "currency": "USD",
+      "monto_usd": 364,
+      "info_extra": {
+        "fecha_gasto": "2025-07-08",
+        "descripcion": "Suministros"
+      },
+      "proveedor": "Proveedor L"
+    },
+    {
+      "id": 419,
+      "currency": "USD",
+      "monto_usd": 811,
+      "info_extra": {
+        "fecha_gasto": "2025-03-02",
+        "descripcion": "Consultoría"
+      },
+      "proveedor": "Proveedor G"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1125,
+      "id_gasto": "G-ORD-420",
+      "fecha": "2025-10-20",
+      "extra": {
+        "proveedor": "Proveedor L",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "FAC-421",
+      "currency": "ARS",
+      "monto_ars": 277312,
+      "detalles": {
+        "proveedor": "Proveedor C",
+        "fecha": "2025-07-10",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id_gasto": "PAGO-422",
+      "currency": "USD",
+      "monto_usd": 746,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-09-19",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id_gasto": "GASTO-423",
+      "currency": "ARS",
+      "monto_ars": 121813,
+      "detalles": {
+        "proveedor": "Proveedor H",
+        "fecha": "2025-03-26",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 198450,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "FAC-424",
+      "fecha": "2025-04-01",
+      "extra": {
+        "proveedor": "Proveedor L",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id": 425,
+      "currency": "ARS",
+      "monto_ars": 44528,
+      "info_extra": {
+        "fecha_gasto": "2025-10-21",
+        "descripcion": "Logística"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "id": 426,
+      "currency": "USD",
+      "monto_usd": 620,
+      "info_extra": {
+        "fecha_gasto": "2025-06-15",
+        "descripcion": "Otros"
+      },
+      "proveedor": "Proveedor J"
+    },
+    {
+      "id": 427,
+      "currency": "USD",
+      "monto_usd": 1593,
+      "info_extra": {
+        "fecha_gasto": "2025-02-20",
+        "descripcion": "Alquiler"
+      },
+      "proveedor": "Proveedor K"
+    },
+    {
+      "id_gasto": "FAC-428",
+      "currency": "ARS",
+      "monto_ars": 67482,
+      "detalles": {
+        "proveedor": "Proveedor D",
+        "fecha": "2025-05-04",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-429",
+      "currency": "ARS",
+      "monto_ars": 47323,
+      "detalles": {
+        "proveedor": "Proveedor L",
+        "fecha": "2025-12-02",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1366,
+      "id_gasto": "EXTRA-430",
+      "fecha": "2025-06-24",
+      "extra": {
+        "proveedor": "Proveedor C",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-431",
+      "currency": "USD",
+      "monto_usd": 700,
+      "detalles": {
+        "proveedor": "Proveedor C",
+        "fecha": "2025-02-25",
+        "categoria": "Salarios"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 225,
+      "id_gasto": "EXTRA-432",
+      "fecha": "2025-03-17",
+      "extra": {
+        "proveedor": "Proveedor D",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id": 433,
+      "currency": "USD",
+      "monto_usd": 749,
+      "info_extra": {
+        "fecha_gasto": "2025-05-11",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor I"
+    },
+    {
+      "id": 434,
+      "currency": "ARS",
+      "monto_ars": 5922,
+      "info_extra": {
+        "fecha_gasto": "2025-10-08",
+        "descripcion": "Servicios Públicos"
+      },
+      "proveedor": "Proveedor K"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 259839,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-435",
+      "fecha": "2025-09-21",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id": 436,
+      "currency": "USD",
+      "monto_usd": 753,
+      "info_extra": {
+        "fecha_gasto": "2025-03-09",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor J"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 431,
+      "id_gasto": "FAC-437",
+      "fecha": "2025-07-14",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id": 438,
+      "currency": "ARS",
+      "monto_ars": 183339,
+      "info_extra": {
+        "fecha_gasto": "2025-12-16",
+        "descripcion": "Suministros"
+      },
+      "proveedor": "Proveedor A"
+    },
+    {
+      "id_gasto": "GASTO-439",
+      "currency": "ARS",
+      "monto_ars": 107060,
+      "detalles": {
+        "proveedor": "Proveedor L",
+        "fecha": "2025-11-11",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id": 440,
+      "currency": "ARS",
+      "monto_ars": 52331,
+      "info_extra": {
+        "fecha_gasto": "2025-04-26",
+        "descripcion": "Logística"
+      },
+      "proveedor": "Proveedor F"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 103,
+      "id_gasto": "FAC-441",
+      "fecha": "2025-02-26",
+      "extra": {
+        "proveedor": "Proveedor I",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id": 442,
+      "currency": "ARS",
+      "monto_ars": 57632,
+      "info_extra": {
+        "fecha_gasto": "2025-05-08",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor A"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 49875,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "FAC-443",
+      "fecha": "2025-08-28",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id": 444,
+      "currency": "ARS",
+      "monto_ars": 94220,
+      "info_extra": {
+        "fecha_gasto": "2025-01-20",
+        "descripcion": "Alquiler"
+      },
+      "proveedor": "Proveedor E"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 844,
+      "id_gasto": "GASTO-445",
+      "fecha": "2025-07-28",
+      "extra": {
+        "proveedor": "Proveedor E",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id": 446,
+      "currency": "ARS",
+      "monto_ars": 299740,
+      "info_extra": {
+        "fecha_gasto": "2025-09-05",
+        "descripcion": "Otros"
+      },
+      "proveedor": "Proveedor E"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 225618,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "GASTO-447",
+      "fecha": "2025-12-26",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id": 448,
+      "currency": "ARS",
+      "monto_ars": 292849,
+      "info_extra": {
+        "fecha_gasto": "2025-01-06",
+        "descripcion": "Mantenimiento"
+      },
+      "proveedor": "Proveedor L"
+    },
+    {
+      "id_gasto": "FAC-449",
+      "currency": "ARS",
+      "monto_ars": 100685,
+      "detalles": {
+        "proveedor": "Proveedor D",
+        "fecha": "2025-06-24",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id_gasto": "PAGO-450",
+      "currency": "USD",
+      "monto_usd": 698,
+      "detalles": {
+        "proveedor": "Proveedor B",
+        "fecha": "2025-06-02",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 240171,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "G-ORD-451",
+      "fecha": "2025-02-09",
+      "extra": {
+        "proveedor": "Proveedor C",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-452",
+      "currency": "ARS",
+      "monto_ars": 260857,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-01-23",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id": 453,
+      "currency": "USD",
+      "monto_usd": 686,
+      "info_extra": {
+        "fecha_gasto": "2025-05-03",
+        "descripcion": "Suministros"
+      },
+      "proveedor": "Proveedor B"
+    },
+    {
+      "id": 454,
+      "currency": "ARS",
+      "monto_ars": 182854,
+      "info_extra": {
+        "fecha_gasto": "2025-03-19",
+        "descripcion": "Mantenimiento"
+      },
+      "proveedor": "Proveedor A"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 251,
+      "id_gasto": "EXTRA-455",
+      "fecha": "2025-06-03",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id": 456,
+      "currency": "USD",
+      "monto_usd": 1450,
+      "info_extra": {
+        "fecha_gasto": "2025-08-14",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor J"
+    },
+    {
+      "id_gasto": "GASTO-457",
+      "currency": "ARS",
+      "monto_ars": 94220,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-05-28",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1265,
+      "id_gasto": "G-ORD-458",
+      "fecha": "2025-04-14",
+      "extra": {
+        "proveedor": "Proveedor H",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-459",
+      "currency": "ARS",
+      "monto_ars": 294936,
+      "detalles": {
+        "proveedor": "Proveedor J",
+        "fecha": "2025-08-15",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id_gasto": "PAGO-460",
+      "currency": "USD",
+      "monto_usd": 1569,
+      "detalles": {
+        "proveedor": "Proveedor H",
+        "fecha": "2025-03-04",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 116765,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "FAC-461",
+      "fecha": "2025-08-09",
+      "extra": {
+        "proveedor": "Proveedor L",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 112841,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "G-ORD-462",
+      "fecha": "2025-05-21",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "id_gasto": "GASTO-463",
+      "currency": "USD",
+      "monto_usd": 338,
+      "detalles": {
+        "proveedor": "Proveedor G",
+        "fecha": "2025-10-16",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id": 464,
+      "currency": "ARS",
+      "monto_ars": 83140,
+      "info_extra": {
+        "fecha_gasto": "2025-08-15",
+        "descripcion": "Mantenimiento"
+      },
+      "proveedor": "Proveedor H"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 34865,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "G-ORD-465",
+      "fecha": "2025-08-13",
+      "extra": {
+        "proveedor": "Proveedor K",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 446,
+      "id_gasto": "EXTRA-466",
+      "fecha": "2025-04-25",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 291445,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "G-ORD-467",
+      "fecha": "2025-09-03",
+      "extra": {
+        "proveedor": "Proveedor B",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id_gasto": "GASTO-468",
+      "currency": "ARS",
+      "monto_ars": 5512,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-08-24",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id_gasto": "PAGO-469",
+      "currency": "ARS",
+      "monto_ars": 78261,
+      "detalles": {
+        "proveedor": "Proveedor C",
+        "fecha": "2025-01-26",
+        "categoria": "Publicidad"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 390,
+      "id_gasto": "GASTO-470",
+      "fecha": "2025-06-02",
+      "extra": {
+        "proveedor": "Proveedor H",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1102,
+      "id_gasto": "FAC-471",
+      "fecha": "2025-05-22",
+      "extra": {
+        "proveedor": "Proveedor C",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id_gasto": "FAC-472",
+      "currency": "ARS",
+      "monto_ars": 152765,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-03-06",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "id_gasto": "PAGO-473",
+      "currency": "USD",
+      "monto_usd": 934,
+      "detalles": {
+        "proveedor": "Proveedor H",
+        "fecha": "2025-07-20",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-474",
+      "currency": "USD",
+      "monto_usd": 1515,
+      "detalles": {
+        "proveedor": "Proveedor A",
+        "fecha": "2025-01-18",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id_gasto": "EXTRA-475",
+      "currency": "ARS",
+      "monto_ars": 257389,
+      "detalles": {
+        "proveedor": "Proveedor C",
+        "fecha": "2025-01-06",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "id_gasto": "FAC-476",
+      "currency": "ARS",
+      "monto_ars": 36810,
+      "detalles": {
+        "proveedor": "Proveedor E",
+        "fecha": "2025-07-21",
+        "categoria": "Logística"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 503,
+      "id_gasto": "GASTO-477",
+      "fecha": "2025-06-28",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "id_gasto": "PAGO-478",
+      "currency": "ARS",
+      "monto_ars": 124888,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-12-21",
+        "categoria": "Otros"
+      }
+    },
+    {
+      "id_gasto": "GASTO-479",
+      "currency": "ARS",
+      "monto_ars": 299671,
+      "detalles": {
+        "proveedor": "Proveedor K",
+        "fecha": "2025-08-24",
+        "categoria": "Servicios Públicos"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 208419,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-480",
+      "fecha": "2025-08-02",
+      "extra": {
+        "proveedor": "Proveedor L",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id": 481,
+      "currency": "USD",
+      "monto_usd": 1528,
+      "info_extra": {
+        "fecha_gasto": "2025-12-05",
+        "descripcion": "Servicios Públicos"
+      },
+      "proveedor": "Proveedor A"
+    },
+    {
+      "id_gasto": "FAC-482",
+      "currency": "ARS",
+      "monto_ars": 11060,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-11-28",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 193285,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "PAGO-483",
+      "fecha": "2025-01-17",
+      "extra": {
+        "proveedor": "Proveedor B",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1590,
+      "id_gasto": "PAGO-484",
+      "fecha": "2025-12-05",
+      "extra": {
+        "proveedor": "Proveedor D",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id_gasto": "G-ORD-485",
+      "currency": "ARS",
+      "monto_ars": 150909,
+      "detalles": {
+        "proveedor": "Proveedor H",
+        "fecha": "2025-12-27",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "id": 486,
+      "currency": "ARS",
+      "monto_ars": 132301,
+      "info_extra": {
+        "fecha_gasto": "2025-07-29",
+        "descripcion": "Salarios"
+      },
+      "proveedor": "Proveedor D"
+    },
+    {
+      "id_gasto": "GASTO-487",
+      "currency": "USD",
+      "monto_usd": 865,
+      "detalles": {
+        "proveedor": "Proveedor E",
+        "fecha": "2025-10-28",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 246800,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-488",
+      "fecha": "2025-03-24",
+      "extra": {
+        "proveedor": "Proveedor H",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id_gasto": "GASTO-489",
+      "currency": "ARS",
+      "monto_ars": 36923,
+      "detalles": {
+        "proveedor": "Proveedor F",
+        "fecha": "2025-04-10",
+        "categoria": "Suministros"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 515,
+      "id_gasto": "FAC-490",
+      "fecha": "2025-05-20",
+      "extra": {
+        "proveedor": "Proveedor I",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 352,
+      "id_gasto": "GASTO-491",
+      "fecha": "2025-11-26",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Mantenimiento"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 193485,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "EXTRA-492",
+      "fecha": "2025-03-04",
+      "extra": {
+        "proveedor": "Proveedor A",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "id": 493,
+      "currency": "USD",
+      "monto_usd": 663,
+      "info_extra": {
+        "fecha_gasto": "2025-10-25",
+        "descripcion": "Logística"
+      },
+      "proveedor": "Proveedor D"
+    },
+    {
+      "id_gasto": "G-ORD-494",
+      "currency": "USD",
+      "monto_usd": 596,
+      "detalles": {
+        "proveedor": "Proveedor G",
+        "fecha": "2025-09-23",
+        "categoria": "Tecnología"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 108912,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "G-ORD-495",
+      "fecha": "2025-11-17",
+      "extra": {
+        "proveedor": "Proveedor G",
+        "categoria": "Transporte"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 132955,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "G-ORD-496",
+      "fecha": "2025-04-03",
+      "extra": {
+        "proveedor": "Proveedor J",
+        "categoria": "Alquiler"
+      }
+    },
+    {
+      "id": 497,
+      "currency": "ARS",
+      "monto_ars": 128165,
+      "info_extra": {
+        "fecha_gasto": "2025-09-26",
+        "descripcion": "Transporte"
+      },
+      "proveedor": "Proveedor L"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 110029,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_gasto": "GASTO-498",
+      "fecha": "2025-03-15",
+      "extra": {
+        "proveedor": "Proveedor H",
+        "categoria": "Consultoría"
+      }
+    },
+    {
+      "id": 499,
+      "currency": "USD",
+      "monto_usd": 1104,
+      "info_extra": {
+        "fecha_gasto": "2025-10-18",
+        "descripcion": "Publicidad"
+      },
+      "proveedor": "Proveedor G"
+    },
+    {
+      "id": 500,
+      "currency": "USD",
+      "monto_usd": 407,
+      "info_extra": {
+        "fecha_gasto": "2025-10-05",
+        "descripcion": "Tecnología"
+      },
+      "proveedor": "Proveedor L"
+    }
+  ],
+  "otros_datos": {
+    "nota": "Este JSON es solo un ejemplo desordenado con 500 registros de gastos",
+    "version": "v1.0"
+  }
+}

@@ -1,0 +1,5284 @@
+{
+  "data_ventas": [
+    {
+      "id_venta": "IMP-001",
+      "currency": "ARS",
+      "monto_ars": 85058,
+      "detalles": {
+        "cliente": "Juan Pérez",
+        "fecha": "2025-12-12",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 103,
+      "id_venta": "TCK-002",
+      "fecha": "2025-06-09",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id": 3,
+      "currency": "USD",
+      "monto_usd": 139,
+      "info_extra": {
+        "fecha_compra": "2025-08-29",
+        "descripcion": "Cámara Web"
+      },
+      "cliente": "Sara Campos"
+    },
+    {
+      "id": 4,
+      "currency": "USD",
+      "monto_usd": 1822,
+      "info_extra": {
+        "fecha_compra": "2025-11-09",
+        "descripcion": "Impresora Láser"
+      },
+      "cliente": "Compañía XYZ"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 406,
+      "id_venta": "ORD-005",
+      "fecha": "2025-09-02",
+      "extra": {
+        "cliente": "Roberto Morales",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id_venta": "CL-006",
+      "currency": "ARS",
+      "monto_ars": 76361,
+      "detalles": {
+        "cliente": "Ana Martínez",
+        "fecha": "2025-07-29",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id_venta": "IMP-007",
+      "currency": "USD",
+      "monto_usd": 465,
+      "detalles": {
+        "cliente": "Compañía XYZ",
+        "fecha": "2025-02-22",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 570,
+      "id_venta": "VX-008",
+      "fecha": "2025-11-27",
+      "extra": {
+        "cliente": "Lucía Tech",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id": 9,
+      "currency": "USD",
+      "monto_usd": 518,
+      "info_extra": {
+        "fecha_compra": "2025-12-27",
+        "descripcion": "Cámara Web"
+      },
+      "cliente": "Jorge Gil"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 86964,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "TCK-010",
+      "fecha": "2025-09-11",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id": 11,
+      "currency": "USD",
+      "monto_usd": 650,
+      "info_extra": {
+        "fecha_compra": "2025-04-24",
+        "descripcion": "Disco SSD"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 65227,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "IMP-012",
+      "fecha": "2025-11-20",
+      "extra": {
+        "cliente": "Roberto Morales",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id_venta": "TCK-013",
+      "currency": "ARS",
+      "monto_ars": 115592,
+      "detalles": {
+        "cliente": "Verónica Díaz",
+        "fecha": "2025-03-19",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 155307,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "VX-014",
+      "fecha": "2025-07-17",
+      "extra": {
+        "cliente": "Jorge Gil",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id_venta": "TCK-015",
+      "currency": "ARS",
+      "monto_ars": 179755,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-06-13",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id": 16,
+      "currency": "ARS",
+      "monto_ars": 185366,
+      "info_extra": {
+        "fecha_compra": "2025-04-07",
+        "descripcion": "Smartphone"
+      },
+      "cliente": "Pablo Reyes"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 164156,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-017",
+      "fecha": "2025-03-29",
+      "extra": {
+        "cliente": "Rosa Méndez",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id_venta": "FAC-018",
+      "currency": "USD",
+      "monto_usd": 1420,
+      "detalles": {
+        "cliente": "Lucía Tech",
+        "fecha": "2025-10-05",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "TCK-019",
+      "currency": "ARS",
+      "monto_ars": 97914,
+      "detalles": {
+        "cliente": "Lucía Tech",
+        "fecha": "2025-09-02",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id_venta": "IMP-020",
+      "currency": "ARS",
+      "monto_ars": 44191,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-06-24",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 138804,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-021",
+      "fecha": "2025-11-14",
+      "extra": {
+        "cliente": "Carlos López",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 194031,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "VX-022",
+      "fecha": "2025-09-05",
+      "extra": {
+        "cliente": "Roberto Morales",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id": 23,
+      "currency": "USD",
+      "monto_usd": 246,
+      "info_extra": {
+        "fecha_compra": "2025-10-18",
+        "descripcion": "Monitor 24''"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "id_venta": "CL-024",
+      "currency": "ARS",
+      "monto_ars": 1080,
+      "detalles": {
+        "cliente": "Compañía XYZ",
+        "fecha": "2025-04-20",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "id_venta": "FAC-025",
+      "currency": "ARS",
+      "monto_ars": 180397,
+      "detalles": {
+        "cliente": "Juan Pérez",
+        "fecha": "2025-09-07",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id_venta": "TCK-026",
+      "currency": "ARS",
+      "monto_ars": 13115,
+      "detalles": {
+        "cliente": "Jorge Gil",
+        "fecha": "2025-03-25",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id": 27,
+      "currency": "USD",
+      "monto_usd": 966,
+      "info_extra": {
+        "fecha_compra": "2025-11-08",
+        "descripcion": "Notebook"
+      },
+      "cliente": "Rosa Méndez"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1871,
+      "id_venta": "CL-028",
+      "fecha": "2025-05-17",
+      "extra": {
+        "cliente": "Rosa Méndez",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id": 29,
+      "currency": "USD",
+      "monto_usd": 809,
+      "info_extra": {
+        "fecha_compra": "2025-08-31",
+        "descripcion": "Teclado Mecánico"
+      },
+      "cliente": "Verónica Díaz"
+    },
+    {
+      "id": 30,
+      "currency": "USD",
+      "monto_usd": 511,
+      "info_extra": {
+        "fecha_compra": "2025-12-12",
+        "descripcion": "Mouse Gamer"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "id": 31,
+      "currency": "ARS",
+      "monto_ars": 93734,
+      "info_extra": {
+        "fecha_compra": "2025-03-01",
+        "descripcion": "Notebook"
+      },
+      "cliente": "Verónica Díaz"
+    },
+    {
+      "id_venta": "FAC-032",
+      "currency": "ARS",
+      "monto_ars": 194777,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-01-12",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 212,
+      "id_venta": "FAC-033",
+      "fecha": "2025-12-07",
+      "extra": {
+        "cliente": "Ana Martínez",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "id_venta": "TCK-034",
+      "currency": "USD",
+      "monto_usd": 134,
+      "detalles": {
+        "cliente": "Juan Pérez",
+        "fecha": "2025-11-06",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id_venta": "VX-035",
+      "currency": "ARS",
+      "monto_ars": 168207,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-05-09",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id_venta": "VX-036",
+      "currency": "ARS",
+      "monto_ars": 27007,
+      "detalles": {
+        "cliente": "Carlos López",
+        "fecha": "2025-05-10",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 69261,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "CL-037",
+      "fecha": "2025-09-17",
+      "extra": {
+        "cliente": "Lucía Tech",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "id": 38,
+      "currency": "ARS",
+      "monto_ars": 6639,
+      "info_extra": {
+        "fecha_compra": "2025-11-02",
+        "descripcion": "Auriculares"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "id_venta": "TCK-039",
+      "currency": "ARS",
+      "monto_ars": 117560,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-09-30",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id": 40,
+      "currency": "ARS",
+      "monto_ars": 9969,
+      "info_extra": {
+        "fecha_compra": "2025-11-01",
+        "descripcion": "Monitor 24''"
+      },
+      "cliente": "Jorge Gil"
+    },
+    {
+      "id": 41,
+      "currency": "USD",
+      "monto_usd": 1931,
+      "info_extra": {
+        "fecha_compra": "2025-08-17",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "id_venta": "VX-042",
+      "currency": "USD",
+      "monto_usd": 591,
+      "detalles": {
+        "cliente": "Compañía XYZ",
+        "fecha": "2025-02-18",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 535,
+      "id_venta": "ORD-043",
+      "fecha": "2025-05-30",
+      "extra": {
+        "cliente": "Rosa Méndez",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id_venta": "ORD-044",
+      "currency": "ARS",
+      "monto_ars": 143483,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-07-25",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id_venta": "IMP-045",
+      "currency": "ARS",
+      "monto_ars": 63993,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-03-20",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id_venta": "VX-046",
+      "currency": "USD",
+      "monto_usd": 171,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-09-27",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 22561,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "CL-047",
+      "fecha": "2025-07-18",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "id_venta": "VX-048",
+      "currency": "ARS",
+      "monto_ars": 47032,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-06-28",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id_venta": "VX-049",
+      "currency": "USD",
+      "monto_usd": 420,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-03-21",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id_venta": "CL-050",
+      "currency": "USD",
+      "monto_usd": 1324,
+      "detalles": {
+        "cliente": "Compañía XYZ",
+        "fecha": "2025-04-11",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id_venta": "TCK-051",
+      "currency": "ARS",
+      "monto_ars": 191593,
+      "detalles": {
+        "cliente": "Lucía Tech",
+        "fecha": "2025-04-12",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id_venta": "VX-052",
+      "currency": "ARS",
+      "monto_ars": 155681,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-12-21",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id_venta": "VX-053",
+      "currency": "USD",
+      "monto_usd": 753,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-07-06",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id_venta": "FAC-054",
+      "currency": "ARS",
+      "monto_ars": 167488,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-10-26",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id_venta": "FAC-055",
+      "currency": "USD",
+      "monto_usd": 708,
+      "detalles": {
+        "cliente": "Jorge Gil",
+        "fecha": "2025-10-12",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1399,
+      "id_venta": "ORD-056",
+      "fecha": "2025-01-28",
+      "extra": {
+        "cliente": "Pablo Reyes",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id": 57,
+      "currency": "USD",
+      "monto_usd": 1680,
+      "info_extra": {
+        "fecha_compra": "2025-08-03",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "id_venta": "IMP-058",
+      "currency": "ARS",
+      "monto_ars": 189793,
+      "detalles": {
+        "cliente": "Ana Martínez",
+        "fecha": "2025-05-10",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id": 59,
+      "currency": "USD",
+      "monto_usd": 648,
+      "info_extra": {
+        "fecha_compra": "2025-03-10",
+        "descripcion": "Auriculares"
+      },
+      "cliente": "Jorge Gil"
+    },
+    {
+      "id": 60,
+      "currency": "ARS",
+      "monto_ars": 37233,
+      "info_extra": {
+        "fecha_compra": "2025-07-21",
+        "descripcion": "Mouse Gamer"
+      },
+      "cliente": "Lucía Tech"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1553,
+      "id_venta": "CL-061",
+      "fecha": "2025-08-21",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id_venta": "ORD-062",
+      "currency": "USD",
+      "monto_usd": 1020,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-05-09",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "CL-063",
+      "currency": "ARS",
+      "monto_ars": 132249,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-05-14",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "IMP-064",
+      "currency": "USD",
+      "monto_usd": 1349,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-02-18",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "id": 65,
+      "currency": "USD",
+      "monto_usd": 1371,
+      "info_extra": {
+        "fecha_compra": "2025-11-08",
+        "descripcion": "Cámara Web"
+      },
+      "cliente": "Verónica Díaz"
+    },
+    {
+      "id": 66,
+      "currency": "USD",
+      "monto_usd": 1722,
+      "info_extra": {
+        "fecha_compra": "2025-12-29",
+        "descripcion": "Smartphone"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 279,
+      "id_venta": "FAC-067",
+      "fecha": "2025-10-03",
+      "extra": {
+        "cliente": "Rosa Méndez",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id": 68,
+      "currency": "USD",
+      "monto_usd": 716,
+      "info_extra": {
+        "fecha_compra": "2025-06-11",
+        "descripcion": "Smartphone"
+      },
+      "cliente": "Jorge Gil"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 6147,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "IMP-069",
+      "fecha": "2025-02-08",
+      "extra": {
+        "cliente": "Jorge Gil",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 153830,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "TCK-070",
+      "fecha": "2025-12-10",
+      "extra": {
+        "cliente": "Jorge Gil",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1649,
+      "id_venta": "ORD-071",
+      "fecha": "2025-06-13",
+      "extra": {
+        "cliente": "Verónica Díaz",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 825,
+      "id_venta": "IMP-072",
+      "fecha": "2025-01-10",
+      "extra": {
+        "cliente": "Jorge Gil",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 604,
+      "id_venta": "FAC-073",
+      "fecha": "2025-07-12",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id_venta": "ORD-074",
+      "currency": "USD",
+      "monto_usd": 2020,
+      "detalles": {
+        "cliente": "Compañía XYZ",
+        "fecha": "2025-07-29",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id": 75,
+      "currency": "ARS",
+      "monto_ars": 100863,
+      "info_extra": {
+        "fecha_compra": "2025-07-04",
+        "descripcion": "Tablet"
+      },
+      "cliente": "María Rodríguez"
+    },
+    {
+      "id_venta": "CL-076",
+      "currency": "USD",
+      "monto_usd": 1668,
+      "detalles": {
+        "cliente": "Lucía Tech",
+        "fecha": "2025-12-22",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id": 77,
+      "currency": "USD",
+      "monto_usd": 306,
+      "info_extra": {
+        "fecha_compra": "2025-01-01",
+        "descripcion": "Tablet"
+      },
+      "cliente": "Ana Martínez"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 596,
+      "id_venta": "CL-078",
+      "fecha": "2025-12-19",
+      "extra": {
+        "cliente": "Rosa Méndez",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id_venta": "IMP-079",
+      "currency": "USD",
+      "monto_usd": 437,
+      "detalles": {
+        "cliente": "Compañía XYZ",
+        "fecha": "2025-05-23",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 549,
+      "id_venta": "VX-080",
+      "fecha": "2025-04-21",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "id_venta": "CL-081",
+      "currency": "ARS",
+      "monto_ars": 116047,
+      "detalles": {
+        "cliente": "Ana Martínez",
+        "fecha": "2025-04-13",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id_venta": "IMP-082",
+      "currency": "USD",
+      "monto_usd": 535,
+      "detalles": {
+        "cliente": "Carlos López",
+        "fecha": "2025-07-25",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1719,
+      "id_venta": "VX-083",
+      "fecha": "2025-01-08",
+      "extra": {
+        "cliente": "Jorge Gil",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "id_venta": "IMP-084",
+      "currency": "USD",
+      "monto_usd": 398,
+      "detalles": {
+        "cliente": "Carlos López",
+        "fecha": "2025-09-05",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id_venta": "IMP-085",
+      "currency": "USD",
+      "monto_usd": 1398,
+      "detalles": {
+        "cliente": "Compañía XYZ",
+        "fecha": "2025-12-07",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id_venta": "TCK-086",
+      "currency": "ARS",
+      "monto_ars": 1340,
+      "detalles": {
+        "cliente": "Jorge Gil",
+        "fecha": "2025-04-24",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 114306,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "FAC-087",
+      "fecha": "2025-06-22",
+      "extra": {
+        "cliente": "María Rodríguez",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id_venta": "CL-088",
+      "currency": "USD",
+      "monto_usd": 691,
+      "detalles": {
+        "cliente": "Carlos López",
+        "fecha": "2025-12-18",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id": 89,
+      "currency": "USD",
+      "monto_usd": 1819,
+      "info_extra": {
+        "fecha_compra": "2025-05-10",
+        "descripcion": "Notebook"
+      },
+      "cliente": "Ana Martínez"
+    },
+    {
+      "id_venta": "FAC-090",
+      "currency": "USD",
+      "monto_usd": 1717,
+      "detalles": {
+        "cliente": "Ana Martínez",
+        "fecha": "2025-11-22",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id": 91,
+      "currency": "ARS",
+      "monto_ars": 100121,
+      "info_extra": {
+        "fecha_compra": "2025-06-08",
+        "descripcion": "Disco SSD"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "id_venta": "CL-092",
+      "currency": "USD",
+      "monto_usd": 784,
+      "detalles": {
+        "cliente": "Carlos López",
+        "fecha": "2025-03-02",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 102705,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "FAC-093",
+      "fecha": "2025-07-04",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id_venta": "ORD-094",
+      "currency": "ARS",
+      "monto_ars": 185121,
+      "detalles": {
+        "cliente": "Verónica Díaz",
+        "fecha": "2025-05-13",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 161932,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "VX-095",
+      "fecha": "2025-08-03",
+      "extra": {
+        "cliente": "Verónica Díaz",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1016,
+      "id_venta": "VX-096",
+      "fecha": "2025-09-19",
+      "extra": {
+        "cliente": "Roberto Morales",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1636,
+      "id_venta": "IMP-097",
+      "fecha": "2025-02-28",
+      "extra": {
+        "cliente": "Rosa Méndez",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id": 98,
+      "currency": "USD",
+      "monto_usd": 1713,
+      "info_extra": {
+        "fecha_compra": "2025-07-17",
+        "descripcion": "Impresora Láser"
+      },
+      "cliente": "Pablo Reyes"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1855,
+      "id_venta": "TCK-099",
+      "fecha": "2025-08-07",
+      "extra": {
+        "cliente": "Pablo Reyes",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 126712,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-100",
+      "fecha": "2025-02-15",
+      "extra": {
+        "cliente": "Ana Martínez",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1102,
+      "id_venta": "CL-101",
+      "fecha": "2025-07-28",
+      "extra": {
+        "cliente": "Roberto Morales",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id_venta": "TCK-102",
+      "currency": "ARS",
+      "monto_ars": 62343,
+      "detalles": {
+        "cliente": "Carlos López",
+        "fecha": "2025-09-15",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 35708,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "CL-103",
+      "fecha": "2025-07-16",
+      "extra": {
+        "cliente": "Juan Pérez",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id": 104,
+      "currency": "ARS",
+      "monto_ars": 109179,
+      "info_extra": {
+        "fecha_compra": "2025-11-10",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Rosa Méndez"
+    },
+    {
+      "id": 105,
+      "currency": "USD",
+      "monto_usd": 1949,
+      "info_extra": {
+        "fecha_compra": "2025-07-25",
+        "descripcion": "Smartphone"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "id": 106,
+      "currency": "USD",
+      "monto_usd": 1735,
+      "info_extra": {
+        "fecha_compra": "2025-10-14",
+        "descripcion": "Disco SSD"
+      },
+      "cliente": "Lucía Tech"
+    },
+    {
+      "id_venta": "TCK-107",
+      "currency": "USD",
+      "monto_usd": 1195,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-05-23",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id_venta": "TCK-108",
+      "currency": "ARS",
+      "monto_ars": 90239,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-01-20",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "id": 109,
+      "currency": "USD",
+      "monto_usd": 1558,
+      "info_extra": {
+        "fecha_compra": "2025-05-28",
+        "descripcion": "Teclado Mecánico"
+      },
+      "cliente": "Sara Campos"
+    },
+    {
+      "id_venta": "ORD-110",
+      "currency": "USD",
+      "monto_usd": 1440,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-01-08",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "id_venta": "TCK-111",
+      "currency": "ARS",
+      "monto_ars": 37589,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-03-08",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id": 112,
+      "currency": "USD",
+      "monto_usd": 1451,
+      "info_extra": {
+        "fecha_compra": "2025-09-11",
+        "descripcion": "Cámara Web"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "id": 113,
+      "currency": "ARS",
+      "monto_ars": 21328,
+      "info_extra": {
+        "fecha_compra": "2025-11-02",
+        "descripcion": "Disco SSD"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "id_venta": "IMP-114",
+      "currency": "ARS",
+      "monto_ars": 67953,
+      "detalles": {
+        "cliente": "Carlos López",
+        "fecha": "2025-10-29",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id_venta": "IMP-115",
+      "currency": "ARS",
+      "monto_ars": 175409,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-04-29",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1789,
+      "id_venta": "ORD-116",
+      "fecha": "2025-06-06",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id": 117,
+      "currency": "USD",
+      "monto_usd": 1249,
+      "info_extra": {
+        "fecha_compra": "2025-02-07",
+        "descripcion": "Tablet"
+      },
+      "cliente": "María Rodríguez"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 193999,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-118",
+      "fecha": "2025-10-26",
+      "extra": {
+        "cliente": "María Rodríguez",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id_venta": "CL-119",
+      "currency": "ARS",
+      "monto_ars": 54814,
+      "detalles": {
+        "cliente": "Lucía Tech",
+        "fecha": "2025-01-28",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id": 120,
+      "currency": "ARS",
+      "monto_ars": 35045,
+      "info_extra": {
+        "fecha_compra": "2025-02-04",
+        "descripcion": "Tablet"
+      },
+      "cliente": "Compañía XYZ"
+    },
+    {
+      "id": 121,
+      "currency": "USD",
+      "monto_usd": 210,
+      "info_extra": {
+        "fecha_compra": "2025-06-17",
+        "descripcion": "Impresora Láser"
+      },
+      "cliente": "Verónica Díaz"
+    },
+    {
+      "id_venta": "VX-122",
+      "currency": "USD",
+      "monto_usd": 657,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-05-20",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id": 123,
+      "currency": "USD",
+      "monto_usd": 545,
+      "info_extra": {
+        "fecha_compra": "2025-02-24",
+        "descripcion": "Memoria RAM"
+      },
+      "cliente": "Compañía XYZ"
+    },
+    {
+      "id_venta": "FAC-124",
+      "currency": "USD",
+      "monto_usd": 884,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-06-21",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 160,
+      "id_venta": "FAC-125",
+      "fecha": "2025-07-16",
+      "extra": {
+        "cliente": "Rosa Méndez",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id_venta": "FAC-126",
+      "currency": "USD",
+      "monto_usd": 555,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-12-27",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 84643,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "CL-127",
+      "fecha": "2025-01-12",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "VX-128",
+      "currency": "ARS",
+      "monto_ars": 186559,
+      "detalles": {
+        "cliente": "Juan Pérez",
+        "fecha": "2025-05-16",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id_venta": "IMP-129",
+      "currency": "ARS",
+      "monto_ars": 138152,
+      "detalles": {
+        "cliente": "Ana Martínez",
+        "fecha": "2025-07-04",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id": 130,
+      "currency": "USD",
+      "monto_usd": 1037,
+      "info_extra": {
+        "fecha_compra": "2025-11-04",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Compañía XYZ"
+    },
+    {
+      "id_venta": "TCK-131",
+      "currency": "ARS",
+      "monto_ars": 141471,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-01-26",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id": 132,
+      "currency": "USD",
+      "monto_usd": 319,
+      "info_extra": {
+        "fecha_compra": "2025-01-16",
+        "descripcion": "Auriculares"
+      },
+      "cliente": "Jorge Gil"
+    },
+    {
+      "id_venta": "TCK-133",
+      "currency": "ARS",
+      "monto_ars": 112246,
+      "detalles": {
+        "cliente": "Juan Pérez",
+        "fecha": "2025-08-06",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 736,
+      "id_venta": "VX-134",
+      "fecha": "2025-05-23",
+      "extra": {
+        "cliente": "Jorge Gil",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id_venta": "VX-135",
+      "currency": "ARS",
+      "monto_ars": 136998,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-12-21",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 159825,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "TCK-136",
+      "fecha": "2025-08-27",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id": 137,
+      "currency": "USD",
+      "monto_usd": 486,
+      "info_extra": {
+        "fecha_compra": "2025-03-05",
+        "descripcion": "Disco SSD"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 165698,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "CL-138",
+      "fecha": "2025-10-15",
+      "extra": {
+        "cliente": "Juan Pérez",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id": 139,
+      "currency": "USD",
+      "monto_usd": 1721,
+      "info_extra": {
+        "fecha_compra": "2025-11-01",
+        "descripcion": "Auriculares"
+      },
+      "cliente": "Pablo Reyes"
+    },
+    {
+      "id": 140,
+      "currency": "ARS",
+      "monto_ars": 9314,
+      "info_extra": {
+        "fecha_compra": "2025-10-01",
+        "descripcion": "Smartphone"
+      },
+      "cliente": "Rosa Méndez"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 8648,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "VX-141",
+      "fecha": "2025-09-07",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id": 142,
+      "currency": "USD",
+      "monto_usd": 288,
+      "info_extra": {
+        "fecha_compra": "2025-02-15",
+        "descripcion": "Disco SSD"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "id": 143,
+      "currency": "USD",
+      "monto_usd": 227,
+      "info_extra": {
+        "fecha_compra": "2025-06-01",
+        "descripcion": "Mouse Gamer"
+      },
+      "cliente": "Sara Campos"
+    },
+    {
+      "id": 144,
+      "currency": "ARS",
+      "monto_ars": 65612,
+      "info_extra": {
+        "fecha_compra": "2025-01-25",
+        "descripcion": "Teclado Mecánico"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 93,
+      "id_venta": "ORD-145",
+      "fecha": "2025-09-14",
+      "extra": {
+        "cliente": "Roberto Morales",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 55,
+      "id_venta": "VX-146",
+      "fecha": "2025-03-02",
+      "extra": {
+        "cliente": "Lucía Tech",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1093,
+      "id_venta": "TCK-147",
+      "fecha": "2025-05-03",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id_venta": "VX-148",
+      "currency": "ARS",
+      "monto_ars": 176086,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-10-07",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id": 149,
+      "currency": "ARS",
+      "monto_ars": 84254,
+      "info_extra": {
+        "fecha_compra": "2025-06-07",
+        "descripcion": "Teclado Mecánico"
+      },
+      "cliente": "Ana Martínez"
+    },
+    {
+      "id_venta": "IMP-150",
+      "currency": "USD",
+      "monto_usd": 692,
+      "detalles": {
+        "cliente": "Juan Pérez",
+        "fecha": "2025-11-22",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "VX-151",
+      "currency": "ARS",
+      "monto_ars": 170456,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-02-16",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id_venta": "IMP-152",
+      "currency": "ARS",
+      "monto_ars": 70491,
+      "detalles": {
+        "cliente": "Compañía XYZ",
+        "fecha": "2025-08-24",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 73653,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "IMP-153",
+      "fecha": "2025-05-03",
+      "extra": {
+        "cliente": "Juan Pérez",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id_venta": "TCK-154",
+      "currency": "ARS",
+      "monto_ars": 129009,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-03-31",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id": 155,
+      "currency": "ARS",
+      "monto_ars": 171110,
+      "info_extra": {
+        "fecha_compra": "2025-10-01",
+        "descripcion": "Teclado Mecánico"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "id": 156,
+      "currency": "ARS",
+      "monto_ars": 196761,
+      "info_extra": {
+        "fecha_compra": "2025-06-06",
+        "descripcion": "Impresora Láser"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "id": 157,
+      "currency": "USD",
+      "monto_usd": 622,
+      "info_extra": {
+        "fecha_compra": "2025-07-03",
+        "descripcion": "Impresora Láser"
+      },
+      "cliente": "Pablo Reyes"
+    },
+    {
+      "id": 158,
+      "currency": "USD",
+      "monto_usd": 692,
+      "info_extra": {
+        "fecha_compra": "2025-05-13",
+        "descripcion": "Disco SSD"
+      },
+      "cliente": "Verónica Díaz"
+    },
+    {
+      "id": 159,
+      "currency": "ARS",
+      "monto_ars": 106060,
+      "info_extra": {
+        "fecha_compra": "2025-09-27",
+        "descripcion": "Mouse Gamer"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "id_venta": "FAC-160",
+      "currency": "ARS",
+      "monto_ars": 154859,
+      "detalles": {
+        "cliente": "Jorge Gil",
+        "fecha": "2025-05-19",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1338,
+      "id_venta": "CL-161",
+      "fecha": "2025-10-15",
+      "extra": {
+        "cliente": "Lucía Tech",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 98586,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-162",
+      "fecha": "2025-02-11",
+      "extra": {
+        "cliente": "Pablo Reyes",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id": 163,
+      "currency": "ARS",
+      "monto_ars": 23104,
+      "info_extra": {
+        "fecha_compra": "2025-02-28",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Rosa Méndez"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1114,
+      "id_venta": "IMP-164",
+      "fecha": "2025-10-16",
+      "extra": {
+        "cliente": "Lucía Tech",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id": 165,
+      "currency": "USD",
+      "monto_usd": 475,
+      "info_extra": {
+        "fecha_compra": "2025-04-18",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Pablo Reyes"
+    },
+    {
+      "id": 166,
+      "currency": "ARS",
+      "monto_ars": 11198,
+      "info_extra": {
+        "fecha_compra": "2025-02-20",
+        "descripcion": "Teclado Mecánico"
+      },
+      "cliente": "Compañía XYZ"
+    },
+    {
+      "id": 167,
+      "currency": "USD",
+      "monto_usd": 1762,
+      "info_extra": {
+        "fecha_compra": "2025-02-19",
+        "descripcion": "Cámara Web"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "id_venta": "IMP-168",
+      "currency": "ARS",
+      "monto_ars": 129296,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-03-04",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 195776,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "IMP-169",
+      "fecha": "2025-12-13",
+      "extra": {
+        "cliente": "Juan Pérez",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 288,
+      "id_venta": "ORD-170",
+      "fecha": "2025-10-17",
+      "extra": {
+        "cliente": "Lucía Tech",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id": 171,
+      "currency": "ARS",
+      "monto_ars": 115328,
+      "info_extra": {
+        "fecha_compra": "2025-01-19",
+        "descripcion": "Monitor 24''"
+      },
+      "cliente": "Jorge Gil"
+    },
+    {
+      "id_venta": "VX-172",
+      "currency": "ARS",
+      "monto_ars": 125887,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-12-02",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id": 173,
+      "currency": "ARS",
+      "monto_ars": 178216,
+      "info_extra": {
+        "fecha_compra": "2025-06-01",
+        "descripcion": "Teclado Mecánico"
+      },
+      "cliente": "Ana Martínez"
+    },
+    {
+      "id_venta": "CL-174",
+      "currency": "ARS",
+      "monto_ars": 47786,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-09-12",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 93475,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "CL-175",
+      "fecha": "2025-08-23",
+      "extra": {
+        "cliente": "Lucía Tech",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id": 176,
+      "currency": "USD",
+      "monto_usd": 2002,
+      "info_extra": {
+        "fecha_compra": "2025-08-13",
+        "descripcion": "Smartphone"
+      },
+      "cliente": "Ana Martínez"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 183607,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-177",
+      "fecha": "2025-09-16",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id_venta": "TCK-178",
+      "currency": "ARS",
+      "monto_ars": 138086,
+      "detalles": {
+        "cliente": "Verónica Díaz",
+        "fecha": "2025-09-26",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 186990,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-179",
+      "fecha": "2025-05-02",
+      "extra": {
+        "cliente": "Jorge Gil",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id_venta": "CL-180",
+      "currency": "USD",
+      "monto_usd": 1570,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-05-31",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "TCK-181",
+      "currency": "ARS",
+      "monto_ars": 59245,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-08-04",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id": 182,
+      "currency": "USD",
+      "monto_usd": 825,
+      "info_extra": {
+        "fecha_compra": "2025-06-06",
+        "descripcion": "Mouse Gamer"
+      },
+      "cliente": "Jorge Gil"
+    },
+    {
+      "id": 183,
+      "currency": "USD",
+      "monto_usd": 1428,
+      "info_extra": {
+        "fecha_compra": "2025-04-24",
+        "descripcion": "Auriculares"
+      },
+      "cliente": "Lucía Tech"
+    },
+    {
+      "id_venta": "VX-184",
+      "currency": "USD",
+      "monto_usd": 1252,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-01-03",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1588,
+      "id_venta": "CL-185",
+      "fecha": "2025-08-26",
+      "extra": {
+        "cliente": "Jorge Gil",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 199652,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-186",
+      "fecha": "2025-02-26",
+      "extra": {
+        "cliente": "Pablo Reyes",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id": 187,
+      "currency": "ARS",
+      "monto_ars": 171856,
+      "info_extra": {
+        "fecha_compra": "2025-04-01",
+        "descripcion": "Mouse Gamer"
+      },
+      "cliente": "María Rodríguez"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1847,
+      "id_venta": "FAC-188",
+      "fecha": "2025-04-09",
+      "extra": {
+        "cliente": "Carlos López",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id_venta": "VX-189",
+      "currency": "USD",
+      "monto_usd": 325,
+      "detalles": {
+        "cliente": "Carlos López",
+        "fecha": "2025-10-02",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 95765,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "TCK-190",
+      "fecha": "2025-07-29",
+      "extra": {
+        "cliente": "María Rodríguez",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id_venta": "FAC-191",
+      "currency": "ARS",
+      "monto_ars": 6388,
+      "detalles": {
+        "cliente": "Juan Pérez",
+        "fecha": "2025-02-16",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id": 192,
+      "currency": "USD",
+      "monto_usd": 677,
+      "info_extra": {
+        "fecha_compra": "2025-11-23",
+        "descripcion": "Tablet"
+      },
+      "cliente": "María Rodríguez"
+    },
+    {
+      "id_venta": "ORD-193",
+      "currency": "ARS",
+      "monto_ars": 15552,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-06-10",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id_venta": "FAC-194",
+      "currency": "ARS",
+      "monto_ars": 4619,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-01-01",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id": 195,
+      "currency": "USD",
+      "monto_usd": 958,
+      "info_extra": {
+        "fecha_compra": "2025-08-21",
+        "descripcion": "Memoria RAM"
+      },
+      "cliente": "Lucía Tech"
+    },
+    {
+      "id": 196,
+      "currency": "USD",
+      "monto_usd": 297,
+      "info_extra": {
+        "fecha_compra": "2025-12-26",
+        "descripcion": "Auriculares"
+      },
+      "cliente": "María Rodríguez"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1672,
+      "id_venta": "TCK-197",
+      "fecha": "2025-09-27",
+      "extra": {
+        "cliente": "Carlos López",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 77467,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "CL-198",
+      "fecha": "2025-04-17",
+      "extra": {
+        "cliente": "Ana Martínez",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id": 199,
+      "currency": "USD",
+      "monto_usd": 1000,
+      "info_extra": {
+        "fecha_compra": "2025-07-17",
+        "descripcion": "Notebook"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "id_venta": "CL-200",
+      "currency": "ARS",
+      "monto_ars": 170311,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-07-14",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id_venta": "VX-201",
+      "currency": "ARS",
+      "monto_ars": 176659,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-04-05",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 168697,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "FAC-202",
+      "fecha": "2025-02-23",
+      "extra": {
+        "cliente": "Lucía Tech",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id": 203,
+      "currency": "ARS",
+      "monto_ars": 108786,
+      "info_extra": {
+        "fecha_compra": "2025-06-12",
+        "descripcion": "Teclado Mecánico"
+      },
+      "cliente": "Verónica Díaz"
+    },
+    {
+      "id": 204,
+      "currency": "ARS",
+      "monto_ars": 30273,
+      "info_extra": {
+        "fecha_compra": "2025-11-05",
+        "descripcion": "Memoria RAM"
+      },
+      "cliente": "María Rodríguez"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 183082,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-205",
+      "fecha": "2025-08-21",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 9118,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "TCK-206",
+      "fecha": "2025-02-15",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 499,
+      "id_venta": "VX-207",
+      "fecha": "2025-10-05",
+      "extra": {
+        "cliente": "Verónica Díaz",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id_venta": "VX-208",
+      "currency": "ARS",
+      "monto_ars": 21788,
+      "detalles": {
+        "cliente": "Ana Martínez",
+        "fecha": "2025-06-17",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1458,
+      "id_venta": "IMP-209",
+      "fecha": "2025-12-14",
+      "extra": {
+        "cliente": "María Rodríguez",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id": 210,
+      "currency": "USD",
+      "monto_usd": 1822,
+      "info_extra": {
+        "fecha_compra": "2025-11-24",
+        "descripcion": "Notebook"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "id": 211,
+      "currency": "USD",
+      "monto_usd": 445,
+      "info_extra": {
+        "fecha_compra": "2025-02-01",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "id_venta": "FAC-212",
+      "currency": "ARS",
+      "monto_ars": 104610,
+      "detalles": {
+        "cliente": "Jorge Gil",
+        "fecha": "2025-10-25",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 235,
+      "id_venta": "FAC-213",
+      "fecha": "2025-08-28",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1519,
+      "id_venta": "TCK-214",
+      "fecha": "2025-12-05",
+      "extra": {
+        "cliente": "Roberto Morales",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 78084,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "IMP-215",
+      "fecha": "2025-03-04",
+      "extra": {
+        "cliente": "Verónica Díaz",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 312,
+      "id_venta": "ORD-216",
+      "fecha": "2025-09-18",
+      "extra": {
+        "cliente": "Verónica Díaz",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 63498,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-217",
+      "fecha": "2025-12-03",
+      "extra": {
+        "cliente": "Verónica Díaz",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1454,
+      "id_venta": "CL-218",
+      "fecha": "2025-02-26",
+      "extra": {
+        "cliente": "Carlos López",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id_venta": "CL-219",
+      "currency": "USD",
+      "monto_usd": 118,
+      "detalles": {
+        "cliente": "Juan Pérez",
+        "fecha": "2025-09-25",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id_venta": "VX-220",
+      "currency": "ARS",
+      "monto_ars": 68517,
+      "detalles": {
+        "cliente": "Ana Martínez",
+        "fecha": "2025-08-08",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 8735,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-221",
+      "fecha": "2025-04-28",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 857,
+      "id_venta": "ORD-222",
+      "fecha": "2025-12-25",
+      "extra": {
+        "cliente": "Roberto Morales",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 6004,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "CL-223",
+      "fecha": "2025-05-03",
+      "extra": {
+        "cliente": "Jorge Gil",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 21414,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "TCK-224",
+      "fecha": "2025-08-30",
+      "extra": {
+        "cliente": "Ana Martínez",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 937,
+      "id_venta": "CL-225",
+      "fecha": "2025-05-10",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id": 226,
+      "currency": "ARS",
+      "monto_ars": 160979,
+      "info_extra": {
+        "fecha_compra": "2025-11-26",
+        "descripcion": "Monitor 24''"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "id": 227,
+      "currency": "USD",
+      "monto_usd": 1253,
+      "info_extra": {
+        "fecha_compra": "2025-02-18",
+        "descripcion": "Notebook"
+      },
+      "cliente": "Roberto Morales"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 147725,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "FAC-228",
+      "fecha": "2025-11-23",
+      "extra": {
+        "cliente": "María Rodríguez",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id_venta": "IMP-229",
+      "currency": "USD",
+      "monto_usd": 743,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-05-31",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1924,
+      "id_venta": "CL-230",
+      "fecha": "2025-09-06",
+      "extra": {
+        "cliente": "Carlos López",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 79198,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "IMP-231",
+      "fecha": "2025-04-18",
+      "extra": {
+        "cliente": "Juan Pérez",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 284,
+      "id_venta": "TCK-232",
+      "fecha": "2025-03-07",
+      "extra": {
+        "cliente": "Verónica Díaz",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id_venta": "ORD-233",
+      "currency": "ARS",
+      "monto_ars": 129406,
+      "detalles": {
+        "cliente": "Ana Martínez",
+        "fecha": "2025-01-07",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1222,
+      "id_venta": "FAC-234",
+      "fecha": "2025-08-24",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id_venta": "FAC-235",
+      "currency": "ARS",
+      "monto_ars": 125865,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-08-19",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id_venta": "IMP-236",
+      "currency": "USD",
+      "monto_usd": 1061,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-07-16",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id": 237,
+      "currency": "USD",
+      "monto_usd": 444,
+      "info_extra": {
+        "fecha_compra": "2025-01-28",
+        "descripcion": "Impresora Láser"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1550,
+      "id_venta": "VX-238",
+      "fecha": "2025-07-22",
+      "extra": {
+        "cliente": "Ana Martínez",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id_venta": "TCK-239",
+      "currency": "USD",
+      "monto_usd": 89,
+      "detalles": {
+        "cliente": "Lucía Tech",
+        "fecha": "2025-11-28",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 140,
+      "id_venta": "ORD-240",
+      "fecha": "2025-05-23",
+      "extra": {
+        "cliente": "Verónica Díaz",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 57383,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "TCK-241",
+      "fecha": "2025-08-17",
+      "extra": {
+        "cliente": "Lucía Tech",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id": 242,
+      "currency": "USD",
+      "monto_usd": 540,
+      "info_extra": {
+        "fecha_compra": "2025-11-02",
+        "descripcion": "Auriculares"
+      },
+      "cliente": "Roberto Morales"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 136051,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "CL-243",
+      "fecha": "2025-05-24",
+      "extra": {
+        "cliente": "María Rodríguez",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 690,
+      "id_venta": "VX-244",
+      "fecha": "2025-03-16",
+      "extra": {
+        "cliente": "Roberto Morales",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id": 245,
+      "currency": "ARS",
+      "monto_ars": 82889,
+      "info_extra": {
+        "fecha_compra": "2025-05-21",
+        "descripcion": "Tablet"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "id": 246,
+      "currency": "ARS",
+      "monto_ars": 43563,
+      "info_extra": {
+        "fecha_compra": "2025-11-17",
+        "descripcion": "Smartphone"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "id_venta": "IMP-247",
+      "currency": "ARS",
+      "monto_ars": 66826,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-12-03",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id_venta": "CL-248",
+      "currency": "USD",
+      "monto_usd": 1738,
+      "detalles": {
+        "cliente": "Verónica Díaz",
+        "fecha": "2025-01-21",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 453,
+      "id_venta": "ORD-249",
+      "fecha": "2025-08-31",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id": 250,
+      "currency": "USD",
+      "monto_usd": 2026,
+      "info_extra": {
+        "fecha_compra": "2025-03-19",
+        "descripcion": "Proyector"
+      },
+      "cliente": "María Rodríguez"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 65544,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "VX-251",
+      "fecha": "2025-02-11",
+      "extra": {
+        "cliente": "Ana Martínez",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "id_venta": "CL-252",
+      "currency": "ARS",
+      "monto_ars": 194270,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-04-26",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id": 253,
+      "currency": "ARS",
+      "monto_ars": 17941,
+      "info_extra": {
+        "fecha_compra": "2025-02-08",
+        "descripcion": "Notebook"
+      },
+      "cliente": "María Rodríguez"
+    },
+    {
+      "id": 254,
+      "currency": "ARS",
+      "monto_ars": 143687,
+      "info_extra": {
+        "fecha_compra": "2025-09-07",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "id": 255,
+      "currency": "ARS",
+      "monto_ars": 99334,
+      "info_extra": {
+        "fecha_compra": "2025-04-30",
+        "descripcion": "Tablet"
+      },
+      "cliente": "Rosa Méndez"
+    },
+    {
+      "id_venta": "FAC-256",
+      "currency": "USD",
+      "monto_usd": 483,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-06-23",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "id": 257,
+      "currency": "USD",
+      "monto_usd": 507,
+      "info_extra": {
+        "fecha_compra": "2025-10-05",
+        "descripcion": "Cámara Web"
+      },
+      "cliente": "Sara Campos"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 43976,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "VX-258",
+      "fecha": "2025-04-13",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "id": 259,
+      "currency": "USD",
+      "monto_usd": 73,
+      "info_extra": {
+        "fecha_compra": "2025-08-03",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Roberto Morales"
+    },
+    {
+      "id_venta": "TCK-260",
+      "currency": "ARS",
+      "monto_ars": 60025,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-05-05",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1392,
+      "id_venta": "FAC-261",
+      "fecha": "2025-06-27",
+      "extra": {
+        "cliente": "Rosa Méndez",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id": 262,
+      "currency": "ARS",
+      "monto_ars": 97127,
+      "info_extra": {
+        "fecha_compra": "2025-09-30",
+        "descripcion": "Impresora Láser"
+      },
+      "cliente": "Roberto Morales"
+    },
+    {
+      "id_venta": "IMP-263",
+      "currency": "USD",
+      "monto_usd": 226,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-05-19",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id_venta": "FAC-264",
+      "currency": "ARS",
+      "monto_ars": 4945,
+      "detalles": {
+        "cliente": "Jorge Gil",
+        "fecha": "2025-01-25",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id_venta": "ORD-265",
+      "currency": "ARS",
+      "monto_ars": 148258,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-10-02",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id_venta": "VX-266",
+      "currency": "ARS",
+      "monto_ars": 197528,
+      "detalles": {
+        "cliente": "Jorge Gil",
+        "fecha": "2025-03-10",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id_venta": "IMP-267",
+      "currency": "USD",
+      "monto_usd": 459,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-04-13",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1472,
+      "id_venta": "VX-268",
+      "fecha": "2025-11-17",
+      "extra": {
+        "cliente": "Carlos López",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id": 269,
+      "currency": "ARS",
+      "monto_ars": 151237,
+      "info_extra": {
+        "fecha_compra": "2025-07-27",
+        "descripcion": "Notebook"
+      },
+      "cliente": "Lucía Tech"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1989,
+      "id_venta": "ORD-270",
+      "fecha": "2025-04-29",
+      "extra": {
+        "cliente": "Pablo Reyes",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id_venta": "IMP-271",
+      "currency": "ARS",
+      "monto_ars": 79955,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-06-26",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id_venta": "ORD-272",
+      "currency": "ARS",
+      "monto_ars": 150669,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-02-25",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id": 273,
+      "currency": "ARS",
+      "monto_ars": 67808,
+      "info_extra": {
+        "fecha_compra": "2025-06-14",
+        "descripcion": "Teclado Mecánico"
+      },
+      "cliente": "Pablo Reyes"
+    },
+    {
+      "id": 274,
+      "currency": "ARS",
+      "monto_ars": 10018,
+      "info_extra": {
+        "fecha_compra": "2025-05-14",
+        "descripcion": "Monitor 24''"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 65300,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "TCK-275",
+      "fecha": "2025-03-29",
+      "extra": {
+        "cliente": "Pablo Reyes",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id": 276,
+      "currency": "ARS",
+      "monto_ars": 198908,
+      "info_extra": {
+        "fecha_compra": "2025-11-25",
+        "descripcion": "Monitor 24''"
+      },
+      "cliente": "Pablo Reyes"
+    },
+    {
+      "id": 277,
+      "currency": "ARS",
+      "monto_ars": 86949,
+      "info_extra": {
+        "fecha_compra": "2025-06-21",
+        "descripcion": "Monitor 24''"
+      },
+      "cliente": "María Rodríguez"
+    },
+    {
+      "id_venta": "CL-278",
+      "currency": "ARS",
+      "monto_ars": 173801,
+      "detalles": {
+        "cliente": "Carlos López",
+        "fecha": "2025-11-28",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 183280,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-279",
+      "fecha": "2025-04-28",
+      "extra": {
+        "cliente": "Ana Martínez",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id": 280,
+      "currency": "USD",
+      "monto_usd": 1981,
+      "info_extra": {
+        "fecha_compra": "2025-12-30",
+        "descripcion": "Proyector"
+      },
+      "cliente": "María Rodríguez"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 2046,
+      "id_venta": "CL-281",
+      "fecha": "2025-12-04",
+      "extra": {
+        "cliente": "Carlos López",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id_venta": "TCK-282",
+      "currency": "USD",
+      "monto_usd": 75,
+      "detalles": {
+        "cliente": "Juan Pérez",
+        "fecha": "2025-04-04",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1641,
+      "id_venta": "VX-283",
+      "fecha": "2025-12-20",
+      "extra": {
+        "cliente": "Roberto Morales",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 69838,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "TCK-284",
+      "fecha": "2025-04-21",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id_venta": "ORD-285",
+      "currency": "ARS",
+      "monto_ars": 195513,
+      "detalles": {
+        "cliente": "Carlos López",
+        "fecha": "2025-11-14",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 971,
+      "id_venta": "VX-286",
+      "fecha": "2025-10-05",
+      "extra": {
+        "cliente": "Juan Pérez",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id": 287,
+      "currency": "ARS",
+      "monto_ars": 57067,
+      "info_extra": {
+        "fecha_compra": "2025-01-14",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Rosa Méndez"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 516,
+      "id_venta": "IMP-288",
+      "fecha": "2025-04-08",
+      "extra": {
+        "cliente": "Rosa Méndez",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id": 289,
+      "currency": "USD",
+      "monto_usd": 1742,
+      "info_extra": {
+        "fecha_compra": "2025-11-22",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Sara Campos"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 157398,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "CL-290",
+      "fecha": "2025-11-09",
+      "extra": {
+        "cliente": "Lucía Tech",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id_venta": "ORD-291",
+      "currency": "ARS",
+      "monto_ars": 116309,
+      "detalles": {
+        "cliente": "Jorge Gil",
+        "fecha": "2025-04-26",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 189731,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "FAC-292",
+      "fecha": "2025-05-23",
+      "extra": {
+        "cliente": "Carlos López",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 222,
+      "id_venta": "ORD-293",
+      "fecha": "2025-08-12",
+      "extra": {
+        "cliente": "María Rodríguez",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id": 294,
+      "currency": "ARS",
+      "monto_ars": 134599,
+      "info_extra": {
+        "fecha_compra": "2025-10-23",
+        "descripcion": "Tablet"
+      },
+      "cliente": "Ana Martínez"
+    },
+    {
+      "id_venta": "CL-295",
+      "currency": "ARS",
+      "monto_ars": 63029,
+      "detalles": {
+        "cliente": "Ana Martínez",
+        "fecha": "2025-04-19",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id_venta": "CL-296",
+      "currency": "ARS",
+      "monto_ars": 26894,
+      "detalles": {
+        "cliente": "Juan Pérez",
+        "fecha": "2025-04-24",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 122002,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "TCK-297",
+      "fecha": "2025-05-10",
+      "extra": {
+        "cliente": "Verónica Díaz",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id_venta": "FAC-298",
+      "currency": "USD",
+      "monto_usd": 1040,
+      "detalles": {
+        "cliente": "Compañía XYZ",
+        "fecha": "2025-12-19",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id_venta": "IMP-299",
+      "currency": "ARS",
+      "monto_ars": 168972,
+      "detalles": {
+        "cliente": "Verónica Díaz",
+        "fecha": "2025-03-30",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "id": 300,
+      "currency": "ARS",
+      "monto_ars": 121305,
+      "info_extra": {
+        "fecha_compra": "2025-12-15",
+        "descripcion": "Monitor 24''"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "id_venta": "CL-301",
+      "currency": "ARS",
+      "monto_ars": 184666,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-08-27",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "VX-302",
+      "currency": "USD",
+      "monto_usd": 2038,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-07-28",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id": 303,
+      "currency": "USD",
+      "monto_usd": 1046,
+      "info_extra": {
+        "fecha_compra": "2025-11-03",
+        "descripcion": "Memoria RAM"
+      },
+      "cliente": "Ana Martínez"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 418,
+      "id_venta": "TCK-304",
+      "fecha": "2025-09-29",
+      "extra": {
+        "cliente": "Lucía Tech",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 88377,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "TCK-305",
+      "fecha": "2025-03-04",
+      "extra": {
+        "cliente": "Ana Martínez",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id_venta": "ORD-306",
+      "currency": "ARS",
+      "monto_ars": 167206,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-02-20",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id_venta": "VX-307",
+      "currency": "USD",
+      "monto_usd": 357,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-12-29",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1098,
+      "id_venta": "CL-308",
+      "fecha": "2025-08-30",
+      "extra": {
+        "cliente": "Jorge Gil",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "id_venta": "TCK-309",
+      "currency": "USD",
+      "monto_usd": 1856,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-07-05",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 974,
+      "id_venta": "IMP-310",
+      "fecha": "2025-07-23",
+      "extra": {
+        "cliente": "Carlos López",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1401,
+      "id_venta": "ORD-311",
+      "fecha": "2025-04-19",
+      "extra": {
+        "cliente": "Rosa Méndez",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "IMP-312",
+      "currency": "USD",
+      "monto_usd": 1858,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-09-26",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id": 313,
+      "currency": "USD",
+      "monto_usd": 181,
+      "info_extra": {
+        "fecha_compra": "2025-04-21",
+        "descripcion": "Cámara Web"
+      },
+      "cliente": "Sara Campos"
+    },
+    {
+      "id": 314,
+      "currency": "ARS",
+      "monto_ars": 133352,
+      "info_extra": {
+        "fecha_compra": "2025-02-21",
+        "descripcion": "Notebook"
+      },
+      "cliente": "Compañía XYZ"
+    },
+    {
+      "id_venta": "FAC-315",
+      "currency": "ARS",
+      "monto_ars": 7803,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-08-13",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id_venta": "IMP-316",
+      "currency": "USD",
+      "monto_usd": 1492,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-07-12",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 176711,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "VX-317",
+      "fecha": "2025-08-05",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "id": 318,
+      "currency": "ARS",
+      "monto_ars": 179926,
+      "info_extra": {
+        "fecha_compra": "2025-01-03",
+        "descripcion": "Proyector"
+      },
+      "cliente": "María Rodríguez"
+    },
+    {
+      "id_venta": "ORD-319",
+      "currency": "ARS",
+      "monto_ars": 72177,
+      "detalles": {
+        "cliente": "Carlos López",
+        "fecha": "2025-01-22",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id_venta": "ORD-320",
+      "currency": "USD",
+      "monto_usd": 1035,
+      "detalles": {
+        "cliente": "Juan Pérez",
+        "fecha": "2025-08-27",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1188,
+      "id_venta": "FAC-321",
+      "fecha": "2025-10-24",
+      "extra": {
+        "cliente": "Lucía Tech",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id_venta": "IMP-322",
+      "currency": "USD",
+      "monto_usd": 1323,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-11-07",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id": 323,
+      "currency": "ARS",
+      "monto_ars": 37526,
+      "info_extra": {
+        "fecha_compra": "2025-07-11",
+        "descripcion": "Memoria RAM"
+      },
+      "cliente": "María Rodríguez"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 142215,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-324",
+      "fecha": "2025-01-24",
+      "extra": {
+        "cliente": "Carlos López",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id_venta": "FAC-325",
+      "currency": "ARS",
+      "monto_ars": 119307,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-04-23",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id_venta": "VX-326",
+      "currency": "ARS",
+      "monto_ars": 194260,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-04-10",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 2043,
+      "id_venta": "TCK-327",
+      "fecha": "2025-07-29",
+      "extra": {
+        "cliente": "Roberto Morales",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 24178,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "VX-328",
+      "fecha": "2025-11-19",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id_venta": "ORD-329",
+      "currency": "USD",
+      "monto_usd": 1261,
+      "detalles": {
+        "cliente": "Ana Martínez",
+        "fecha": "2025-09-17",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "id": 330,
+      "currency": "USD",
+      "monto_usd": 739,
+      "info_extra": {
+        "fecha_compra": "2025-03-17",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "id": 331,
+      "currency": "USD",
+      "monto_usd": 1627,
+      "info_extra": {
+        "fecha_compra": "2025-06-29",
+        "descripcion": "Disco SSD"
+      },
+      "cliente": "Jorge Gil"
+    },
+    {
+      "id": 332,
+      "currency": "USD",
+      "monto_usd": 410,
+      "info_extra": {
+        "fecha_compra": "2025-11-15",
+        "descripcion": "Tablet"
+      },
+      "cliente": "Pablo Reyes"
+    },
+    {
+      "id_venta": "IMP-333",
+      "currency": "USD",
+      "monto_usd": 1586,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-01-13",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id_venta": "VX-334",
+      "currency": "USD",
+      "monto_usd": 1385,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-01-27",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id_venta": "FAC-335",
+      "currency": "USD",
+      "monto_usd": 1720,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-10-31",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id_venta": "IMP-336",
+      "currency": "USD",
+      "monto_usd": 1395,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-08-27",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id_venta": "VX-337",
+      "currency": "ARS",
+      "monto_ars": 178291,
+      "detalles": {
+        "cliente": "Carlos López",
+        "fecha": "2025-01-07",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id_venta": "ORD-338",
+      "currency": "USD",
+      "monto_usd": 1638,
+      "detalles": {
+        "cliente": "Verónica Díaz",
+        "fecha": "2025-05-23",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id": 339,
+      "currency": "USD",
+      "monto_usd": 783,
+      "info_extra": {
+        "fecha_compra": "2025-09-12",
+        "descripcion": "Cámara Web"
+      },
+      "cliente": "Rosa Méndez"
+    },
+    {
+      "id_venta": "ORD-340",
+      "currency": "USD",
+      "monto_usd": 626,
+      "detalles": {
+        "cliente": "Carlos López",
+        "fecha": "2025-07-05",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 5604,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "CL-341",
+      "fecha": "2025-04-26",
+      "extra": {
+        "cliente": "María Rodríguez",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1485,
+      "id_venta": "TCK-342",
+      "fecha": "2025-09-14",
+      "extra": {
+        "cliente": "Rosa Méndez",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id": 343,
+      "currency": "USD",
+      "monto_usd": 1208,
+      "info_extra": {
+        "fecha_compra": "2025-06-12",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Sara Campos"
+    },
+    {
+      "id": 344,
+      "currency": "USD",
+      "monto_usd": 1794,
+      "info_extra": {
+        "fecha_compra": "2025-02-28",
+        "descripcion": "Auriculares"
+      },
+      "cliente": "Pablo Reyes"
+    },
+    {
+      "id_venta": "TCK-345",
+      "currency": "USD",
+      "monto_usd": 444,
+      "detalles": {
+        "cliente": "Compañía XYZ",
+        "fecha": "2025-04-17",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id": 346,
+      "currency": "USD",
+      "monto_usd": 1617,
+      "info_extra": {
+        "fecha_compra": "2025-10-17",
+        "descripcion": "Impresora Láser"
+      },
+      "cliente": "Ana Martínez"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 72880,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-347",
+      "fecha": "2025-06-13",
+      "extra": {
+        "cliente": "Rosa Méndez",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id": 348,
+      "currency": "ARS",
+      "monto_ars": 33538,
+      "info_extra": {
+        "fecha_compra": "2025-04-27",
+        "descripcion": "Memoria RAM"
+      },
+      "cliente": "María Rodríguez"
+    },
+    {
+      "id_venta": "VX-349",
+      "currency": "USD",
+      "monto_usd": 248,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-08-05",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "id_venta": "IMP-350",
+      "currency": "ARS",
+      "monto_ars": 174741,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-10-23",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id_venta": "CL-351",
+      "currency": "ARS",
+      "monto_ars": 123886,
+      "detalles": {
+        "cliente": "Ana Martínez",
+        "fecha": "2025-05-04",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id_venta": "VX-352",
+      "currency": "USD",
+      "monto_usd": 1864,
+      "detalles": {
+        "cliente": "Verónica Díaz",
+        "fecha": "2025-07-10",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "ORD-353",
+      "currency": "ARS",
+      "monto_ars": 8651,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-10-04",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1195,
+      "id_venta": "CL-354",
+      "fecha": "2025-01-14",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id": 355,
+      "currency": "USD",
+      "monto_usd": 1204,
+      "info_extra": {
+        "fecha_compra": "2025-12-10",
+        "descripcion": "Disco SSD"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "id": 356,
+      "currency": "USD",
+      "monto_usd": 1361,
+      "info_extra": {
+        "fecha_compra": "2025-08-01",
+        "descripcion": "Smartphone"
+      },
+      "cliente": "Jorge Gil"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 187411,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "CL-357",
+      "fecha": "2025-04-11",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "TCK-358",
+      "currency": "USD",
+      "monto_usd": 727,
+      "detalles": {
+        "cliente": "Compañía XYZ",
+        "fecha": "2025-12-15",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id": 359,
+      "currency": "USD",
+      "monto_usd": 454,
+      "info_extra": {
+        "fecha_compra": "2025-11-10",
+        "descripcion": "Cámara Web"
+      },
+      "cliente": "Compañía XYZ"
+    },
+    {
+      "id_venta": "ORD-360",
+      "currency": "ARS",
+      "monto_ars": 134871,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-07-24",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1627,
+      "id_venta": "CL-361",
+      "fecha": "2025-11-11",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id": 362,
+      "currency": "USD",
+      "monto_usd": 1042,
+      "info_extra": {
+        "fecha_compra": "2025-12-14",
+        "descripcion": "Tablet"
+      },
+      "cliente": "Jorge Gil"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1086,
+      "id_venta": "FAC-363",
+      "fecha": "2025-06-25",
+      "extra": {
+        "cliente": "Verónica Díaz",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id": 364,
+      "currency": "ARS",
+      "monto_ars": 188488,
+      "info_extra": {
+        "fecha_compra": "2025-03-08",
+        "descripcion": "Auriculares"
+      },
+      "cliente": "Lucía Tech"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1345,
+      "id_venta": "CL-365",
+      "fecha": "2025-05-04",
+      "extra": {
+        "cliente": "Pablo Reyes",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "IMP-366",
+      "currency": "ARS",
+      "monto_ars": 185002,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-04-11",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 298,
+      "id_venta": "ORD-367",
+      "fecha": "2025-01-14",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 94897,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "FAC-368",
+      "fecha": "2025-11-20",
+      "extra": {
+        "cliente": "Juan Pérez",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id": 369,
+      "currency": "ARS",
+      "monto_ars": 166946,
+      "info_extra": {
+        "fecha_compra": "2025-05-03",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 198900,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "VX-370",
+      "fecha": "2025-05-19",
+      "extra": {
+        "cliente": "Carlos López",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "CL-371",
+      "currency": "ARS",
+      "monto_ars": 147011,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-08-14",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "ORD-372",
+      "currency": "USD",
+      "monto_usd": 1218,
+      "detalles": {
+        "cliente": "Ana Martínez",
+        "fecha": "2025-02-10",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 737,
+      "id_venta": "IMP-373",
+      "fecha": "2025-09-20",
+      "extra": {
+        "cliente": "Jorge Gil",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1838,
+      "id_venta": "FAC-374",
+      "fecha": "2025-11-30",
+      "extra": {
+        "cliente": "Pablo Reyes",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id": 375,
+      "currency": "ARS",
+      "monto_ars": 34781,
+      "info_extra": {
+        "fecha_compra": "2025-04-01",
+        "descripcion": "Notebook"
+      },
+      "cliente": "Pablo Reyes"
+    },
+    {
+      "id": 376,
+      "currency": "USD",
+      "monto_usd": 1167,
+      "info_extra": {
+        "fecha_compra": "2025-06-13",
+        "descripcion": "Disco SSD"
+      },
+      "cliente": "Verónica Díaz"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 17814,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-377",
+      "fecha": "2025-10-20",
+      "extra": {
+        "cliente": "María Rodríguez",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id_venta": "VX-378",
+      "currency": "ARS",
+      "monto_ars": 183095,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-03-14",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1744,
+      "id_venta": "IMP-379",
+      "fecha": "2025-04-21",
+      "extra": {
+        "cliente": "Juan Pérez",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id_venta": "FAC-380",
+      "currency": "USD",
+      "monto_usd": 877,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-12-19",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id": 381,
+      "currency": "ARS",
+      "monto_ars": 42674,
+      "info_extra": {
+        "fecha_compra": "2025-12-14",
+        "descripcion": "Notebook"
+      },
+      "cliente": "Rosa Méndez"
+    },
+    {
+      "id": 382,
+      "currency": "USD",
+      "monto_usd": 313,
+      "info_extra": {
+        "fecha_compra": "2025-08-30",
+        "descripcion": "Monitor 24''"
+      },
+      "cliente": "Jorge Gil"
+    },
+    {
+      "id_venta": "VX-383",
+      "currency": "ARS",
+      "monto_ars": 33281,
+      "detalles": {
+        "cliente": "Juan Pérez",
+        "fecha": "2025-03-09",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id": 384,
+      "currency": "USD",
+      "monto_usd": 586,
+      "info_extra": {
+        "fecha_compra": "2025-11-24",
+        "descripcion": "Impresora Láser"
+      },
+      "cliente": "Ana Martínez"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1870,
+      "id_venta": "ORD-385",
+      "fecha": "2025-05-16",
+      "extra": {
+        "cliente": "Ana Martínez",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id": 386,
+      "currency": "ARS",
+      "monto_ars": 134998,
+      "info_extra": {
+        "fecha_compra": "2025-06-14",
+        "descripcion": "Smartphone"
+      },
+      "cliente": "Verónica Díaz"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1522,
+      "id_venta": "IMP-387",
+      "fecha": "2025-08-28",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id_venta": "CL-388",
+      "currency": "USD",
+      "monto_usd": 325,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-05-09",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id": 389,
+      "currency": "USD",
+      "monto_usd": 837,
+      "info_extra": {
+        "fecha_compra": "2025-06-15",
+        "descripcion": "Tablet"
+      },
+      "cliente": "Lucía Tech"
+    },
+    {
+      "id_venta": "ORD-390",
+      "currency": "USD",
+      "monto_usd": 1272,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-04-19",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1982,
+      "id_venta": "IMP-391",
+      "fecha": "2025-06-02",
+      "extra": {
+        "cliente": "Juan Pérez",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1842,
+      "id_venta": "FAC-392",
+      "fecha": "2025-03-09",
+      "extra": {
+        "cliente": "Juan Pérez",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id_venta": "IMP-393",
+      "currency": "USD",
+      "monto_usd": 998,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-08-31",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id_venta": "TCK-394",
+      "currency": "USD",
+      "monto_usd": 1441,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-08-18",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id_venta": "CL-395",
+      "currency": "ARS",
+      "monto_ars": 134687,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-10-22",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id_venta": "IMP-396",
+      "currency": "ARS",
+      "monto_ars": 141509,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-07-09",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id_venta": "FAC-397",
+      "currency": "USD",
+      "monto_usd": 1627,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-12-05",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1763,
+      "id_venta": "CL-398",
+      "fecha": "2025-11-07",
+      "extra": {
+        "cliente": "María Rodríguez",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id": 399,
+      "currency": "USD",
+      "monto_usd": 626,
+      "info_extra": {
+        "fecha_compra": "2025-12-28",
+        "descripcion": "Impresora Láser"
+      },
+      "cliente": "María Rodríguez"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 14907,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "VX-400",
+      "fecha": "2025-03-04",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 544,
+      "id_venta": "IMP-401",
+      "fecha": "2025-05-11",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "id_venta": "VX-402",
+      "currency": "USD",
+      "monto_usd": 1303,
+      "detalles": {
+        "cliente": "Lucía Tech",
+        "fecha": "2025-09-03",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id": 403,
+      "currency": "USD",
+      "monto_usd": 1796,
+      "info_extra": {
+        "fecha_compra": "2025-10-19",
+        "descripcion": "Mouse Gamer"
+      },
+      "cliente": "Verónica Díaz"
+    },
+    {
+      "id_venta": "ORD-404",
+      "currency": "USD",
+      "monto_usd": 134,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-06-08",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 28564,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "IMP-405",
+      "fecha": "2025-09-27",
+      "extra": {
+        "cliente": "Lucía Tech",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id_venta": "TCK-406",
+      "currency": "ARS",
+      "monto_ars": 51723,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-10-24",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id_venta": "CL-407",
+      "currency": "ARS",
+      "monto_ars": 107379,
+      "detalles": {
+        "cliente": "Ana Martínez",
+        "fecha": "2025-07-26",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1166,
+      "id_venta": "TCK-408",
+      "fecha": "2025-12-07",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 2019,
+      "id_venta": "CL-409",
+      "fecha": "2025-07-16",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id": 410,
+      "currency": "USD",
+      "monto_usd": 208,
+      "info_extra": {
+        "fecha_compra": "2025-04-17",
+        "descripcion": "Disco SSD"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "id": 411,
+      "currency": "USD",
+      "monto_usd": 912,
+      "info_extra": {
+        "fecha_compra": "2025-07-02",
+        "descripcion": "Monitor 24''"
+      },
+      "cliente": "Pablo Reyes"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 674,
+      "id_venta": "FAC-412",
+      "fecha": "2025-10-07",
+      "extra": {
+        "cliente": "María Rodríguez",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "id": 413,
+      "currency": "USD",
+      "monto_usd": 1218,
+      "info_extra": {
+        "fecha_compra": "2025-05-17",
+        "descripcion": "Mouse Gamer"
+      },
+      "cliente": "Lucía Tech"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 180464,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "CL-414",
+      "fecha": "2025-04-18",
+      "extra": {
+        "cliente": "Ana Martínez",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id_venta": "IMP-415",
+      "currency": "ARS",
+      "monto_ars": 118899,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-04-20",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id": 416,
+      "currency": "ARS",
+      "monto_ars": 119208,
+      "info_extra": {
+        "fecha_compra": "2025-05-22",
+        "descripcion": "Auriculares"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 943,
+      "id_venta": "CL-417",
+      "fecha": "2025-05-09",
+      "extra": {
+        "cliente": "Juan Pérez",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 216,
+      "id_venta": "IMP-418",
+      "fecha": "2025-10-04",
+      "extra": {
+        "cliente": "Ana Martínez",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id_venta": "TCK-419",
+      "currency": "USD",
+      "monto_usd": 464,
+      "detalles": {
+        "cliente": "Verónica Díaz",
+        "fecha": "2025-06-18",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 92824,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-420",
+      "fecha": "2025-06-12",
+      "extra": {
+        "cliente": "Rosa Méndez",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id_venta": "IMP-421",
+      "currency": "ARS",
+      "monto_ars": 6446,
+      "detalles": {
+        "cliente": "Carlos López",
+        "fecha": "2025-11-29",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id": 422,
+      "currency": "ARS",
+      "monto_ars": 180823,
+      "info_extra": {
+        "fecha_compra": "2025-06-05",
+        "descripcion": "Disco SSD"
+      },
+      "cliente": "Verónica Díaz"
+    },
+    {
+      "id_venta": "TCK-423",
+      "currency": "ARS",
+      "monto_ars": 1573,
+      "detalles": {
+        "cliente": "Ana Martínez",
+        "fecha": "2025-02-12",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id": 424,
+      "currency": "USD",
+      "monto_usd": 1529,
+      "info_extra": {
+        "fecha_compra": "2025-02-16",
+        "descripcion": "Impresora Láser"
+      },
+      "cliente": "Compañía XYZ"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 826,
+      "id_venta": "TCK-425",
+      "fecha": "2025-02-18",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id": 426,
+      "currency": "USD",
+      "monto_usd": 1461,
+      "info_extra": {
+        "fecha_compra": "2025-11-16",
+        "descripcion": "Monitor 24''"
+      },
+      "cliente": "Jorge Gil"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 800,
+      "id_venta": "VX-427",
+      "fecha": "2025-02-12",
+      "extra": {
+        "cliente": "Ana Martínez",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id_venta": "IMP-428",
+      "currency": "ARS",
+      "monto_ars": 184469,
+      "detalles": {
+        "cliente": "Lucía Tech",
+        "fecha": "2025-06-05",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id": 429,
+      "currency": "ARS",
+      "monto_ars": 192621,
+      "info_extra": {
+        "fecha_compra": "2025-11-17",
+        "descripcion": "Cámara Web"
+      },
+      "cliente": "Ana Martínez"
+    },
+    {
+      "id_venta": "CL-430",
+      "currency": "USD",
+      "monto_usd": 131,
+      "detalles": {
+        "cliente": "Juan Pérez",
+        "fecha": "2025-10-17",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "id": 431,
+      "currency": "USD",
+      "monto_usd": 1916,
+      "info_extra": {
+        "fecha_compra": "2025-06-27",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Verónica Díaz"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1355,
+      "id_venta": "VX-432",
+      "fecha": "2025-11-21",
+      "extra": {
+        "cliente": "Verónica Díaz",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id_venta": "FAC-433",
+      "currency": "USD",
+      "monto_usd": 1047,
+      "detalles": {
+        "cliente": "Lucía Tech",
+        "fecha": "2025-01-26",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 13193,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-434",
+      "fecha": "2025-09-04",
+      "extra": {
+        "cliente": "Ana Martínez",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id": 435,
+      "currency": "ARS",
+      "monto_ars": 59332,
+      "info_extra": {
+        "fecha_compra": "2025-08-20",
+        "descripcion": "Auriculares"
+      },
+      "cliente": "María Rodríguez"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1266,
+      "id_venta": "FAC-436",
+      "fecha": "2025-05-29",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id": 437,
+      "currency": "USD",
+      "monto_usd": 876,
+      "info_extra": {
+        "fecha_compra": "2025-11-24",
+        "descripcion": "Auriculares"
+      },
+      "cliente": "Jorge Gil"
+    },
+    {
+      "id": 438,
+      "currency": "USD",
+      "monto_usd": 1203,
+      "info_extra": {
+        "fecha_compra": "2025-12-03",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Roberto Morales"
+    },
+    {
+      "id": 439,
+      "currency": "ARS",
+      "monto_ars": 181815,
+      "info_extra": {
+        "fecha_compra": "2025-05-08",
+        "descripcion": "Impresora Láser"
+      },
+      "cliente": "Compañía XYZ"
+    },
+    {
+      "id_venta": "FAC-440",
+      "currency": "USD",
+      "monto_usd": 1202,
+      "detalles": {
+        "cliente": "Compañía XYZ",
+        "fecha": "2025-06-30",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id": 441,
+      "currency": "USD",
+      "monto_usd": 1791,
+      "info_extra": {
+        "fecha_compra": "2025-04-10",
+        "descripcion": "Mouse Gamer"
+      },
+      "cliente": "Roberto Morales"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 21660,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "VX-442",
+      "fecha": "2025-07-25",
+      "extra": {
+        "cliente": "Verónica Díaz",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 124172,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "ORD-443",
+      "fecha": "2025-06-01",
+      "extra": {
+        "cliente": "Juan Pérez",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id_venta": "VX-444",
+      "currency": "USD",
+      "monto_usd": 98,
+      "detalles": {
+        "cliente": "Ana Martínez",
+        "fecha": "2025-02-14",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "ORD-445",
+      "currency": "ARS",
+      "monto_ars": 178502,
+      "detalles": {
+        "cliente": "Jorge Gil",
+        "fecha": "2025-05-22",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id_venta": "TCK-446",
+      "currency": "ARS",
+      "monto_ars": 49157,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-10-27",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 199817,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "VX-447",
+      "fecha": "2025-08-26",
+      "extra": {
+        "cliente": "Juan Pérez",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id_venta": "VX-448",
+      "currency": "USD",
+      "monto_usd": 862,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-08-27",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1508,
+      "id_venta": "TCK-449",
+      "fecha": "2025-07-09",
+      "extra": {
+        "cliente": "Lucía Tech",
+        "producto": "Auriculares"
+      }
+    },
+    {
+      "id_venta": "IMP-450",
+      "currency": "USD",
+      "monto_usd": 765,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-02-08",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "ORD-451",
+      "currency": "ARS",
+      "monto_ars": 137866,
+      "detalles": {
+        "cliente": "Jorge Gil",
+        "fecha": "2025-05-02",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 708,
+      "id_venta": "FAC-452",
+      "fecha": "2025-08-14",
+      "extra": {
+        "cliente": "Verónica Díaz",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id_venta": "FAC-453",
+      "currency": "ARS",
+      "monto_ars": 1399,
+      "detalles": {
+        "cliente": "Verónica Díaz",
+        "fecha": "2025-07-30",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "id": 454,
+      "currency": "ARS",
+      "monto_ars": 155659,
+      "info_extra": {
+        "fecha_compra": "2025-06-06",
+        "descripcion": "Memoria RAM"
+      },
+      "cliente": "María Rodríguez"
+    },
+    {
+      "id": 455,
+      "currency": "USD",
+      "monto_usd": 1396,
+      "info_extra": {
+        "fecha_compra": "2025-10-08",
+        "descripcion": "Auriculares"
+      },
+      "cliente": "Rosa Méndez"
+    },
+    {
+      "id_venta": "IMP-456",
+      "currency": "USD",
+      "monto_usd": 1039,
+      "detalles": {
+        "cliente": "Rosa Méndez",
+        "fecha": "2025-12-09",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "VX-457",
+      "currency": "USD",
+      "monto_usd": 554,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-01-13",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 826,
+      "id_venta": "IMP-458",
+      "fecha": "2025-04-06",
+      "extra": {
+        "cliente": "Verónica Díaz",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id": 459,
+      "currency": "USD",
+      "monto_usd": 1204,
+      "info_extra": {
+        "fecha_compra": "2025-02-24",
+        "descripcion": "Disco SSD"
+      },
+      "cliente": "Roberto Morales"
+    },
+    {
+      "id": 460,
+      "currency": "ARS",
+      "monto_ars": 148658,
+      "info_extra": {
+        "fecha_compra": "2025-01-30",
+        "descripcion": "Disco SSD"
+      },
+      "cliente": "Lucía Tech"
+    },
+    {
+      "id_venta": "TCK-461",
+      "currency": "ARS",
+      "monto_ars": 177386,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-09-24",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id_venta": "CL-462",
+      "currency": "USD",
+      "monto_usd": 679,
+      "detalles": {
+        "cliente": "Carlos López",
+        "fecha": "2025-06-11",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "id": 463,
+      "currency": "ARS",
+      "monto_ars": 92853,
+      "info_extra": {
+        "fecha_compra": "2025-12-22",
+        "descripcion": "Tablet"
+      },
+      "cliente": "Ana Martínez"
+    },
+    {
+      "id": 464,
+      "currency": "ARS",
+      "monto_ars": 139143,
+      "info_extra": {
+        "fecha_compra": "2025-08-07",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Lucía Tech"
+    },
+    {
+      "id_venta": "CL-465",
+      "currency": "USD",
+      "monto_usd": 1690,
+      "detalles": {
+        "cliente": "Ana Martínez",
+        "fecha": "2025-05-13",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id": 466,
+      "currency": "ARS",
+      "monto_ars": 163106,
+      "info_extra": {
+        "fecha_compra": "2025-03-30",
+        "descripcion": "Teclado Mecánico"
+      },
+      "cliente": "Jorge Gil"
+    },
+    {
+      "id_venta": "IMP-467",
+      "currency": "USD",
+      "monto_usd": 1661,
+      "detalles": {
+        "cliente": "Juan Pérez",
+        "fecha": "2025-12-14",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1198,
+      "id_venta": "VX-468",
+      "fecha": "2025-07-01",
+      "extra": {
+        "cliente": "Pablo Reyes",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id": 469,
+      "currency": "USD",
+      "monto_usd": 432,
+      "info_extra": {
+        "fecha_compra": "2025-08-14",
+        "descripcion": "Tablet"
+      },
+      "cliente": "Roberto Morales"
+    },
+    {
+      "id": 470,
+      "currency": "USD",
+      "monto_usd": 1783,
+      "info_extra": {
+        "fecha_compra": "2025-04-22",
+        "descripcion": "Cámara Web"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1877,
+      "id_venta": "CL-471",
+      "fecha": "2025-01-21",
+      "extra": {
+        "cliente": "Roberto Morales",
+        "producto": "Mouse Gamer"
+      }
+    },
+    {
+      "id": 472,
+      "currency": "USD",
+      "monto_usd": 486,
+      "info_extra": {
+        "fecha_compra": "2025-07-24",
+        "descripcion": "Monitor 24''"
+      },
+      "cliente": "Sara Campos"
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 25147,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "FAC-473",
+      "fecha": "2025-05-03",
+      "extra": {
+        "cliente": "Verónica Díaz",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id_venta": "VX-474",
+      "currency": "USD",
+      "monto_usd": 1842,
+      "detalles": {
+        "cliente": "Pablo Reyes",
+        "fecha": "2025-09-15",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id_venta": "VX-475",
+      "currency": "ARS",
+      "monto_ars": 89457,
+      "detalles": {
+        "cliente": "Compañía XYZ",
+        "fecha": "2025-11-25",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "id_venta": "IMP-476",
+      "currency": "USD",
+      "monto_usd": 1014,
+      "detalles": {
+        "cliente": "Roberto Morales",
+        "fecha": "2025-02-13",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "currency": "ARS",
+      "monto_ars": 93770,
+      "impuestos": {
+        "IVA": 21,
+        "otros": 0.5
+      },
+      "id_venta": "TCK-477",
+      "fecha": "2025-12-01",
+      "extra": {
+        "cliente": "Sara Campos",
+        "producto": "Tablet"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 199,
+      "id_venta": "TCK-478",
+      "fecha": "2025-01-27",
+      "extra": {
+        "cliente": "Compañía XYZ",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 929,
+      "id_venta": "TCK-479",
+      "fecha": "2025-10-19",
+      "extra": {
+        "cliente": "Lucía Tech",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id_venta": "TCK-480",
+      "currency": "ARS",
+      "monto_ars": 110930,
+      "detalles": {
+        "cliente": "Lucía Tech",
+        "fecha": "2025-10-22",
+        "producto": "Teclado Mecánico"
+      }
+    },
+    {
+      "id_venta": "ORD-481",
+      "currency": "USD",
+      "monto_usd": 747,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-01-12",
+        "producto": "Proyector"
+      }
+    },
+    {
+      "id": 482,
+      "currency": "ARS",
+      "monto_ars": 183344,
+      "info_extra": {
+        "fecha_compra": "2025-11-11",
+        "descripcion": "Tablet"
+      },
+      "cliente": "Sara Campos"
+    },
+    {
+      "id_venta": "VX-483",
+      "currency": "USD",
+      "monto_usd": 1693,
+      "detalles": {
+        "cliente": "María Rodríguez",
+        "fecha": "2025-02-15",
+        "producto": "Smartphone"
+      }
+    },
+    {
+      "id_venta": "CL-484",
+      "currency": "ARS",
+      "monto_ars": 7867,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-02-21",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1755,
+      "id_venta": "FAC-485",
+      "fecha": "2025-01-26",
+      "extra": {
+        "cliente": "Pablo Reyes",
+        "producto": "Monitor 24''"
+      }
+    },
+    {
+      "id": 486,
+      "currency": "ARS",
+      "monto_ars": 199700,
+      "info_extra": {
+        "fecha_compra": "2025-07-01",
+        "descripcion": "Notebook"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "id": 487,
+      "currency": "ARS",
+      "monto_ars": 39731,
+      "info_extra": {
+        "fecha_compra": "2025-08-15",
+        "descripcion": "Auriculares"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "id": 488,
+      "currency": "ARS",
+      "monto_ars": 15160,
+      "info_extra": {
+        "fecha_compra": "2025-10-28",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Sara Campos"
+    },
+    {
+      "id": 489,
+      "currency": "ARS",
+      "monto_ars": 166159,
+      "info_extra": {
+        "fecha_compra": "2025-06-13",
+        "descripcion": "Monitor 24''"
+      },
+      "cliente": "Carlos López"
+    },
+    {
+      "id": 490,
+      "currency": "ARS",
+      "monto_ars": 146312,
+      "info_extra": {
+        "fecha_compra": "2025-11-12",
+        "descripcion": "Proyector"
+      },
+      "cliente": "Verónica Díaz"
+    },
+    {
+      "id": 491,
+      "currency": "ARS",
+      "monto_ars": 195601,
+      "info_extra": {
+        "fecha_compra": "2025-03-14",
+        "descripcion": "Teclado Mecánico"
+      },
+      "cliente": "Juan Pérez"
+    },
+    {
+      "id_venta": "TCK-492",
+      "currency": "ARS",
+      "monto_ars": 170675,
+      "detalles": {
+        "cliente": "Jorge Gil",
+        "fecha": "2025-10-12",
+        "producto": "Notebook"
+      }
+    },
+    {
+      "id_venta": "FAC-493",
+      "currency": "USD",
+      "monto_usd": 1117,
+      "detalles": {
+        "cliente": "Sara Campos",
+        "fecha": "2025-08-10",
+        "producto": "Memoria RAM"
+      }
+    },
+    {
+      "id": 494,
+      "currency": "ARS",
+      "monto_ars": 125796,
+      "info_extra": {
+        "fecha_compra": "2025-03-15",
+        "descripcion": "Memoria RAM"
+      },
+      "cliente": "Rosa Méndez"
+    },
+    {
+      "id": 495,
+      "currency": "ARS",
+      "monto_ars": 15842,
+      "info_extra": {
+        "fecha_compra": "2025-05-07",
+        "descripcion": "Monitor 24''"
+      },
+      "cliente": "Verónica Díaz"
+    },
+    {
+      "id": 496,
+      "currency": "USD",
+      "monto_usd": 161,
+      "info_extra": {
+        "fecha_compra": "2025-04-27",
+        "descripcion": "Cámara Web"
+      },
+      "cliente": "Rosa Méndez"
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 94,
+      "id_venta": "CL-497",
+      "fecha": "2025-10-09",
+      "extra": {
+        "cliente": "Carlos López",
+        "producto": "Impresora Láser"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 851,
+      "id_venta": "FAC-498",
+      "fecha": "2025-02-24",
+      "extra": {
+        "cliente": "María Rodríguez",
+        "producto": "Disco SSD"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 903,
+      "id_venta": "TCK-499",
+      "fecha": "2025-08-02",
+      "extra": {
+        "cliente": "Juan Pérez",
+        "producto": "Cámara Web"
+      }
+    },
+    {
+      "currency": "USD",
+      "monto_usd": 1685,
+      "id_venta": "TCK-500",
+      "fecha": "2025-03-07",
+      "extra": {
+        "cliente": "María Rodríguez",
+        "producto": "Tablet"
+      }
+    }
+  ],
+  "otros_datos": {
+    "nota": "Este JSON es solo un ejemplo desordenado con 500 registros",
+    "version": "v1.0"
+  }
+}
