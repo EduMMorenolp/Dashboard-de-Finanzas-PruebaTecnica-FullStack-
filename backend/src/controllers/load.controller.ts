@@ -3,13 +3,34 @@ import { loadSalesFromJSON, loadExpensesFromJSON } from "../data/loadData";
 import { normalizeJsonFiles } from "../data/normalizeData";
 
 export const loadAllData = async (_req: Request, res: Response) => {
+  const results = { sales: 0, expenses: 0, errors: [] as string[] };
+  
   try {
     await loadSalesFromJSON();
-    await loadExpensesFromJSON();
-    res.status(200).json({ message: "Datos cargados correctamente." });
+    results.sales = 1;
   } catch (error) {
-    res.status(500).json({ message: "Error cargando datos.", error });
+    results.errors.push(`Ventas: ${error instanceof Error ? error.message : 'Error desconocido'}`);
   }
+
+  try {
+    await loadExpensesFromJSON();
+    results.expenses = 1;
+  } catch (error) {
+    results.errors.push(`Gastos: ${error instanceof Error ? error.message : 'Error desconocido'}`);
+  }
+
+  if (results.errors.length > 0) {
+    return res.status(207).json({ 
+      message: "Carga parcial completada", 
+      results,
+      errors: results.errors 
+    });
+  }
+
+  res.status(200).json({ 
+    message: "Datos cargados correctamente", 
+    results 
+  });
 };
 
 export const normalizeData = async (_req: Request, res: Response) => {

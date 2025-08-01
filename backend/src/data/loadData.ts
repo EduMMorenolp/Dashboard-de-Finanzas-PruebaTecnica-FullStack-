@@ -5,44 +5,90 @@ import { Expense } from "../models/Expense";
 import { normalizeSales, normalizeExpenses } from "./normalizeData";
 
 export const loadSalesFromJSON = async (): Promise<void> => {
-  const jsonPath = path.join(__dirname, "ventas.json");
-  const rawData = fs.readFileSync(jsonPath, "utf-8");
-  const parsed = JSON.parse(rawData);
+  try {
+    const jsonPath = path.join(__dirname, "ventas.json");
+    
+    if (!fs.existsSync(jsonPath)) {
+      throw new Error(`Archivo no encontrado: ${jsonPath}`);
+    }
 
-  if (!parsed.data_ventas)
-    throw new Error("No se encontró data_ventas en ventas.json");
+    const rawData = fs.readFileSync(jsonPath, "utf-8");
+    const parsed = JSON.parse(rawData);
 
-  const normalizedSales = normalizeSales(parsed);
-  const sales = normalizedSales.map(sale => ({
-    id_venta: sale.id,
-    currency: sale.currency,
-    amount: sale.amount,
-    date: sale.date,
-    description: sale.description,
-    client: sale.client
-  }));
+    if (!parsed.data_ventas || !Array.isArray(parsed.data_ventas)) {
+      throw new Error("Estructura inválida: data_ventas debe ser un array");
+    }
 
-  await Sale.bulkCreate(sales, { ignoreDuplicates: true });
-  console.log("✔ Ventas cargadas");
+    const normalizedSales = normalizeSales(parsed);
+    const validSales = normalizedSales.filter(sale => 
+      sale.currency && sale.amount > 0 && sale.date && sale.description
+    );
+
+    if (validSales.length === 0) {
+      throw new Error("No hay ventas válidas para cargar");
+    }
+
+    const sales = validSales.map(sale => ({
+      id_venta: sale.id,
+      currency: sale.currency,
+      amount: sale.amount,
+      date: sale.date,
+      description: sale.description,
+      client: sale.client
+    }));
+
+    const result = await Sale.bulkCreate(sales, { 
+      ignoreDuplicates: true,
+      validate: true
+    });
+    
+    console.log(`✔ ${result.length} ventas cargadas de ${normalizedSales.length} registros`);
+  } catch (error) {
+    console.error("❌ Error cargando ventas:", error);
+    throw error;
+  }
 };
 
 export const loadExpensesFromJSON = async (): Promise<void> => {
-  const jsonPath = path.join(__dirname, "gastos.json");
-  const rawData = fs.readFileSync(jsonPath, "utf-8");
-  const parsed = JSON.parse(rawData);
+  try {
+    const jsonPath = path.join(__dirname, "gastos.json");
+    
+    if (!fs.existsSync(jsonPath)) {
+      throw new Error(`Archivo no encontrado: ${jsonPath}`);
+    }
 
-  if (!parsed.data_gastos)
-    throw new Error("No se encontró data_gastos en gastos.json");
+    const rawData = fs.readFileSync(jsonPath, "utf-8");
+    const parsed = JSON.parse(rawData);
 
-  const normalizedExpenses = normalizeExpenses(parsed);
-  const expenses = normalizedExpenses.map(expense => ({
-    currency: expense.currency,
-    amount: expense.amount,
-    date: expense.date,
-    description: expense.description,
-    provider: expense.provider
-  }));
+    if (!parsed.data_gastos || !Array.isArray(parsed.data_gastos)) {
+      throw new Error("Estructura inválida: data_gastos debe ser un array");
+    }
 
-  await Expense.bulkCreate(expenses, { ignoreDuplicates: true });
-  console.log("✔ Gastos cargados");
+    const normalizedExpenses = normalizeExpenses(parsed);
+    const validExpenses = normalizedExpenses.filter(expense => 
+      expense.currency && expense.amount > 0 && expense.date && expense.description
+    );
+
+    if (validExpenses.length === 0) {
+      throw new Error("No hay gastos válidos para cargar");
+    }
+
+    const expenses = validExpenses.map(expense => ({
+      currency: expense.currency,
+      amount: expense.amount,
+      date: expense.date,
+      description: expense.description,
+      provider: expense.provider
+    }));
+
+    const result = await Expense.bulkCreate(expenses, { 
+      ignoreDuplicates: true,
+      validate: true
+    });
+    
+    console.log(`✔ ${result.length} gastos cargados de ${normalizedExpenses.length} registros`);
+  } catch (error) {
+    console.error("❌ Error cargando gastos:", error);
+    throw error;
+  }
 };
