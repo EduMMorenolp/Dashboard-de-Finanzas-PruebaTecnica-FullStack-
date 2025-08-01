@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // Rutas
-app.use("/api/load", loadRoutes);
+app.use("/api", loadRoutes);
 
 // Conexión a la base de datos
 sequelize
