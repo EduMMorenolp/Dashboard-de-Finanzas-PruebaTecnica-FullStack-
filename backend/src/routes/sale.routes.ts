@@ -6,13 +6,14 @@ import {
   updateSale,
   deleteSale,
 } from "../controllers/sale.controller";
+import { validateSale, validateId } from "../validation";
 
 const router = Router();
 
 router.get("/sales/", getSales);
-router.get("/sale/:id", getSale);
-router.post("/sale/", createSale);
-router.put("/sale/:id", updateSale);
-router.delete("/sale/:id", deleteSale);
+router.get("/sale/:id", validateId, getSale);
+router.post("/sale/", validateSale, createSale);
+router.put("/sale/:id", validateId, validateSale, updateSale);
+router.delete("/sale/:id", validateId, deleteSale);
 
 export default router;
