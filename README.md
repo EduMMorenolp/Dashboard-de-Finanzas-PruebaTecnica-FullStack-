@@ -50,8 +50,8 @@ Dashboard financiero full-stack desarrollado con React, Node.js, Express y Postg
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/EduMMorenolp/PT-FullStack-Dashboard-de-Finanzas.git
-cd PT-FullStack-Dashboard-de-Finanzas
+git hhttps://github.com/EduMMorenolp/Dashboard-de-Finanzas-PruebaTecnica-FullStack-.git
+cd Dashboard-de-Finanzas-PruebaTecnica-FullStack-
 ```
 
 ### 2. Base de Datos
