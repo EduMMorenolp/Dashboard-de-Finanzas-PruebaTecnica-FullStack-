@@ -9,19 +9,19 @@ export const getAllExpenses = async (): Promise<Expense[]> => {
   try {
     return await Expense.findAll();
   } catch (error) {
-    throw new Error('Failed to retrieve expenses');
+    throw new Error("Failed to retrieve expenses");
   }
 };
 
 // Obtener expense por id
 export const getExpenseById = async (id: number): Promise<Expense | null> => {
   if (!Number.isInteger(id) || id <= 0) {
-    throw new Error('Invalid ID provided');
+    throw new Error("Invalid ID provided");
   }
   try {
     return await Expense.findByPk(id);
   } catch (error) {
-    throw new Error('Failed to retrieve expense');
+    throw new Error("Failed to retrieve expense");
   }
 };
 
@@ -31,8 +31,14 @@ export const createExpense = async (
 ): Promise<Expense> => {
   try {
     return await Expense.create(data);
-  } catch (error) {
-    throw new Error('Failed to create expense');
+  } catch (error: any) {
+    if (error.name === "SequelizeUniqueConstraintError") {
+      if (error.parent?.constraint === "expenses_pkey") {
+        throw new Error("DUPLICATE_ID");
+      }
+      throw new Error("DUPLICATE_ENTRY");
+    }
+    throw new Error("DATABASE_ERROR");
   }
 };
 
@@ -42,21 +48,21 @@ export const updateExpense = async (
   data: Partial<ExpenseAttributes>
 ): Promise<Expense | null> => {
   if (!Number.isInteger(id) || id <= 0) {
-    throw new Error('Invalid ID provided');
+    throw new Error("Invalid ID provided");
   }
   try {
     const expense = await Expense.findByPk(id);
     if (!expense) return null;
     return await expense.update(data);
   } catch (error) {
-    throw new Error('Failed to update expense');
+    throw new Error("Failed to update expense");
   }
 };
 
 // Eliminar expense
 export const deleteExpense = async (id: number): Promise<Expense | null> => {
   if (!Number.isInteger(id) || id <= 0) {
-    throw new Error('Invalid ID provided');
+    throw new Error("Invalid ID provided");
   }
   try {
     const expense = await Expense.findByPk(id);
@@ -64,6 +70,6 @@ export const deleteExpense = async (id: number): Promise<Expense | null> => {
     await expense.destroy();
     return expense;
   } catch (error) {
-    throw new Error('Failed to delete expense');
+    throw new Error("Failed to delete expense");
   }
 };

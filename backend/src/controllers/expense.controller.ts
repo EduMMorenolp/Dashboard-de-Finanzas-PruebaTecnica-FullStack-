@@ -6,7 +6,7 @@ export const getExpenses = async (_req: Request, res: Response) => {
     const expenses = await expenseService.getAllExpenses();
     res.json(expenses);
   } catch (error) {
-    console.error('Error getting expenses:', error);
+    console.error("Error getting expenses:", error);
     res.status(500).json({ message: "Error al obtener gastos." });
   }
 };
@@ -18,7 +18,7 @@ export const getExpense = async (req: Request, res: Response) => {
       return res.status(404).json({ message: "Gasto no encontrado" });
     res.json(expense);
   } catch (error) {
-    console.error('Error getting expense:', error);
+    console.error("Error getting expense:", error);
     res.status(500).json({ message: "Error al buscar gasto." });
   }
 };
@@ -27,8 +27,23 @@ export const postExpense = async (req: Request, res: Response) => {
   try {
     const newExpense = await expenseService.createExpense(req.body);
     res.status(201).json(newExpense);
-  } catch (error) {
-    console.error('Error creating expense:', error);
+  } catch (error: any) {
+    console.error("Error creating expense:", error);
+
+    if (error.message === "DUPLICATE_ID") {
+      return res.status(409).json({
+        message: "El ID del gasto ya existe.",
+        code: "DUPLICATE_ID",
+      });
+    }
+
+    if (error.message === "DUPLICATE_ENTRY") {
+      return res.status(409).json({
+        message: "Ya existe un gasto con estos datos.",
+        code: "DUPLICATE_ENTRY",
+      });
+    }
+
     res.status(500).json({ message: "Error al crear gasto." });
   }
 };
@@ -43,7 +58,7 @@ export const putExpense = async (req: Request, res: Response) => {
       return res.status(404).json({ message: "Gasto no encontrado" });
     res.json(updatedExpense);
   } catch (error) {
-    console.error('Error updating expense:', error);
+    console.error("Error updating expense:", error);
     res.status(500).json({ message: "Error al actualizar gasto." });
   }
 };
@@ -57,7 +72,7 @@ export const deleteExpense = async (req: Request, res: Response) => {
       return res.status(404).json({ message: "Gasto no encontrado" });
     res.json({ message: "Gasto eliminado" });
   } catch (error) {
-    console.error('Error deleting expense:', error);
+    console.error("Error deleting expense:", error);
     res.status(500).json({ message: "Error al eliminar gasto." });
   }
 };
