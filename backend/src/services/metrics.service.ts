@@ -2,6 +2,11 @@ import { Sale } from "../models/Sale";
 import { Expense } from "../models/Expense";
 import { Op } from "sequelize";
 
+/**
+ * Calcula el rango de fechas basado en el período especificado.
+ * @param period El período de tiempo (day, week, month, year).
+ * @returns Objeto con fechas de inicio y fin del período.
+ */
 const getDateRange = async (period: string) => {
   const [latestSale, latestExpense, earliestSale, earliestExpense] =
     await Promise.all([
@@ -55,6 +60,11 @@ const getDateRange = async (period: string) => {
   return { startDate, endDate: latestDate };
 };
 
+/**
+ * Obtiene datos organizados para gráficos según el período.
+ * @param period El período de agrupación (day, week, month, year).
+ * @returns Datos de ventas y gastos agrupados por fecha y moneda.
+ */
 export const getChartData = async (period: string) => {
   try {
     const { startDate, endDate } = await getDateRange(period);
@@ -314,6 +324,11 @@ export const getChartData = async (period: string) => {
   }
 };
 
+/**
+ * Calcula métricas financieras resumidas para el período especificado.
+ * @param period El período para calcular las métricas (day, week, month, year).
+ * @returns Totales de ventas, gastos y ganancias separados por moneda.
+ */
 export const getFinancialMetrics = async (period: string) => {
   try {
     const { startDate, endDate } = await getDateRange(period);

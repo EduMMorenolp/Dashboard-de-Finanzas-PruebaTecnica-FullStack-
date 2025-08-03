@@ -4,7 +4,10 @@ import {
   ExpenseCreationAttributes,
 } from "../models/Expense";
 
-// Obtener todas las expenses
+/**
+ * Obtiene todos los gastos.
+ * @returns Lista de todos los gastos registrados.
+ */
 export const getAllExpenses = async (): Promise<Expense[]> => {
   try {
     return await Expense.findAll();
@@ -13,7 +16,11 @@ export const getAllExpenses = async (): Promise<Expense[]> => {
   }
 };
 
-// Obtener expense por id
+/**
+ * Obtiene un gasto por ID.
+ * @param id El ID del gasto.
+ * @returns El gasto encontrado o null si no existe.
+ */
 export const getExpenseById = async (id: number): Promise<Expense | null> => {
   if (!Number.isInteger(id) || id <= 0) {
     throw new Error("Invalid ID provided");
@@ -25,7 +32,11 @@ export const getExpenseById = async (id: number): Promise<Expense | null> => {
   }
 };
 
-// Crear expense nuevo
+/**
+ * Crea un nuevo gasto.
+ * @param data Los datos del gasto a crear.
+ * @returns El gasto creado.
+ */
 export const createExpense = async (
   data: ExpenseCreationAttributes
 ): Promise<Expense> => {
@@ -42,7 +53,12 @@ export const createExpense = async (
   }
 };
 
-// Actualizar expense existente
+/**
+ * Actualiza un gasto existente.
+ * @param id El ID del gasto a actualizar.
+ * @param data Los nuevos datos del gasto.
+ * @returns El gasto actualizado o null si no existe.
+ */
 export const updateExpense = async (
   id: number,
   data: Partial<ExpenseAttributes>
@@ -59,7 +75,11 @@ export const updateExpense = async (
   }
 };
 
-// Eliminar expense
+/**
+ * Elimina un gasto por ID.
+ * @param id El ID del gasto a eliminar.
+ * @returns El gasto eliminado o null si no existe.
+ */
 export const deleteExpense = async (id: number): Promise<Expense | null> => {
   if (!Number.isInteger(id) || id <= 0) {
     throw new Error("Invalid ID provided");

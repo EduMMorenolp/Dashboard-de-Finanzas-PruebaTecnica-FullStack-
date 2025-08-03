@@ -2,6 +2,10 @@ import { Request, Response } from "express";
 import { loadSalesFromJSON, loadExpensesFromJSON } from "../data/loadData";
 import { normalizeJsonFiles } from "../data/normalizeData";
 
+/**
+ * Carga todos los datos desde archivos JSON a la base de datos.
+ * @returns Resultado de la carga con contadores y errores si los hay.
+ */
 export const loadAllData = async (_req: Request, res: Response) => {
   const results = { sales: 0, expenses: 0, errors: [] as string[] };
   
@@ -33,6 +37,10 @@ export const loadAllData = async (_req: Request, res: Response) => {
   });
 };
 
+/**
+ * Normaliza los archivos JSON de datos.
+ * @returns Confirmación de normalización exitosa o error.
+ */
 export const normalizeData = async (_req: Request, res: Response) => {
   try {
     await normalizeJsonFiles();

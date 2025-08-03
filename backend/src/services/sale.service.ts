@@ -1,10 +1,19 @@
 import { Sale } from "../models/Sale";
 import { SaleCreationAttributes } from "../models/Sale";
 
+/**
+ * Obtiene todas las ventas.
+ * @returns Lista de todas las ventas registradas.
+ */
 export const getAllSales = async () => {
   return await Sale.findAll();
 };
 
+/**
+ * Obtiene una venta por ID.
+ * @param id El ID de la venta.
+ * @returns La venta encontrada o null si no existe.
+ */
 export const getSaleById = async (id: number) => {
   if (!Number.isInteger(id) || id <= 0) {
     throw new Error("Invalid ID provided");
@@ -12,6 +21,11 @@ export const getSaleById = async (id: number) => {
   return await Sale.findByPk(id);
 };
 
+/**
+ * Crea una nueva venta.
+ * @param data Los datos de la venta a crear.
+ * @returns La venta creada.
+ */
 export const createSale = async (data: SaleCreationAttributes) => {
   try {
     return await Sale.create(data);
@@ -29,6 +43,12 @@ export const createSale = async (data: SaleCreationAttributes) => {
   }
 };
 
+/**
+ * Actualiza una venta existente.
+ * @param id El ID de la venta a actualizar.
+ * @param data Los nuevos datos de la venta.
+ * @returns La venta actualizada o null si no existe.
+ */
 export const updateSale = async (id: number, data: Partial<Sale>) => {
   if (!Number.isInteger(id) || id <= 0) {
     throw new Error("Invalid ID provided");
@@ -38,6 +58,11 @@ export const updateSale = async (id: number, data: Partial<Sale>) => {
   return await sale.update(data);
 };
 
+/**
+ * Elimina una venta por ID.
+ * @param id El ID de la venta a eliminar.
+ * @returns La venta eliminada o null si no existe.
+ */
 export const deleteSale = async (id: number) => {
   if (!Number.isInteger(id) || id <= 0) {
     throw new Error("Invalid ID provided");

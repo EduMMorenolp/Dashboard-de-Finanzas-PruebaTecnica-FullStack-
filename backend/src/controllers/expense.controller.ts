@@ -1,6 +1,10 @@
 import { Request, Response } from "express";
 import * as expenseService from "../services/expense.service";
 
+/**
+ * Obtiene todos los gastos.
+ * @returns Lista de todos los gastos registrados.
+ */
 export const getExpenses = async (_req: Request, res: Response) => {
   try {
     const expenses = await expenseService.getAllExpenses();
@@ -11,6 +15,11 @@ export const getExpenses = async (_req: Request, res: Response) => {
   }
 };
 
+/**
+ * Obtiene un gasto por ID.
+ * @param req.params.id El ID del gasto.
+ * @returns El gasto encontrado o error 404 si no existe.
+ */
 export const getExpense = async (req: Request, res: Response) => {
   try {
     const expense = await expenseService.getExpenseById(Number(req.params.id));
@@ -23,6 +32,11 @@ export const getExpense = async (req: Request, res: Response) => {
   }
 };
 
+/**
+ * Crea un nuevo gasto.
+ * @param req.body Los datos del gasto a crear.
+ * @returns El gasto creado o error si hay duplicados.
+ */
 export const postExpense = async (req: Request, res: Response) => {
   try {
     const newExpense = await expenseService.createExpense(req.body);
@@ -48,6 +62,12 @@ export const postExpense = async (req: Request, res: Response) => {
   }
 };
 
+/**
+ * Actualiza un gasto existente.
+ * @param req.params.id El ID del gasto a actualizar.
+ * @param req.body Los nuevos datos del gasto.
+ * @returns El gasto actualizado o error 404 si no existe.
+ */
 export const putExpense = async (req: Request, res: Response) => {
   try {
     const updatedExpense = await expenseService.updateExpense(
@@ -63,6 +83,11 @@ export const putExpense = async (req: Request, res: Response) => {
   }
 };
 
+/**
+ * Elimina un gasto por ID.
+ * @param req.params.id El ID del gasto a eliminar.
+ * @returns Mensaje de confirmación o error 404 si no existe.
+ */
 export const deleteExpense = async (req: Request, res: Response) => {
   try {
     const deletedExpense = await expenseService.deleteExpense(
