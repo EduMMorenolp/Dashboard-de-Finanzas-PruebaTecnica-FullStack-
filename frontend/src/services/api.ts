@@ -1,17 +1,17 @@
-import axios from 'axios';
+import axios from "axios";
 
-const API_BASE_URL = 'http://localhost:3000/api';
+const API_BASE_URL = "http://localhost:3000/api";
 
 const api = axios.create({
   baseURL: API_BASE_URL,
   headers: {
-    'Content-Type': 'application/json',
+    "Content-Type": "application/json",
   },
 });
 
 export const apiService = {
-  getChartData: () => api.get('/chart'),
-  getMetrics: () => api.get('/metrics'),
+  getChartData: (period?: string) => api.get("/chart", { params: { period } }),
+  getMetrics: (period?: string) => api.get("/metrics", { params: { period } }),
 };
 
 export default api;

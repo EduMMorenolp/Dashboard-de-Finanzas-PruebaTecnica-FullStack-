@@ -31,24 +31,43 @@ const Dashboard: React.FC = () => {
     const [loading, setLoading] = useState<boolean>(true);
     const [summaryItems, setSummaryItems] = useState<SummaryItem[]>(summaryData);
 
+    const mapPeriodToBackend = (period: string) => {
+        const periodMap: { [key: string]: string } = {
+            'Anual': 'year',
+            'Mensual': 'month',
+            'Semanal': 'week',
+            'Diario': 'day'
+        };
+        return periodMap[period] || 'month';
+    };
+
+    const loadChartData = async (period = 'Anual') => {
+        try {
+            const backendPeriod = mapPeriodToBackend(period);
+            const chartResponse = await apiService.getChartData(backendPeriod);
+            const backendChart = chartResponse.data as BackendChartData;
+
+            // El backend ya agrupa los datos, solo formatear la fecha
+            const processedChart = backendChart.sales.map((sale, index) => ({
+                month: `${index + 1}`,
+                value: sale.amount
+            }));
+
+            setChartData(processedChart);
+        } catch (error) {
+            console.error('Error cargando datos del gráfico:', error);
+        }
+    };
+
     // Carga de datos desde el backend
     useEffect(() => {
         const loadData = async () => {
             try {
                 setLoading(true);
 
-                const [chartResponse, metricsResponse] = await Promise.all([
-                    apiService.getChartData(),
-                    apiService.getMetrics()
-                ]);
+                const metricsResponse = await apiService.getMetrics('month');
 
-                // Procesar datos del gráfico
-                const backendChart = chartResponse.data as BackendChartData;
-                const processedChart = backendChart.sales.map(sale => ({
-                    month: new Date(sale.date).toLocaleDateString('es', { month: 'short' }),
-                    value: sale.amount
-                }));
-                setChartData(processedChart);
+                await loadChartData();
 
                 // Procesar métricas
                 const backendMetrics = metricsResponse.data as BackendMetrics;
@@ -82,6 +101,10 @@ const Dashboard: React.FC = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
+    const handlePeriodChange = (period: string) => {
+        loadChartData(period);
+    };
+
     return (
         <div className="dashboard-page">
             <Sidebar
@@ -103,9 +126,10 @@ const Dashboard: React.FC = () => {
                         <>
                             <div className="dashboard-page__charts">
                                 <Chart
-                                    title="Título gráfico lineal"
+                                    title="Ventas por período"
                                     data={chartData}
                                     height={300}
+                                    onPeriodChange={handlePeriodChange}
                                 />
 
                                 <ValueCard
