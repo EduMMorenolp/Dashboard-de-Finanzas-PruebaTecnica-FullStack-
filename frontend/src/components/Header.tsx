@@ -8,12 +8,12 @@ interface MetricData {
 }
 
 interface HeaderProps {
-    userName?: string;
+    username?: string;
     metrics?: MetricData[];
 }
 
 const Header: React.FC<HeaderProps> = ({
-    userName = 'Usuario',
+    username = 'Usuario',
     metrics = [
         { value: 12, label: 'Valor 1', icon: '📊' },
         { value: 10, label: 'Valor 2', icon: '⏰' }
@@ -22,7 +22,7 @@ const Header: React.FC<HeaderProps> = ({
     return (
         <div className="header">
             <div className="header__content">
-                <h1 className="header__title">Hola {userName} !</h1>
+                <h1 className="header__title">Hola {username} !</h1>
                 <h2 className="header__subtitle">¿Qué hacemos hoy?</h2>
 
                 <div className="header__metrics">

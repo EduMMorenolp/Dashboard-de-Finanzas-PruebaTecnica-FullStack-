@@ -29,7 +29,7 @@ const Dashboard: React.FC = () => {
     const [chartData, setChartData] = useState<ChartDataPoint[]>([]);
     const [metrics, setMetrics] = useState<MetricData[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
-    const [summaryItems, setSummaryItems] = useState<SummaryItem[]>(summaryData);
+
 
     const mapPeriodToBackend = (period: string) => {
         const periodMap: { [key: string]: string } = {
@@ -155,7 +155,7 @@ const Dashboard: React.FC = () => {
                                 />
                             </div>
 
-                            <ValueSummary items={summaryItems} />
+                            <ValueSummary items={summaryData} />
                         </>
                     )}
                 </div>
