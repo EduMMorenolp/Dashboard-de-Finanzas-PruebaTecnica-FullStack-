@@ -105,10 +105,12 @@
 
   .header__title {
     font-size: var(--font-size-2xl);
+    text-align: center;
   }
 
   .header__subtitle {
     font-size: var(--font-size-base);
+    text-align: center;
   }
 
   .header__metrics {

@@ -11,9 +11,14 @@ interface MenuItem {
 interface SidebarProps {
     activeItem?: string;
     onItemClick?: (itemId: string) => void;
+    isMobileOpen?: boolean;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ activeItem = 'item-empresa-2', onItemClick }) => {
+const Sidebar: React.FC<SidebarProps> = ({
+    activeItem = 'item-empresa-2',
+    onItemClick,
+    isMobileOpen = false
+}) => {
     const menuItems: MenuItem[] = [
         { id: 'inicio', label: 'Inicio', icon: '🏠' },
         { id: 'item-empresa-2', label: 'Item Empresa 2', icon: '📊', active: true },
@@ -33,8 +38,10 @@ const Sidebar: React.FC<SidebarProps> = ({ activeItem = 'item-empresa-2', onItem
         console.log('Cerrar sesión');
     };
 
+    const sidebarClasses = `sidebar ${isMobileOpen ? 'sidebar--mobile-open' : ''}`;
+
     return (
-        <div className="sidebar">
+        <div className={sidebarClasses}>
             <div className="sidebar__header">
                 <div className="sidebar__logo">
                     <div className="sidebar__logo-icon">📊</div>
