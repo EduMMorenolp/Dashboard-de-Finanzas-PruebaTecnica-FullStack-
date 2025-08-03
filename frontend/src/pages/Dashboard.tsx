@@ -185,7 +185,7 @@ const Dashboard: React.FC = () => {
                                 <ValueCard
                                     subtitle="Resumen Financiero"
                                     amount={`ARS: $${chartData.reduce((sum, item) => sum + (item.valueARS || 0), 0).toLocaleString()} | USD: $${chartData.reduce((sum, item) => sum + (item.valueUSD || 0), 0).toLocaleString()}`}
-                                    description="Total del período seleccionado"
+                                    description="Total del período"
                                     buttonText="Ver detalle"
                                     onButtonClick={handleValueCardClick}
                                 />
