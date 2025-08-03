@@ -9,6 +9,7 @@ import metricsRoutes from "./routes/metrics.routes";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const HOST = process.env.BASE_URL || "localhost:3000";
 
 // Middlewares
 app.use(cors());
@@ -29,9 +30,13 @@ app.use("/api", metricsRoutes);
 sequelize
   .sync({ force: false })
   .then(() => {
+    console.log("==================================================");
     console.log("📦 DB conectada correctamente");
     app.listen(PORT, () => {
-      console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
+      console.log("==================================================");
+      console.log(`🚀 Servidor corriendo en: http://${HOST}`);
+      console.log(`📃 Swagger Docs: http://${HOST}/api-docs`);
+      console.log("==================================================\n");
     });
   })
   .catch((error) => {
