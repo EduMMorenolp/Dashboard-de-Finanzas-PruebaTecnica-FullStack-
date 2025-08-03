@@ -5,7 +5,7 @@ Dashboard financiero full-stack desarrollado con React, Node.js, Express y Postg
 ## 🚀 Tecnologías
 
 ### Frontend
-- **React 19** con TypeScript
+- **React** con TypeScript
 - **Recharts** para visualización de datos
 - **CSS** puro (sin librerías de estilos)
 - **Axios** para comunicación con API
