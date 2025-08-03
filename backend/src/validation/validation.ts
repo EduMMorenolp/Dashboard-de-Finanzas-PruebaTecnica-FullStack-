@@ -9,8 +9,6 @@ export const handleValidationErrors = (req: Request, res: Response, next: NextFu
   next();
 };
 
-// amazonq-ignore-next-line
-// amazonq-ignore-next-line
 export const validateSale = [
   body("id_venta").notEmpty().withMessage("ID de venta requerido"),
   body("currency").isIn(["ARS", "USD"]).withMessage("Moneda debe ser ARS o USD"),

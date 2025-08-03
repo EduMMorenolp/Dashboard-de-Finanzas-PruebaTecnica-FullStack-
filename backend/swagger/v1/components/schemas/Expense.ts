@@ -13,7 +13,6 @@ const Expense = {
       description: "Moneda del gasto",
       example: "ARS"
     },
-    // amazonq-ignore-next-line
     amount: {
       type: "number",
       minimum: 0,

@@ -20,7 +20,6 @@ const ValueCard: React.FC<ValueCardProps> = ({
         if (onButtonClick) {
             onButtonClick();
         } else {
-            // amazonq-ignore-next-line
             console.log('Ver detalle clicked');
         }
     };

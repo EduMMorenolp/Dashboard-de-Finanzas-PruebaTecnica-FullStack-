@@ -4,7 +4,6 @@ import { sequelize } from "../config/database";
 
 export interface SaleAttributes {
   id?: number;
-  // amazonq-ignore-next-line
   id_venta: string;
   currency: string;
   amount: number;

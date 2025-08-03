@@ -27,7 +27,6 @@ export const getChartData = async (period: string) => {
   const { startDate, endDate } = getDateRange(period);
 
   const [sales, expenses] = await Promise.all([
-    // amazonq-ignore-next-line
     Sale.findAll({
       where: { date: { [Op.between]: [startDate, endDate] } },
       order: [["date", "ASC"]]
