@@ -1,181 +1,62 @@
-```bash
-📂 src/
-├── components/
-│   ├── Sidebar.tsx
-│   ├── Header.tsx
-│   ├── ValueCard.tsx
-│   ├── Chart.tsx
-│   └── ValueSummary.tsx
-├── pages/
-│   └── Dashboard.tsx
-├── styles/
-│   ├── _variables.scss
-│   ├── Dashboard.scss
-│   └── components/
-│       ├── Sidebar.scss
-│       ├── Header.scss
-│       ├── ValueCard.scss
-│       ├── Chart.scss
-│       └── ValueSummary.scss
+# Dashboard de Finanzas - Frontend
 
-```
-
-# Dashboard Fullstack - React + TypeScript + Vite
-
-Dashboard interactivo creado con React, TypeScript, Vite y CSS vanilla siguiendo las especificaciones del diseño de Figma.
+Dashboard financiero desarrollado con React, TypeScript, Vite y CSS vanilla. Visualiza métricas de ventas y gastos con gráficos interactivos y diseño responsive.
 
 ## 📁 Estructura del Proyecto
 
 ```
 📂 src/
 ├── components/
-│   ├── Sidebar.tsx
-│   ├── Sidebar.css
-│   ├── Header.tsx
-│   ├── Header.css
-│   ├── ValueCard.tsx
-│   ├── ValueCard.css
-│   ├── Chart.tsx
-│   ├── Chart.css
-│   ├── ValueSummary.tsx
-│   └── ValueSummary.css
+│   ├── Chart.tsx           # Gráfico de área con filtros temporales
+│   ├── Header.tsx          # Encabezado con métricas
+│   ├── Sidebar.tsx         # Navegación lateral
+│   ├── ValueCard.tsx       # Tarjeta de valor destacado
+│   └── ValueSummary.tsx    # Resumen de valores positivos/negativos
 ├── pages/
-│   └── Dashboard.tsx
-├── styles/
-│   ├── variables.css
-│   └── Dashboard.css
+│   └── Dashboard.tsx       # Página principal del dashboard
+├── services/
+│   └── api.ts             # Servicios para comunicación con backend
+├── style/
+│   ├── variables.css      # Variables CSS globales
+│   ├── Dashboard.css      # Estilos de la página principal
+│   └── components/        # Estilos por componente
+├── types/
+│   └── api.ts            # Tipos TypeScript para API
 └── App.tsx
-```
-
-## 🚀 Instalación y Configuración
-
-### 1. Crear el proyecto con Vite
-
-```bash
-npm create vite@latest dashboard-app --template react-ts
-cd dashboard-app
-```
-
-### 2. Instalar dependencias
-
-```bash
-npm install recharts
-```
-
-### 3. Configurar la estructura de archivos
-
-Crear las carpetas y archivos según la estructura mostrada arriba.
-
-### 4. Copiar el contenido de los archivos
-
-Copia el contenido de cada archivo proporcionado a su ubicación correspondiente:
-
-- **Variables CSS**: `src/styles/variables.css`
-- **Componentes**:
-  - `src/components/Sidebar.tsx` + `src/components/Sidebar.css`
-  - `src/components/Header.tsx` + `src/components/Header.css`
-  - `src/components/Chart.tsx` + `src/components/Chart.css`
-  - `src/components/ValueCard.tsx` + `src/components/ValueCard.css`
-  - `src/components/ValueSummary.tsx` + `src/components/ValueSummary.css`
-- **Página principal**: `src/pages/Dashboard.tsx`
-- **Estilos principales**: `src/styles/Dashboard.css`
-- **App principal**: `src/App.tsx`
-- **Configuración**: `package.json`, `vite.config.ts`, `tsconfig.json`
-
-### 5. Ejecutar el proyecto
-
-```bash
-npm run dev
 ```
 
 ## ✅ Características Implementadas
 
 ### **Tecnologías Utilizadas**
 
-- ✅ **React 18** con Hooks
+- ✅ **React**
 - ✅ **TypeScript** para tipado fuerte
-- ✅ **Vite** como build tool
-- ✅ **CSS vanilla** (sin librerías como MUI, Tailwind, etc.)
-- ✅ **Recharts** para visualización de gráficos
-- ✅ **CSS Custom Properties** para variables
+- ✅ **Vite** como build tool y bundler
+- ✅ **CSS vanilla** con variables personalizadas
+- ✅ **Recharts** para gráficos de área interactivos
+- ✅ **Axios** para comunicación con API REST
 
 ### **Componentes**
 
-- ✅ **Sidebar**: Navegación lateral con items activos
-- ✅ **Header**: Título de bienvenida y métricas
-- ✅ **Chart**: Gráfico lineal interactivo con selector de período
-- ✅ **ValueCard**: Tarjeta destacada con valor principal
-- ✅ **ValueSummary**: Grid de valores positivos y negativos
+- ✅ **Sidebar**: Navegación lateral con logo y menú
+- ✅ **Header**: Saludo personalizado y métricas en tiempo real
+- ✅ **Chart**: Gráfico de área con gradiente azul y filtros (Diario/Semanal/Mensual/Anual)
+- ✅ **ValueCard**: Tarjeta destacada con concepto de valor
+- ✅ **ValueSummary**: Grid de valores positivos (verde) y negativos (rojo)
 
 ### **Funcionalidades**
 
-- ✅ **Responsive Design**: Adaptativo para desktop, tablet y mobile
-- ✅ **Estado React**: Manejo de navegación y datos
-- ✅ **Props TypeScript**: Componentes tipados
-- ✅ **CSS Variables**: Sistema de design tokens
-- ✅ **Animaciones**: Transiciones suaves y efectos hover
-- ✅ **Accesibilidad**: Focus states y navegación por teclado
-
-### **Diseño**
-
-- ✅ **Fiel al mockup**: Colores, tipografía y layout exactos
-- ✅ **Sidebar oscuro**: Navegación lateral con logo de empresa
-- ✅ **Header claro**: Saludo personalizado y métricas destacadas
-- ✅ **Gráfico interactivo**: Línea azul con puntos activos
-- ✅ **Tarjeta azul**: Valor destacado con botón de acción
-- ✅ **Grid de valores**: Positivos en verde, negativos en rojo
-
-## 📊 Integración con Datos JSON
-
-El dashboard está preparado para recibir datos desde archivos JSON:
-
-```typescript
-// En Dashboard.tsx líneas 52-63
-useEffect(() => {
-  const loadData = async () => {
-    try {
-      // Cargar datos de ventas
-      const salesResponse = await fetch("/data/sales.json");
-      const salesJson = await salesResponse.json();
-      setChartData(salesJson);
-
-      // Cargar métricas
-      const metricsResponse = await fetch("/data/metrics.json");
-      const metricsJson = await metricsResponse.json();
-      setMetrics(metricsJson);
-    } catch (error) {
-      console.error("Error cargando datos:", error);
-    }
-  };
-  loadData();
-}, []);
-```
-
-### Estructura esperada de los JSON:
-
-**`public/data/sales.json`**:
-
-```json
-[
-  { "month": "Ene", "value": 580000 },
-  { "month": "Feb", "value": 620000 }
-]
-```
-
-**`public/data/metrics.json`**:
-
-```json
-[
-  { "value": 12, "label": "Valor 1", "icon": "📊" },
-  { "value": 10, "label": "Valor 2", "icon": "⏰" }
-]
-```
+- ✅ **Responsive Design**: Sidebar colapsable en móviles
+- ✅ **Filtros temporales**: Cambio dinámico de período en gráficos
+- ✅ **Integración API**: Conexión con backend PostgreSQL
+- ✅ **Agrupación de datos**: Por año, mes, semana o día
+- ✅ **Formateo inteligente**: Etiquetas adaptativas según período
 
 ## 🎨 Personalización
 
 ### Variables CSS
 
-Todas las variables de diseño están centralizadas en `src/styles/variables.css`:
+Todas las variables de diseño están centralizadas en `src/style/variables.css`:
 
 ```css
 :root {
@@ -192,24 +73,6 @@ Todas las variables de diseño están centralizadas en `src/styles/variables.css
 - **Tablet**: 768px - 1024px
 - **Mobile**: < 768px
 
-## 🐛 Troubleshooting
-
-### Error de importación de CSS
-
-Si tienes problemas con las importaciones de CSS, asegúrate de que:
-
-1. Los archivos CSS estén en las rutas correctas
-2. Las importaciones en los componentes TypeScript sean correctas
-3. El archivo `Dashboard.css` importe todos los componentes
-
-### Recharts no se muestra
-
-Verifica que:
-
-1. `recharts` esté instalado: `npm install recharts`
-2. Los datos tengan el formato correcto (array de objetos)
-3. El contenedor tenga altura definida
-
 ## 📱 Compatibilidad
 
 - ✅ Chrome 90+
@@ -221,8 +84,17 @@ Verifica que:
 ## 🔧 Scripts Disponibles
 
 ```bash
-npm run dev      # Desarrollo
-npm run build    # Producción
-npm run preview  # Preview del build
-npm run lint     # Linting
+npm run dev      # Servidor de desarrollo (http://localhost:5173)
+npm run build    # Build para producción
+npm run preview  # Preview del build de producción
 ```
+
+## 🔗 Configuración de API
+
+Crea un archivo `.env` (opcional) para configurar la URL del backend:
+
+```env
+VITE_API_BASE_URL=http://localhost:3000/api
+```
+
+Por defecto, la aplicación se conecta a `http://localhost:3000/api`.
