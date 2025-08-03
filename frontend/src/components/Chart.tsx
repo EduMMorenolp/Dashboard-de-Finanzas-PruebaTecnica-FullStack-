@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Tooltip, Legend } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Tooltip } from 'recharts';
 import '../style/components/Chart.css';
 
 interface ChartDataPoint {
@@ -22,23 +22,11 @@ const Chart: React.FC<ChartProps> = ({
     data = [],
     onPeriodChange
 }) => {
-    const [selectedPeriod, setSelectedPeriod] = useState<string>('Anual');
+    const [selectedPeriod, setSelectedPeriod] = useState<string>('Mensual');
 
     const formatXAxisLabel = (value: string) => {
         if (!value) return '';
-        
-        switch (selectedPeriod) {
-            case 'Anual':
-                return value; // Ya viene como "2025"
-            case 'Mensual':
-                return value; // Ya viene formateado desde el backend
-            case 'Semanal':
-                return value.length > 10 ? value.substring(5, 10) : value; // MM-DD
-            case 'Diario':
-                return value.length > 10 ? value.substring(5, 10) : value; // MM-DD
-            default:
-                return value;
-        }
+        return value; // El formateo ya se hace en el Dashboard
     };
 
     const periodOptions = [

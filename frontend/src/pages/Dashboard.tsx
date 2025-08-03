@@ -41,7 +41,7 @@ const Dashboard: React.FC = () => {
         return periodMap[period] || 'month';
     };
 
-    const loadChartData = async (period = 'Anual') => {
+    const loadChartData = async (period = 'Mensual') => {
         try {
             const backendPeriod = mapPeriodToBackend(period);
             const chartResponse = await apiService.getChartData(backendPeriod);
@@ -65,7 +65,7 @@ const Dashboard: React.FC = () => {
 
                 // Combinar fechas únicas
                 const allDates = new Set([...dataMapARS.keys(), ...dataMapUSD.keys()]);
-                
+
                 const processedChart = Array.from(allDates)
                     .sort((a, b) => new Date(a).getTime() - new Date(b).getTime())
                     .map((date, index) => ({
@@ -89,13 +89,14 @@ const Dashboard: React.FC = () => {
         const dateObj = new Date(date);
         switch (period) {
             case 'Anual':
-                return dateObj.getFullYear().toString();
+                return (dateObj.getFullYear() + 1).toString()
             case 'Mensual':
-                return dateObj.toLocaleDateString('es-ES', { month: 'short', year: '2-digit' });
+                const months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+                return months[dateObj.getMonth()];
             case 'Semanal':
-                return `S${index + 1}`;
+                return `Semana ${index + 1}`;
             case 'Diario':
-                return dateObj.toLocaleDateString('es-ES', { month: 'numeric', day: 'numeric' });
+                return dateObj.toLocaleDateString('es-ES', { weekday: 'short', day: 'numeric' });
             default:
                 return date;
         }
