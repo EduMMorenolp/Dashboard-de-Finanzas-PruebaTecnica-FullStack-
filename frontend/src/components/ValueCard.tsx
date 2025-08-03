@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../style/components/ValueCard.css';
 
 interface ValueCardProps {
-    title?: string;
     subtitle?: string;
     amount?: string;
     description?: string;
@@ -11,7 +10,6 @@ interface ValueCardProps {
 }
 
 const ValueCard: React.FC<ValueCardProps> = ({
-    title = 'Ayuda',
     subtitle = 'Concepto de Valor',
     amount = '$700.000',
     description = 'Texto de ejemplo valor',
@@ -26,10 +24,33 @@ const ValueCard: React.FC<ValueCardProps> = ({
         }
     };
 
+    const [selectedPeriod, setSelectedPeriod] = useState<string>('Anual');
+
+    const periodOptions = [
+        { value: 'Anual', label: 'Anual' },
+        { value: 'Mensual', label: 'Mensual' },
+        { value: 'Semanal', label: 'Semanal' },
+        { value: 'Diario', label: 'Diario' }
+    ];
+
+    const handlePeriodChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        setSelectedPeriod(event.target.value);
+    };
+
     return (
         <div className="value-card">
-            <div className="value-card__header">
-                <span className="value-card__tag">{title}</span>
+            <div className="chart__controls">
+                <select
+                    className="chart__select"
+                    value={selectedPeriod}
+                    onChange={handlePeriodChange}
+                >
+                    {periodOptions.map((option) => (
+                        <option key={option.value} value={option.value}>
+                            {option.label}
+                        </option>
+                    ))}
+                </select>
             </div>
 
             <div className="value-card__content">
