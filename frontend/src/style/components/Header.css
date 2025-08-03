@@ -1,0 +1,122 @@
+.header {
+  background: var(--bg-primary);
+  padding: var(--spacing-3xl) var(--spacing-4xl);
+  border-radius: var(--radius-2xl) 0 0 0;
+}
+
+.header__content {
+  max-width: 100%;
+}
+
+.header__title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.header__subtitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-normal);
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-3xl);
+}
+
+.header__metrics {
+  display: flex;
+  gap: var(--spacing-3xl);
+}
+
+.header__metric-card {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-xl);
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  min-width: 160px;
+  transition: transform var(--transition-base);
+}
+
+.header__metric-card:hover {
+  transform: translateY(-2px);
+}
+
+.header__metric-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--light-blue);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  color: var(--text-white);
+}
+
+.header__metric-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__metric-value {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+.header__metric-label {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-top: var(--spacing-xs);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .header {
+    padding: var(--spacing-2xl) var(--spacing-xl);
+  }
+
+  .header__metrics {
+    gap: var(--spacing-xl);
+  }
+
+  .header__metric-card {
+    min-width: 140px;
+    padding: var(--spacing-lg);
+  }
+
+  .header__metric-icon {
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-size-lg);
+  }
+
+  .header__metric-value {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: var(--spacing-xl);
+  }
+
+  .header__title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .header__subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .header__metrics {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .header__metric-card {
+    min-width: auto;
+  }
+}

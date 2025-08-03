@@ -1,0 +1,90 @@
+.value-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-xl);
+  padding: 0 var(--spacing-4xl) var(--spacing-4xl);
+}
+
+.value-summary__card {
+  background: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.value-summary__card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.value-summary__card--positive .value-summary__amount {
+  color: var(--success-color);
+}
+
+.value-summary__card--positive .value-summary__trend {
+  color: var(--success-color);
+}
+
+.value-summary__card--negative .value-summary__amount {
+  color: var(--error-color);
+}
+
+.value-summary__card--negative .value-summary__trend {
+  color: var(--error-color);
+  transform: rotate(180deg);
+}
+
+.value-summary__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.value-summary__title {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  font-weight: var(--font-weight-medium);
+}
+
+.value-summary__trend {
+  font-size: var(--font-size-base);
+  transition: transform var(--transition-base);
+}
+
+.value-summary__amount {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .value-summary {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 var(--spacing-xl) var(--spacing-xl);
+  }
+}
+
+@media (max-width: 1024px) {
+  .value-summary {
+    padding: 0 var(--spacing-xl) var(--spacing-xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .value-summary {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+    padding: 0 var(--spacing-xl) var(--spacing-xl);
+  }
+
+  .value-summary__card {
+    padding: var(--spacing-lg);
+  }
+
+  .value-summary__amount {
+    font-size: var(--font-size-base);
+  }
+}

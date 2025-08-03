@@ -1,12 +1,12 @@
-import './App.css'
+import Dashboard from './pages/Dashboard';
+import './style/Dashboard.css';
 
 function App() {
 
   return (
     <>
-      <div>
-        <h1>Welcome to the App</h1>
-        <p>This is a simple React application.</p>
+      <div className='App'>
+        <Dashboard />
       </div>
     </>
   )
