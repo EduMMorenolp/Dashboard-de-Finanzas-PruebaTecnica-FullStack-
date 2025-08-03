@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer, Tooltip, Legend } from 'recharts';
 import '../style/components/Chart.css';
 
 interface ChartDataPoint {
@@ -25,7 +25,20 @@ const Chart: React.FC<ChartProps> = ({
     const [selectedPeriod, setSelectedPeriod] = useState<string>('Anual');
 
     const formatXAxisLabel = (value: string) => {
-        return value;
+        if (!value) return '';
+        
+        switch (selectedPeriod) {
+            case 'Anual':
+                return value; // Ya viene como "2025"
+            case 'Mensual':
+                return value; // Ya viene formateado desde el backend
+            case 'Semanal':
+                return value.length > 10 ? value.substring(5, 10) : value; // MM-DD
+            case 'Diario':
+                return value.length > 10 ? value.substring(5, 10) : value; // MM-DD
+            default:
+                return value;
+        }
     };
 
     const periodOptions = [
@@ -75,17 +88,7 @@ const Chart: React.FC<ChartProps> = ({
             <div className="chart__container">
                 {data && data.length > 0 ? (
                     <ResponsiveContainer width="100%" height={height}>
-                        <AreaChart data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-                            <defs>
-                                <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
-                                    <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.8}/>
-                                    <stop offset="95%" stopColor="#3b82f6" stopOpacity={0.1}/>
-                                </linearGradient>
-                                <linearGradient id="colorValueUSD" x1="0" y1="0" x2="0" y2="1">
-                                    <stop offset="5%" stopColor="#10b981" stopOpacity={0.8}/>
-                                    <stop offset="95%" stopColor="#10b981" stopOpacity={0.1}/>
-                                </linearGradient>
-                            </defs>
+                        <LineChart data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                             <CartesianGrid strokeDasharray="3 3" stroke="#e0e6ed" />
                             <XAxis
                                 dataKey="month"
@@ -98,28 +101,38 @@ const Chart: React.FC<ChartProps> = ({
                                 axisLine={false}
                                 tickLine={false}
                                 tick={{ fontSize: 12, fill: '#8b949e' }}
-                                domain={['dataMin - 50000', 'dataMax + 50000']}
-                                tickFormatter={(value) => `${(value / 1000)}k`}
+                                tickFormatter={(value) => `${(value / 1000).toFixed(0)}k`}
                             />
-                            <Area
+                            <Tooltip
+                                contentStyle={{
+                                    backgroundColor: '#ffffff',
+                                    border: '1px solid #e0e6ed',
+                                    borderRadius: '8px',
+                                    boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+                                }}
+                                formatter={(value: any, name: string) => [
+                                    `$${Number(value).toLocaleString()}`,
+                                    name === 'valueARS' ? 'ARS' : 'USD'
+                                ]}
+                                labelFormatter={(label) => `Período: ${label}`}
+                            />
+                            <Line
                                 type="monotone"
                                 dataKey="valueARS"
                                 stroke="#3b82f6"
-                                strokeWidth={2}
-                                fill="url(#colorValue)"
-                                dot={false}
+                                strokeWidth={3}
+                                dot={{ fill: '#3b82f6', strokeWidth: 2, r: 4 }}
                                 activeDot={{ r: 6, fill: '#3b82f6', strokeWidth: 2, stroke: '#ffffff' }}
                             />
-                            <Area
+                            <Line
                                 type="monotone"
                                 dataKey="valueUSD"
                                 stroke="#10b981"
-                                strokeWidth={2}
-                                fill="url(#colorValueUSD)"
-                                dot={false}
+                                strokeWidth={3}
+                                dot={{ fill: '#10b981', strokeWidth: 2, r: 4 }}
                                 activeDot={{ r: 6, fill: '#10b981', strokeWidth: 2, stroke: '#ffffff' }}
                             />
-                        </AreaChart>
+                        </LineChart>
                     </ResponsiveContainer>
                 ) : (
                     <div style={{ height, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#8b949e' }}>

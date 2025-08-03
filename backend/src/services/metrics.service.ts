@@ -231,28 +231,80 @@ export const getChartData = async (period: string) => {
       return { sales: salesData, expenses: expensesData };
     }
 
-    // Para day y week, datos individuales
-    const [sales, expenses] = await Promise.all([
+    if (period === "week") {
+      // Para semana, agrupar por semana
+      const [salesByWeek, expensesByWeek] = await Promise.all([
+        Sale.findAll({
+          attributes: [
+            [Sale.sequelize!.fn('DATE_TRUNC', 'week', Sale.sequelize!.col('date')), 'week'],
+            'currency',
+            [Sale.sequelize!.fn('SUM', Sale.sequelize!.col('amount')), 'total']
+          ],
+          where: { date: { [Op.between]: [startDate, endDate] } },
+          group: [Sale.sequelize!.fn('DATE_TRUNC', 'week', Sale.sequelize!.col('date')), 'currency'],
+          order: [[Sale.sequelize!.fn('DATE_TRUNC', 'week', Sale.sequelize!.col('date')), 'ASC']]
+        }),
+        Expense.findAll({
+          attributes: [
+            [Expense.sequelize!.fn('DATE_TRUNC', 'week', Expense.sequelize!.col('date')), 'week'],
+            'currency',
+            [Expense.sequelize!.fn('SUM', Expense.sequelize!.col('amount')), 'total']
+          ],
+          where: { date: { [Op.between]: [startDate, endDate] } },
+          group: [Expense.sequelize!.fn('DATE_TRUNC', 'week', Expense.sequelize!.col('date')), 'currency'],
+          order: [[Expense.sequelize!.fn('DATE_TRUNC', 'week', Expense.sequelize!.col('date')), 'ASC']]
+        })
+      ]);
+
+      const salesData = salesByWeek.map((sale: any) => ({
+        date: sale.getDataValue('week'),
+        amount: parseFloat(sale.getDataValue('total')),
+        currency: sale.currency
+      }));
+
+      const expensesData = expensesByWeek.map((expense: any) => ({
+        date: expense.getDataValue('week'),
+        amount: parseFloat(expense.getDataValue('total')),
+        currency: expense.currency
+      }));
+
+      return { sales: salesData, expenses: expensesData };
+    }
+
+    // Para day, agrupar por día
+    const [salesByDay, expensesByDay] = await Promise.all([
       Sale.findAll({
+        attributes: [
+          'date',
+          'currency',
+          [Sale.sequelize!.fn('SUM', Sale.sequelize!.col('amount')), 'total']
+        ],
         where: { date: { [Op.between]: [startDate, endDate] } },
-        order: [["date", "ASC"]],
+        group: ['date', 'currency'],
+        order: [['date', 'ASC']]
       }),
       Expense.findAll({
+        attributes: [
+          'date',
+          'currency',
+          [Expense.sequelize!.fn('SUM', Expense.sequelize!.col('amount')), 'total']
+        ],
         where: { date: { [Op.between]: [startDate, endDate] } },
-        order: [["date", "ASC"]],
-      }),
+        group: ['date', 'currency'],
+        order: [['date', 'ASC']]
+      })
     ]);
 
-    const salesData = sales.map((sale) => ({
+    const salesData = salesByDay.map((sale: any) => ({
       date: sale.date,
-      amount: sale.amount,
-      currency: sale.currency,
+      amount: parseFloat(sale.getDataValue('total')),
+      currency: sale.currency
     }));
 
-    const expensesData = expenses.map((expense) => ({
+    const expensesData = expensesByDay.map((expense: any) => ({
       date: expense.date,
-      amount: expense.amount,
-      currency: expense.currency,
+      amount: parseFloat(expense.getDataValue('total')),
+      currency: expense.currency
     }));
 
     return { sales: salesData, expenses: expensesData };
