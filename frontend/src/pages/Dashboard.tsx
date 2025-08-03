@@ -96,6 +96,7 @@ const Dashboard: React.FC = () => {
             <Sidebar
                 activeItem={activeMenuItem}
                 onItemClick={handleMenuItemClick}
+                isMobileOpen={isMobileMenuOpen}
             />
 
             <div className="dashboard-page__main">

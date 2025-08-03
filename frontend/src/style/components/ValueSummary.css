@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--spacing-xl);
-  padding: 0 var(--spacing-4xl) var(--spacing-4xl);
+  padding: 1em;
 }
 
 .value-summary__card {
