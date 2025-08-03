@@ -11,20 +11,14 @@ interface ChartProps {
     title?: string;
     data?: ChartDataPoint[];
     height?: number;
+    onPeriodChange?: (period: string) => void;
 }
 
 const Chart: React.FC<ChartProps> = ({
     title = 'Título gráfico lineal',
     height = 300,
-    data = [
-        { month: 'Ene', value: 580000 },
-        { month: 'Feb', value: 620000 },
-        { month: 'Mar', value: 590000 },
-        { month: 'Abr', value: 640000 },
-        { month: 'May', value: 680000 },
-        { month: 'Jun', value: 720000 },
-        { month: 'Jul', value: 700000 }
-    ]
+    data = [],
+    onPeriodChange
 }) => {
     const [selectedPeriod, setSelectedPeriod] = useState<string>('Anual');
 
@@ -36,7 +30,11 @@ const Chart: React.FC<ChartProps> = ({
     ];
 
     const handlePeriodChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-        setSelectedPeriod(event.target.value);
+        const newPeriod = event.target.value;
+        setSelectedPeriod(newPeriod);
+        if (onPeriodChange) {
+            onPeriodChange(newPeriod);
+        }
     };
 
     return (
