@@ -47,15 +47,20 @@ const Dashboard: React.FC = () => {
             const chartResponse = await apiService.getChartData(backendPeriod);
             const backendChart = chartResponse.data as BackendChartData;
 
-            // El backend ya agrupa los datos, solo formatear la fecha
-            const processedChart = backendChart.sales.map((sale, index) => ({
-                month: `${index + 1}`,
-                value: sale.amount
-            }));
-
-            setChartData(processedChart);
+            // Validar que existan los datos antes de procesarlos
+            if (backendChart && backendChart.sales && Array.isArray(backendChart.sales)) {
+                const processedChart = backendChart.sales.map((sale, index) => ({
+                    month: `${index + 1}`,
+                    value: sale.amount
+                }));
+                setChartData(processedChart);
+            } else {
+                console.warn('Datos del gráfico no válidos:', backendChart);
+                setChartData([]);
+            }
         } catch (error) {
             console.error('Error cargando datos del gráfico:', error);
+            setChartData([]);
         }
     };
 
@@ -69,13 +74,18 @@ const Dashboard: React.FC = () => {
 
                 await loadChartData();
 
-                // Procesar métricas
+                // Procesar métricas con validación
                 const backendMetrics = metricsResponse.data as BackendMetrics;
-                const processedMetrics: MetricData[] = [
-                    { value: backendMetrics.sales.ARS, label: 'Ventas ARS', icon: '💰' },
-                    { value: backendMetrics.sales.USD, label: 'Ventas USD', icon: '💵' }
-                ];
-                setMetrics(processedMetrics);
+                if (backendMetrics && backendMetrics.sales) {
+                    const processedMetrics: MetricData[] = [
+                        { value: backendMetrics.sales.ARS || 0, label: 'Ventas ARS', icon: '💰' },
+                        { value: backendMetrics.sales.USD || 0, label: 'Ventas USD', icon: '💵' }
+                    ];
+                    setMetrics(processedMetrics);
+                } else {
+                    console.warn('Datos de métricas no válidos:', backendMetrics);
+                    setMetrics([]);
+                }
 
                 console.log('Datos cargados correctamente desde el backend');
             } catch (error) {
