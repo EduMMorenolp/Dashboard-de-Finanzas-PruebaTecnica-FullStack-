@@ -1,0 +1,107 @@
+.chart {
+  flex: 2;
+  background: var(--bg-primary);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-md);
+}
+
+.chart__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.chart__title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.chart__controls {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.chart__select {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid #d1d5db;
+  border-radius: var(--radius-sm);
+  background: var(--bg-primary);
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: border-color var(--transition-base);
+}
+
+.chart__select:focus {
+  outline: none;
+  border-color: var(--light-blue);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.chart__select:hover {
+  border-color: #9ca3af;
+}
+
+.chart__container {
+  width: 100%;
+  position: relative;
+}
+
+.chart__container .recharts-wrapper .recharts-cartesian-grid-horizontal line,
+.chart__container .recharts-wrapper .recharts-cartesian-grid-vertical line {
+  stroke: #f1f5f9;
+}
+
+.chart__container .recharts-wrapper .recharts-active-dot {
+  filter: drop-shadow(0 2px 4px rgba(37, 99, 235, 0.3));
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .chart {
+    flex: 1;
+    padding: var(--spacing-xl);
+  }
+
+  .chart__header {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    align-items: flex-start;
+  }
+
+  .chart__controls {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .chart__select {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chart {
+    padding: var(--spacing-lg);
+  }
+
+  .chart__title {
+    font-size: var(--font-size-base);
+  }
+
+  .chart__header {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .chart__controls {
+    justify-content: stretch;
+  }
+
+  .chart__select {
+    flex: 1;
+    min-width: auto;
+  }
+}
