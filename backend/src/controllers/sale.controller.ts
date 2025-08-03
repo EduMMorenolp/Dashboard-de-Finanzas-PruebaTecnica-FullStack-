@@ -6,7 +6,8 @@ export const getSales = async (_req: Request, res: Response) => {
     const sales = await saleService.getAllSales();
     res.json(sales);
   } catch (error) {
-    res.status(500).json({ message: "Error al obtener ventas.", error });
+    console.error('Error getting sales:', error);
+    res.status(500).json({ message: "Error al obtener ventas." });
   }
 };
 
@@ -16,7 +17,8 @@ export const getSale = async (req: Request, res: Response) => {
     if (!sale) return res.status(404).json({ message: "Venta no encontrada" });
     res.json(sale);
   } catch (error) {
-    res.status(500).json({ message: "Error al buscar venta.", error });
+    console.error('Error getting sale:', error);
+    res.status(500).json({ message: "Error al buscar venta." });
   }
 };
 
@@ -25,7 +27,8 @@ export const createSale = async (req: Request, res: Response) => {
     const newSale = await saleService.createSale(req.body);
     res.status(201).json(newSale);
   } catch (error) {
-    res.status(500).json({ message: "Error al crear venta.", error });
+    console.error('Error creating sale:', error);
+    res.status(500).json({ message: "Error al crear venta." });
   }
 };
 
@@ -35,7 +38,8 @@ export const updateSale = async (req: Request, res: Response) => {
     if (!updated) return res.status(404).json({ message: "Venta no encontrada" });
     res.json(updated);
   } catch (error) {
-    res.status(500).json({ message: "Error al actualizar venta.", error });
+    console.error('Error updating sale:', error);
+    res.status(500).json({ message: "Error al actualizar venta." });
   }
 };
 
@@ -45,6 +49,7 @@ export const deleteSale = async (req: Request, res: Response) => {
     if (!deleted) return res.status(404).json({ message: "Venta no encontrada" });
     res.json({ message: "Venta eliminada" });
   } catch (error) {
-    res.status(500).json({ message: "Error al eliminar venta.", error });
+    console.error('Error deleting sale:', error);
+    res.status(500).json({ message: "Error al eliminar venta." });
   }
 };

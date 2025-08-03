@@ -40,5 +40,6 @@ sequelize
     });
   })
   .catch((error) => {
-    console.error("❌ Error conectando a la base de datos:", error);
+    const sanitizedError = String(error).replace(/[\r\n]/g, ' ');
+    console.error("❌ Error conectando a la base de datos:", sanitizedError);
   });

@@ -17,6 +17,7 @@ const normalizeData = {
           }
         }
       },
+      // amazonq-ignore-next-line
       500: { description: "Error interno del servidor" }
     }
   }

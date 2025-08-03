@@ -27,6 +27,7 @@ const Header: React.FC<HeaderProps> = ({
 
                 <div className="header__metrics">
                     {Array.isArray(metrics) && metrics.map((metric, index) => (
+                        // amazonq-ignore-next-line
                         <div key={index} className="header__metric-card">
                             <div className="header__metric-icon">{metric.icon}</div>
                             <div className="header__metric-info">

@@ -55,11 +55,13 @@ const Dashboard: React.FC = () => {
                 }));
                 setChartData(processedChart);
             } else {
-                console.warn('Datos del gráfico no válidos:', backendChart);
+                const sanitizedChart = JSON.stringify(backendChart).replace(/[\r\n]/g, ' ');
+                console.warn('Datos del gráfico no válidos:', sanitizedChart);
                 setChartData([]);
             }
         } catch (error) {
-            console.error('Error cargando datos del gráfico:', error);
+            const sanitizedError = String(error).replace(/[\r\n]/g, ' ');
+            console.error('Error cargando datos del gráfico:', sanitizedError);
             setChartData([]);
         }
     };
@@ -83,13 +85,15 @@ const Dashboard: React.FC = () => {
                     ];
                     setMetrics(processedMetrics);
                 } else {
-                    console.warn('Datos de métricas no válidos:', backendMetrics);
+                    const sanitizedMetrics = JSON.stringify(backendMetrics).replace(/[\r\n]/g, ' ');
+                    console.warn('Datos de métricas no válidos:', sanitizedMetrics);
                     setMetrics([]);
                 }
 
                 console.log('Datos cargados correctamente desde el backend');
             } catch (error) {
-                console.error('Error cargando datos del backend:', error);
+                const sanitizedError = String(error).replace(/[\r\n]/g, ' ');
+                console.error('Error cargando datos del backend:', sanitizedError);
             } finally {
                 setLoading(false);
             }

@@ -7,7 +7,8 @@ export const getChartData = async (req: Request, res: Response) => {
     const data = await metricsService.getChartData(period as string);
     res.json(data);
   } catch (error) {
-    res.status(500).json({ message: "Error al obtener datos del gráfico.", error });
+    console.error('Error getting chart data:', error);
+    res.status(500).json({ message: "Error al obtener datos del gráfico." });
   }
 };
 
@@ -17,6 +18,7 @@ export const getMetrics = async (req: Request, res: Response) => {
     const metrics = await metricsService.getFinancialMetrics(period as string);
     res.json(metrics);
   } catch (error) {
-    res.status(500).json({ message: "Error al obtener métricas.", error });
+    console.error('Error getting metrics:', error);
+    res.status(500).json({ message: "Error al obtener métricas." });
   }
 };

@@ -6,7 +6,8 @@ export const getExpenses = async (_req: Request, res: Response) => {
     const expenses = await expenseService.getAllExpenses();
     res.json(expenses);
   } catch (error) {
-    res.status(500).json({ message: "Error al obtener gastos.", error });
+    console.error('Error getting expenses:', error);
+    res.status(500).json({ message: "Error al obtener gastos." });
   }
 };
 
@@ -17,7 +18,8 @@ export const getExpense = async (req: Request, res: Response) => {
       return res.status(404).json({ message: "Gasto no encontrado" });
     res.json(expense);
   } catch (error) {
-    res.status(500).json({ message: "Error al buscar gasto.", error });
+    console.error('Error getting expense:', error);
+    res.status(500).json({ message: "Error al buscar gasto." });
   }
 };
 
@@ -26,7 +28,8 @@ export const postExpense = async (req: Request, res: Response) => {
     const newExpense = await expenseService.createExpense(req.body);
     res.status(201).json(newExpense);
   } catch (error) {
-    res.status(500).json({ message: "Error al crear gasto.", error });
+    console.error('Error creating expense:', error);
+    res.status(500).json({ message: "Error al crear gasto." });
   }
 };
 
@@ -40,7 +43,8 @@ export const putExpense = async (req: Request, res: Response) => {
       return res.status(404).json({ message: "Gasto no encontrado" });
     res.json(updatedExpense);
   } catch (error) {
-    res.status(500).json({ message: "Error al actualizar gasto.", error });
+    console.error('Error updating expense:', error);
+    res.status(500).json({ message: "Error al actualizar gasto." });
   }
 };
 
@@ -53,6 +57,7 @@ export const deleteExpense = async (req: Request, res: Response) => {
       return res.status(404).json({ message: "Gasto no encontrado" });
     res.json({ message: "Gasto eliminado" });
   } catch (error) {
-    res.status(500).json({ message: "Error al eliminar gasto.", error });
+    console.error('Error deleting expense:', error);
+    res.status(500).json({ message: "Error al eliminar gasto." });
   }
 };

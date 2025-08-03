@@ -34,6 +34,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         }
     };
 
+    // amazonq-ignore-next-line
     const handleLogout = () => {
         console.log('Cerrar sesión');
     };

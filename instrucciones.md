@@ -25,7 +25,7 @@ Configurar variables de entorno en `.env`:
 DB_HOST=localhost
 DB_PORT=5432
 DB_USER=postgres
-DB_PASSWORD=root
+DB_PASSWORD=password
 DB_NAME=finance_dashboard
 ```
 

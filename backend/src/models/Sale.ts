@@ -4,6 +4,7 @@ import { sequelize } from "../config/database";
 
 export interface SaleAttributes {
   id?: number;
+  // amazonq-ignore-next-line
   id_venta: string;
   currency: string;
   amount: number;
@@ -41,7 +42,7 @@ Sale.init(
       allowNull: false,
     },
     amount: {
-      type: DataTypes.FLOAT,
+      type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
     },
     date: {

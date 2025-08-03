@@ -57,32 +57,38 @@ const Chart: React.FC<ChartProps> = ({
             </div>
 
             <div className="chart__container">
-                <ResponsiveContainer width="100%" height={height}>
-                    <LineChart data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
-                        <CartesianGrid strokeDasharray="3 3" stroke="#e0e6ed" />
-                        <XAxis
-                            dataKey="month"
-                            axisLine={false}
-                            tickLine={false}
-                            tick={{ fontSize: 12, fill: '#8b949e' }}
-                        />
-                        <YAxis
-                            axisLine={false}
-                            tickLine={false}
-                            tick={{ fontSize: 12, fill: '#8b949e' }}
-                            domain={['dataMin - 50000', 'dataMax + 50000']}
-                            tickFormatter={(value) => `${(value / 1000)}k`}
-                        />
-                        <Line
-                            type="monotone"
-                            dataKey="value"
-                            stroke="#2563eb"
-                            strokeWidth={3}
-                            dot={false}
-                            activeDot={{ r: 6, fill: '#2563eb', strokeWidth: 2, stroke: '#ffffff' }}
-                        />
-                    </LineChart>
-                </ResponsiveContainer>
+                {data && data.length > 0 ? (
+                    <ResponsiveContainer width="100%" height={height}>
+                        <LineChart data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+                            <CartesianGrid strokeDasharray="3 3" stroke="#e0e6ed" />
+                            <XAxis
+                                dataKey="month"
+                                axisLine={false}
+                                tickLine={false}
+                                tick={{ fontSize: 12, fill: '#8b949e' }}
+                            />
+                            <YAxis
+                                axisLine={false}
+                                tickLine={false}
+                                tick={{ fontSize: 12, fill: '#8b949e' }}
+                                domain={['dataMin - 50000', 'dataMax + 50000']}
+                                tickFormatter={(value) => `${(value / 1000)}k`}
+                            />
+                            <Line
+                                type="monotone"
+                                dataKey="value"
+                                stroke="#2563eb"
+                                strokeWidth={3}
+                                dot={false}
+                                activeDot={{ r: 6, fill: '#2563eb', strokeWidth: 2, stroke: '#ffffff' }}
+                            />
+                        </LineChart>
+                    </ResponsiveContainer>
+                ) : (
+                    <div style={{ height, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#8b949e' }}>
+                        No hay datos disponibles
+                    </div>
+                )}
             </div>
         </div>
     );
