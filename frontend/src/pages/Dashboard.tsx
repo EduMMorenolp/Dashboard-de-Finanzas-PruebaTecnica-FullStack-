@@ -55,6 +55,14 @@ const Dashboard: React.FC = () => {
     const [chartData, setChartData] = useState<ChartDataPoint[]>(salesData);
     const [metrics, setMetrics] = useState<MetricData[]>(metricsData);
     const [summaryItems, setSummaryItems] = useState<SummaryItem[]>(summaryData);
+    const [selectedPeriod, setSelectedPeriod] = useState<string>('Anual');
+
+    const periodOptions = [
+        { value: 'Anual', label: 'Anual' },
+        { value: 'Mensual', label: 'Mensual' },
+        { value: 'Semanal', label: 'Semanal' },
+        { value: 'Diario', label: 'Diario' }
+    ];
 
     // Simulación de carga de datos desde JSON
     useEffect(() => {
