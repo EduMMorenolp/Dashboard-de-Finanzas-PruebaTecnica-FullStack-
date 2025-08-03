@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
 import '../style/components/Chart.css';
 
 interface ChartDataPoint {
@@ -21,6 +21,23 @@ const Chart: React.FC<ChartProps> = ({
     onPeriodChange
 }) => {
     const [selectedPeriod, setSelectedPeriod] = useState<string>('Anual');
+
+    const formatXAxisLabel = (value: string, index: number) => {
+        const num = parseInt(value);
+        switch (selectedPeriod) {
+            case 'Anual':
+                return `${2020 + index}`;
+            case 'Mensual':
+                const months = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
+                return months[(num - 1) % 12] || `M${num}`;
+            case 'Semanal':
+                return `S${num}`;
+            case 'Diario':
+                return `${num}`;
+            default:
+                return value;
+        }
+    };
 
     const periodOptions = [
         { value: 'Anual', label: 'Anual' },
@@ -59,13 +76,20 @@ const Chart: React.FC<ChartProps> = ({
             <div className="chart__container">
                 {data && data.length > 0 ? (
                     <ResponsiveContainer width="100%" height={height}>
-                        <LineChart data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+                        <AreaChart data={data} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+                            <defs>
+                                <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.8}/>
+                                    <stop offset="95%" stopColor="#3b82f6" stopOpacity={0.1}/>
+                                </linearGradient>
+                            </defs>
                             <CartesianGrid strokeDasharray="3 3" stroke="#e0e6ed" />
                             <XAxis
                                 dataKey="month"
                                 axisLine={false}
                                 tickLine={false}
                                 tick={{ fontSize: 12, fill: '#8b949e' }}
+                                tickFormatter={(value, index) => formatXAxisLabel(value, index)}
                             />
                             <YAxis
                                 axisLine={false}
@@ -74,15 +98,16 @@ const Chart: React.FC<ChartProps> = ({
                                 domain={['dataMin - 50000', 'dataMax + 50000']}
                                 tickFormatter={(value) => `${(value / 1000)}k`}
                             />
-                            <Line
+                            <Area
                                 type="monotone"
                                 dataKey="value"
-                                stroke="#2563eb"
-                                strokeWidth={3}
+                                stroke="#3b82f6"
+                                strokeWidth={2}
+                                fill="url(#colorValue)"
                                 dot={false}
-                                activeDot={{ r: 6, fill: '#2563eb', strokeWidth: 2, stroke: '#ffffff' }}
+                                activeDot={{ r: 6, fill: '#3b82f6', strokeWidth: 2, stroke: '#ffffff' }}
                             />
-                        </LineChart>
+                        </AreaChart>
                     </ResponsiveContainer>
                 ) : (
                     <div style={{ height, display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#8b949e' }}>

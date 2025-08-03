@@ -57,7 +57,11 @@
 }
 
 .chart__container .recharts-wrapper .recharts-active-dot {
-  filter: drop-shadow(0 2px 4px rgba(37, 99, 235, 0.3));
+  filter: drop-shadow(0 2px 4px rgba(59, 130, 246, 0.3));
+}
+
+.chart__container .recharts-wrapper .recharts-area {
+  filter: drop-shadow(0 1px 3px rgba(59, 130, 246, 0.1));
 }
 
 /* Responsive */
