@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({
                 <h2 className="header__subtitle">¿Qué hacemos hoy?</h2>
 
                 <div className="header__metrics">
-                    {metrics.map((metric, index) => (
+                    {Array.isArray(metrics) && metrics.map((metric, index) => (
                         <div key={index} className="header__metric-card">
                             <div className="header__metric-icon">{metric.icon}</div>
                             <div className="header__metric-info">

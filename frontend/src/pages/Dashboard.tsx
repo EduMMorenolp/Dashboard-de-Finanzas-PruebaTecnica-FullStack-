@@ -4,19 +4,9 @@ import Header from '../components/Header';
 import Chart from '../components/Chart';
 import ValueCard from '../components/ValueCard';
 import ValueSummary from '../components/ValueSummary';
+import { apiService } from '../services/api';
+import type { ChartDataPoint, MetricData, BackendChartData, BackendMetrics } from '../types/api';
 import '../style/Dashboard.css';
-
-// Interfaces
-interface ChartDataPoint {
-    month: string;
-    value: number;
-}
-
-interface MetricData {
-    value: number;
-    label: string;
-    icon: string;
-}
 
 interface SummaryItem {
     id: string;
@@ -25,22 +15,6 @@ interface SummaryItem {
     type: 'positive' | 'negative';
     trend?: 'up' | 'down';
 }
-
-// Datos de ejemplo - normalmente vendrían de archivos JSON
-const salesData: ChartDataPoint[] = [
-    { month: 'Ene', value: 580000 },
-    { month: 'Feb', value: 620000 },
-    { month: 'Mar', value: 590000 },
-    { month: 'Abr', value: 640000 },
-    { month: 'May', value: 680000 },
-    { month: 'Jun', value: 720000 },
-    { month: 'Jul', value: 700000 }
-];
-
-const metricsData: MetricData[] = [
-    { value: 12, label: 'Valor 1', icon: '📊' },
-    { value: 10, label: 'Valor 2', icon: '⏰' }
-];
 
 const summaryData: SummaryItem[] = [
     { id: '1', title: 'Valor positivo', amount: '$700.000 ARS', type: 'positive', trend: 'up' },
@@ -52,34 +26,43 @@ const summaryData: SummaryItem[] = [
 const Dashboard: React.FC = () => {
     const [activeMenuItem, setActiveMenuItem] = useState<string>('item-empresa-2');
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
-    const [chartData, setChartData] = useState<ChartDataPoint[]>(salesData);
-    const [metrics, setMetrics] = useState<MetricData[]>(metricsData);
+    const [chartData, setChartData] = useState<ChartDataPoint[]>([]);
+    const [metrics, setMetrics] = useState<MetricData[]>([]);
+    const [loading, setLoading] = useState<boolean>(true);
     const [summaryItems, setSummaryItems] = useState<SummaryItem[]>(summaryData);
-    const [selectedPeriod, setSelectedPeriod] = useState<string>('Anual');
 
-    const periodOptions = [
-        { value: 'Anual', label: 'Anual' },
-        { value: 'Mensual', label: 'Mensual' },
-        { value: 'Semanal', label: 'Semanal' },
-        { value: 'Diario', label: 'Diario' }
-    ];
-
-    // Simulación de carga de datos desde JSON
+    // Carga de datos desde el backend
     useEffect(() => {
         const loadData = async () => {
             try {
-                // Aquí cargarías los datos reales desde archivos JSON
-                // const salesResponse = await fetch('/data/sales.json');
-                // const salesJson = await salesResponse.json();
-                // setChartData(salesJson);
+                setLoading(true);
 
-                // const metricsResponse = await fetch('/data/metrics.json');
-                // const metricsJson = await metricsResponse.json();
-                // setMetrics(metricsJson);
+                const [chartResponse, metricsResponse] = await Promise.all([
+                    apiService.getChartData(),
+                    apiService.getMetrics()
+                ]);
 
-                console.log('Datos cargados correctamente');
+                // Procesar datos del gráfico
+                const backendChart = chartResponse.data as BackendChartData;
+                const processedChart = backendChart.sales.map(sale => ({
+                    month: new Date(sale.date).toLocaleDateString('es', { month: 'short' }),
+                    value: sale.amount
+                }));
+                setChartData(processedChart);
+
+                // Procesar métricas
+                const backendMetrics = metricsResponse.data as BackendMetrics;
+                const processedMetrics: MetricData[] = [
+                    { value: backendMetrics.sales.ARS, label: 'Ventas ARS', icon: '💰' },
+                    { value: backendMetrics.sales.USD, label: 'Ventas USD', icon: '💵' }
+                ];
+                setMetrics(processedMetrics);
+
+                console.log('Datos cargados correctamente desde el backend');
             } catch (error) {
-                console.error('Error cargando datos:', error);
+                console.error('Error cargando datos del backend:', error);
+            } finally {
+                setLoading(false);
             }
         };
 
@@ -114,24 +97,29 @@ const Dashboard: React.FC = () => {
                 />
 
                 <div className="dashboard-page__content">
-                    <div className="dashboard-page__charts">
-                        <Chart
-                            title="Título gráfico lineal"
-                            data={chartData}
-                            height={300}
-                        />
+                    {loading ? (
+                        <div className="dashboard-page__loading">Cargando datos...</div>
+                    ) : (
+                        <>
+                            <div className="dashboard-page__charts">
+                                <Chart
+                                    title="Título gráfico lineal"
+                                    data={chartData}
+                                    height={300}
+                                />
 
-                        <ValueCard
-                            title="Ayuda"
-                            subtitle="Concepto de Valor"
-                            amount="$700.000"
-                            description="Texto de ejemplo valor"
-                            buttonText="Ver detalle"
-                            onButtonClick={handleValueCardClick}
-                        />
-                    </div>
+                                <ValueCard
+                                    subtitle="Concepto de Valor"
+                                    amount="$700.000"
+                                    description="Texto de ejemplo valor"
+                                    buttonText="Ver detalle"
+                                    onButtonClick={handleValueCardClick}
+                                />
+                            </div>
 
-                    <ValueSummary items={summaryItems} />
+                            <ValueSummary items={summaryItems} />
+                        </>
+                    )}
                 </div>
             </div>
 
