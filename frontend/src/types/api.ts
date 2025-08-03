@@ -4,7 +4,7 @@ export interface ChartDataPoint {
 }
 
 export interface MetricData {
-  value: number;
+  value: number | string;
   label: string;
   icon: string;
 }

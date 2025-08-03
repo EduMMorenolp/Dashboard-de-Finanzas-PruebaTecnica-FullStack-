@@ -23,6 +23,27 @@
 .chart__controls {
   display: flex;
   gap: var(--spacing-md);
+  align-items: center;
+}
+
+.chart__legend {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.chart__legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.chart__legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
 }
 
 .chart__select {

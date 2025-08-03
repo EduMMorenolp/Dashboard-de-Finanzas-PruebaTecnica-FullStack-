@@ -47,22 +47,57 @@ const Dashboard: React.FC = () => {
             const chartResponse = await apiService.getChartData(backendPeriod);
             const backendChart = chartResponse.data as BackendChartData;
 
-            // Validar que existan los datos antes de procesarlos
             if (backendChart && backendChart.sales && Array.isArray(backendChart.sales)) {
-                const processedChart = backendChart.sales.map((sale, index) => ({
-                    month: `${index + 1}`,
-                    value: sale.amount
-                }));
+                const dataMapARS = new Map<string, number>();
+                const dataMapUSD = new Map<string, number>();
+
+                // Procesar ventas por moneda
+                backendChart.sales.forEach(sale => {
+                    const dateKey = sale.date.split('T')[0];
+                    if (sale.currency === 'ARS') {
+                        const currentValue = dataMapARS.get(dateKey) || 0;
+                        dataMapARS.set(dateKey, currentValue + sale.amount);
+                    } else if (sale.currency === 'USD') {
+                        const currentValue = dataMapUSD.get(dateKey) || 0;
+                        dataMapUSD.set(dateKey, currentValue + sale.amount);
+                    }
+                });
+
+                // Combinar fechas únicas
+                const allDates = new Set([...dataMapARS.keys(), ...dataMapUSD.keys()]);
+                
+                const processedChart = Array.from(allDates)
+                    .sort((a, b) => new Date(a).getTime() - new Date(b).getTime())
+                    .map((date, index) => ({
+                        month: formatDateForChart(date, period, index),
+                        valueARS: Math.round(dataMapARS.get(date) || 0),
+                        valueUSD: Math.round(dataMapUSD.get(date) || 0)
+                    }));
+
                 setChartData(processedChart);
             } else {
-                const sanitizedChart = JSON.stringify(backendChart).replace(/[\r\n]/g, ' ');
-                console.warn('Datos del gráfico no válidos:', sanitizedChart);
+                console.warn('Datos del gráfico no válidos');
                 setChartData([]);
             }
         } catch (error) {
-            const sanitizedError = String(error).replace(/[\r\n]/g, ' ');
-            console.error('Error cargando datos del gráfico:', sanitizedError);
+            console.error('Error cargando datos del gráfico:', error);
             setChartData([]);
+        }
+    };
+
+    const formatDateForChart = (date: string, period: string, index: number) => {
+        const dateObj = new Date(date);
+        switch (period) {
+            case 'Anual':
+                return dateObj.getFullYear().toString();
+            case 'Mensual':
+                return dateObj.toLocaleDateString('es-ES', { month: 'short', year: '2-digit' });
+            case 'Semanal':
+                return `S${index + 1}`;
+            case 'Diario':
+                return dateObj.toLocaleDateString('es-ES', { month: 'numeric', day: 'numeric' });
+            default:
+                return date;
         }
     };
 
@@ -80,13 +115,14 @@ const Dashboard: React.FC = () => {
                 const backendMetrics = metricsResponse.data as BackendMetrics;
                 if (backendMetrics && backendMetrics.sales) {
                     const processedMetrics: MetricData[] = [
-                        { value: backendMetrics.sales.ARS || 0, label: 'Ventas ARS', icon: '💰' },
-                        { value: backendMetrics.sales.USD || 0, label: 'Ventas USD', icon: '💵' }
+                        { value: `$${Math.round(backendMetrics.sales.ARS || 0).toLocaleString()}`, label: 'Ventas ARS', icon: '💰' },
+                        { value: `$${Math.round(backendMetrics.sales.USD || 0).toLocaleString()}`, label: 'Ventas USD', icon: '💵' },
+                        { value: `$${Math.round(backendMetrics.expenses.ARS || 0).toLocaleString()}`, label: 'Gastos ARS', icon: '📉' },
+                        { value: `$${Math.round(backendMetrics.expenses.USD || 0).toLocaleString()}`, label: 'Gastos USD', icon: '📉' }
                     ];
                     setMetrics(processedMetrics);
                 } else {
-                    const sanitizedMetrics = JSON.stringify(backendMetrics).replace(/[\r\n]/g, ' ');
-                    console.warn('Datos de métricas no válidos:', sanitizedMetrics);
+                    console.warn('Datos de métricas no válidos');
                     setMetrics([]);
                 }
 
@@ -129,7 +165,7 @@ const Dashboard: React.FC = () => {
 
             <div className="dashboard-page__main">
                 <Header
-                    userName="Usuario"
+                    username="Usuario"
                     metrics={metrics}
                 />
 
@@ -140,16 +176,16 @@ const Dashboard: React.FC = () => {
                         <>
                             <div className="dashboard-page__charts">
                                 <Chart
-                                    title="Ventas por período"
+                                    title="Datos Financieros por Período"
                                     data={chartData}
                                     height={300}
                                     onPeriodChange={handlePeriodChange}
                                 />
 
                                 <ValueCard
-                                    subtitle="Concepto de Valor"
-                                    amount="$700.000"
-                                    description="Texto de ejemplo valor"
+                                    subtitle="Resumen Financiero"
+                                    amount={`ARS: $${chartData.reduce((sum, item) => sum + (item.valueARS || 0), 0).toLocaleString()} | USD: $${chartData.reduce((sum, item) => sum + (item.valueUSD || 0), 0).toLocaleString()}`}
+                                    description="Total del período seleccionado"
                                     buttonText="Ver detalle"
                                     onButtonClick={handleValueCardClick}
                                 />

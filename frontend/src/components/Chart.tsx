@@ -4,7 +4,9 @@ import '../style/components/Chart.css';
 
 interface ChartDataPoint {
     month: string;
-    value: number;
+    value?: number;
+    valueARS?: number;
+    valueUSD?: number;
 }
 
 interface ChartProps {
@@ -22,21 +24,8 @@ const Chart: React.FC<ChartProps> = ({
 }) => {
     const [selectedPeriod, setSelectedPeriod] = useState<string>('Anual');
 
-    const formatXAxisLabel = (value: string, index: number) => {
-        const num = parseInt(value);
-        switch (selectedPeriod) {
-            case 'Anual':
-                return `${2020 + index}`;
-            case 'Mensual':
-                const months = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
-                return months[(num - 1) % 12] || `M${num}`;
-            case 'Semanal':
-                return `S${num}`;
-            case 'Diario':
-                return `${num}`;
-            default:
-                return value;
-        }
+    const formatXAxisLabel = (value: string) => {
+        return value;
     };
 
     const periodOptions = [
@@ -59,6 +48,16 @@ const Chart: React.FC<ChartProps> = ({
             <div className="chart__header">
                 <h3 className="chart__title">{title}</h3>
                 <div className="chart__controls">
+                    <div className="chart__legend">
+                        <span className="chart__legend-item">
+                            <span className="chart__legend-color" style={{backgroundColor: '#3b82f6'}}></span>
+                            ARS
+                        </span>
+                        <span className="chart__legend-item">
+                            <span className="chart__legend-color" style={{backgroundColor: '#10b981'}}></span>
+                            USD
+                        </span>
+                    </div>
                     <select
                         className="chart__select"
                         value={selectedPeriod}
@@ -82,6 +81,10 @@ const Chart: React.FC<ChartProps> = ({
                                     <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.8}/>
                                     <stop offset="95%" stopColor="#3b82f6" stopOpacity={0.1}/>
                                 </linearGradient>
+                                <linearGradient id="colorValueUSD" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="5%" stopColor="#10b981" stopOpacity={0.8}/>
+                                    <stop offset="95%" stopColor="#10b981" stopOpacity={0.1}/>
+                                </linearGradient>
                             </defs>
                             <CartesianGrid strokeDasharray="3 3" stroke="#e0e6ed" />
                             <XAxis
@@ -89,7 +92,7 @@ const Chart: React.FC<ChartProps> = ({
                                 axisLine={false}
                                 tickLine={false}
                                 tick={{ fontSize: 12, fill: '#8b949e' }}
-                                tickFormatter={(value, index) => formatXAxisLabel(value, index)}
+                                tickFormatter={formatXAxisLabel}
                             />
                             <YAxis
                                 axisLine={false}
@@ -100,12 +103,21 @@ const Chart: React.FC<ChartProps> = ({
                             />
                             <Area
                                 type="monotone"
-                                dataKey="value"
+                                dataKey="valueARS"
                                 stroke="#3b82f6"
                                 strokeWidth={2}
                                 fill="url(#colorValue)"
                                 dot={false}
                                 activeDot={{ r: 6, fill: '#3b82f6', strokeWidth: 2, stroke: '#ffffff' }}
+                            />
+                            <Area
+                                type="monotone"
+                                dataKey="valueUSD"
+                                stroke="#10b981"
+                                strokeWidth={2}
+                                fill="url(#colorValueUSD)"
+                                dot={false}
+                                activeDot={{ r: 6, fill: '#10b981', strokeWidth: 2, stroke: '#ffffff' }}
                             />
                         </AreaChart>
                     </ResponsiveContainer>
